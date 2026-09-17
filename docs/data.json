@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T18:42:18+00:00",
+ "generated_at": "2026-09-17T18:44:05+00:00",
  "season": "2026",
  "week": 2,
  "short_weeks": [
@@ -2426,55 +2426,6 @@
    "moves": [],
    "watch": [
     {
-     "id": "11610",
-     "name": "Malik Washington",
-     "pos": "WR",
-     "team": "MIA",
-     "injury": null,
-     "bye": 6,
-     "opp": "SF",
-     "proj": 9.2,
-     "next": [
-      9.2,
-      8.4,
-      8.0
-     ],
-     "ros": 8.9,
-     "last": {
-      "w": 1,
-      "pts": 6.3,
-      "snap": 0.98,
-      "touches": 8,
-      "targets": 8,
-      "carries": 0,
-      "tgt_share": 0.296,
-      "carry_share": 0.0,
-      "ay_share": 0.437
-     },
-     "usage": {
-      "g": 1,
-      "snap": 0.98,
-      "tgt_share": 0.296,
-      "carry_share": 0.0,
-      "ay_share": 0.437,
-      "targets": 8.0,
-      "carries": 0.0,
-      "pts": 6.3
-     },
-     "adds": 185160,
-     "drops": 180776,
-     "tags": [
-      {
-       "kind": "trend",
-       "text": "185K adds in 48h"
-      },
-      {
-       "kind": "usage",
-       "text": "29% target share in Wk 1"
-      }
-     ]
-    },
-    {
      "id": "7049",
      "name": "Jauan Jennings",
      "pos": "WR",
@@ -2524,6 +2475,55 @@
       {
        "kind": "caution",
        "text": "Hype ahead of usage: 1 target, 0 carries in Wk 1"
+      }
+     ]
+    },
+    {
+     "id": "4177",
+     "name": "Mack Hollins",
+     "pos": "WR",
+     "team": "NE",
+     "injury": null,
+     "bye": 11,
+     "opp": "PIT",
+     "proj": 8.8,
+     "next": [
+      8.8,
+      8.3,
+      8.4
+     ],
+     "ros": 7.2,
+     "last": {
+      "w": 1,
+      "pts": 9.1,
+      "snap": 0.7,
+      "touches": 5,
+      "targets": 5,
+      "carries": 0,
+      "tgt_share": 0.161,
+      "carry_share": 0.0,
+      "ay_share": 0.281
+     },
+     "usage": {
+      "g": 1,
+      "snap": 0.7,
+      "tgt_share": 0.161,
+      "carry_share": 0.0,
+      "ay_share": 0.281,
+      "targets": 5.0,
+      "carries": 0.0,
+      "pts": 9.1
+     },
+     "adds": 462450,
+     "drops": null,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "462K adds in 48h"
+      },
+      {
+       "kind": "usage",
+       "text": "16% target share in Wk 1"
       }
      ]
     },
@@ -2807,43 +2807,43 @@
    ],
    "drop_candidates": [
     {
-     "id": "13305",
-     "name": "Mike Washington",
-     "pos": "RB",
-     "team": "LV",
+     "id": "11610",
+     "name": "Malik Washington",
+     "pos": "WR",
+     "team": "MIA",
      "injury": null,
-     "bye": 13,
-     "opp": "LAC",
-     "proj": 3.9,
+     "bye": 6,
+     "opp": "SF",
+     "proj": 9.2,
      "next": [
-      3.9,
-      2.8,
-      2.9
+      9.2,
+      8.4,
+      8.0
      ],
-     "ros": 3.1,
+     "ros": 8.9,
      "last": {
       "w": 1,
-      "pts": 4.1,
-      "snap": 0.19,
-      "touches": 7,
-      "targets": 0,
-      "carries": 7,
-      "tgt_share": 0.0,
-      "carry_share": 0.189,
-      "ay_share": 0.0
+      "pts": 6.3,
+      "snap": 0.98,
+      "touches": 8,
+      "targets": 8,
+      "carries": 0,
+      "tgt_share": 0.296,
+      "carry_share": 0.0,
+      "ay_share": 0.437
      },
      "usage": {
       "g": 1,
-      "snap": 0.19,
-      "tgt_share": 0.0,
-      "carry_share": 0.189,
-      "ay_share": 0.0,
-      "targets": 0.0,
-      "carries": 7.0,
-      "pts": 4.1
+      "snap": 0.98,
+      "tgt_share": 0.296,
+      "carry_share": 0.0,
+      "ay_share": 0.437,
+      "targets": 8.0,
+      "carries": 0.0,
+      "pts": 6.3
      },
-     "adds": null,
-     "drops": null
+     "adds": 185160,
+     "drops": 180776
     },
     {
      "id": "8131",
@@ -3365,6 +3365,47 @@
      "optimal": false
     },
     {
+     "id": "11610",
+     "name": "Malik Washington",
+     "pos": "WR",
+     "team": "MIA",
+     "injury": null,
+     "bye": 6,
+     "opp": "SF",
+     "proj": 9.2,
+     "next": [
+      9.2,
+      8.4,
+      8.0
+     ],
+     "ros": 8.9,
+     "last": {
+      "w": 1,
+      "pts": 6.3,
+      "snap": 0.98,
+      "touches": 8,
+      "targets": 8,
+      "carries": 0,
+      "tgt_share": 0.296,
+      "carry_share": 0.0,
+      "ay_share": 0.437
+     },
+     "usage": {
+      "g": 1,
+      "snap": 0.98,
+      "tgt_share": 0.296,
+      "carry_share": 0.0,
+      "ay_share": 0.437,
+      "targets": 8.0,
+      "carries": 0.0,
+      "pts": 6.3
+     },
+     "adds": 185160,
+     "drops": 180776,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
      "id": "LAR",
      "name": "Rams D/ST",
      "pos": "DEF",
@@ -3477,47 +3518,6 @@
      },
      "adds": null,
      "drops": 302580,
-     "slot": "BN",
-     "optimal": false
-    },
-    {
-     "id": "13305",
-     "name": "Mike Washington",
-     "pos": "RB",
-     "team": "LV",
-     "injury": null,
-     "bye": 13,
-     "opp": "LAC",
-     "proj": 3.9,
-     "next": [
-      3.9,
-      2.8,
-      2.9
-     ],
-     "ros": 3.1,
-     "last": {
-      "w": 1,
-      "pts": 4.1,
-      "snap": 0.19,
-      "touches": 7,
-      "targets": 0,
-      "carries": 7,
-      "tgt_share": 0.0,
-      "carry_share": 0.189,
-      "ay_share": 0.0
-     },
-     "usage": {
-      "g": 1,
-      "snap": 0.19,
-      "tgt_share": 0.0,
-      "carry_share": 0.189,
-      "ay_share": 0.0,
-      "targets": 0.0,
-      "carries": 7.0,
-      "pts": 4.1
-     },
-     "adds": null,
-     "drops": null,
      "slot": "BN",
      "optimal": false
     }
@@ -4742,47 +4742,6 @@
    ]
   },
   {
-   "id": "4034",
-   "name": "Christian McCaffrey",
-   "pos": "RB",
-   "team": "SF",
-   "injury": null,
-   "bye": 8,
-   "opp": "MIA",
-   "proj": {
-    "ppr": 19.8,
-    "half_ppr": 17.4,
-    "std": 15.1
-   },
-   "next3": {
-    "ppr": 56.4,
-    "half_ppr": 49.4,
-    "std": 42.5
-   },
-   "ros": {
-    "ppr": 18.7,
-    "half_ppr": 16.4,
-    "std": 14.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.55,
-    "tgt_share": 0.235,
-    "carry_share": 0.333,
-    "ay_share": -0.02,
-    "targets": 8.0,
-    "carries": 10.0,
-    "pts": 13.8
-   },
-   "adds": null,
-   "drops": null,
-   "free": [],
-   "mine": [
-    "1398428734666579968",
-    "1395811"
-   ]
-  },
-  {
    "id": "6804",
    "name": "Jordan Love",
    "pos": "QB",
@@ -4822,6 +4781,47 @@
     "1508881"
    ],
    "mine": []
+  },
+  {
+   "id": "4034",
+   "name": "Christian McCaffrey",
+   "pos": "RB",
+   "team": "SF",
+   "injury": null,
+   "bye": 8,
+   "opp": "MIA",
+   "proj": {
+    "ppr": 19.8,
+    "half_ppr": 17.4,
+    "std": 15.1
+   },
+   "next3": {
+    "ppr": 56.4,
+    "half_ppr": 49.4,
+    "std": 42.5
+   },
+   "ros": {
+    "ppr": 18.7,
+    "half_ppr": 16.4,
+    "std": 14.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.55,
+    "tgt_share": 0.235,
+    "carry_share": 0.333,
+    "ay_share": -0.02,
+    "targets": 8.0,
+    "carries": 10.0,
+    "pts": 13.8
+   },
+   "adds": null,
+   "drops": null,
+   "free": [],
+   "mine": [
+    "1398428734666579968",
+    "1395811"
+   ]
   },
   {
    "id": "8183",
@@ -5483,49 +5483,6 @@
    ]
   },
   {
-   "id": "3257",
-   "name": "Jacoby Brissett",
-   "pos": "QB",
-   "team": "ARI",
-   "injury": null,
-   "bye": 14,
-   "opp": "SEA",
-   "proj": {
-    "ppr": 12.4,
-    "half_ppr": 12.4,
-    "std": 12.4
-   },
-   "next3": {
-    "ppr": 43.6,
-    "half_ppr": 43.6,
-    "std": 43.6
-   },
-   "ros": {
-    "ppr": 14.6,
-    "half_ppr": 14.6,
-    "std": 14.6
-   },
-   "usage": {
-    "g": 1,
-    "snap": 1.0,
-    "tgt_share": 0.0,
-    "carry_share": 0.176,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 6.0,
-    "pts": 16.5
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "4943",
    "name": "Sam Darnold",
    "pos": "QB",
@@ -5560,6 +5517,49 @@
    },
    "adds": null,
    "drops": 91590,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "3257",
+   "name": "Jacoby Brissett",
+   "pos": "QB",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": "SEA",
+   "proj": {
+    "ppr": 12.4,
+    "half_ppr": 12.4,
+    "std": 12.4
+   },
+   "next3": {
+    "ppr": 43.6,
+    "half_ppr": 43.6,
+    "std": 43.6
+   },
+   "ros": {
+    "ppr": 14.6,
+    "half_ppr": 14.6,
+    "std": 14.6
+   },
+   "usage": {
+    "g": 1,
+    "snap": 1.0,
+    "tgt_share": 0.0,
+    "carry_share": 0.176,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 6.0,
+    "pts": 16.5
+   },
+   "adds": null,
+   "drops": null,
    "free": [
     "1398428734666579968",
     "1191912",
@@ -5609,6 +5609,42 @@
    ]
   },
   {
+   "id": "6768",
+   "name": "Tua Tagovailoa",
+   "pos": "QB",
+   "team": "ATL",
+   "injury": "Questionable",
+   "bye": 11,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 32.0,
+    "half_ppr": 32.0,
+    "std": 32.0
+   },
+   "ros": {
+    "ppr": 14.0,
+    "half_ppr": 14.0,
+    "std": 14.0
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "12522",
    "name": "Cam Ward",
    "pos": "QB",
@@ -5640,42 +5676,6 @@
     "targets": 0.0,
     "carries": 4.0,
     "pts": 11.7
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "6768",
-   "name": "Tua Tagovailoa",
-   "pos": "QB",
-   "team": "ATL",
-   "injury": "Questionable",
-   "bye": 11,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 32.0,
-    "half_ppr": 32.0,
-    "std": 32.0
-   },
-   "ros": {
-    "ppr": 14.0,
-    "half_ppr": 14.0,
-    "std": 14.0
-   },
-   "usage": {
-    "g": 0
    },
    "adds": null,
    "drops": null,
@@ -6709,48 +6709,6 @@
    ]
   },
   {
-   "id": "11610",
-   "name": "Malik Washington",
-   "pos": "WR",
-   "team": "MIA",
-   "injury": null,
-   "bye": 6,
-   "opp": "SF",
-   "proj": {
-    "ppr": 9.2,
-    "half_ppr": 7.3,
-    "std": 5.5
-   },
-   "next3": {
-    "ppr": 25.7,
-    "half_ppr": 20.4,
-    "std": 15.1
-   },
-   "ros": {
-    "ppr": 8.9,
-    "half_ppr": 7.1,
-    "std": 5.3
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.98,
-    "tgt_share": 0.296,
-    "carry_share": 0.0,
-    "ay_share": 0.437,
-    "targets": 8.0,
-    "carries": 0.0,
-    "pts": 6.3
-   },
-   "adds": 185160,
-   "drops": 180776,
-   "free": [
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "11603",
    "name": "AJ Barner",
    "pos": "TE",
@@ -6791,6 +6749,49 @@
     "1508881"
    ],
    "mine": []
+  },
+  {
+   "id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "injury": null,
+   "bye": 6,
+   "opp": "SF",
+   "proj": {
+    "ppr": 9.2,
+    "half_ppr": 7.3,
+    "std": 5.5
+   },
+   "next3": {
+    "ppr": 25.7,
+    "half_ppr": 20.4,
+    "std": 15.1
+   },
+   "ros": {
+    "ppr": 8.9,
+    "half_ppr": 7.1,
+    "std": 5.3
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.98,
+    "tgt_share": 0.296,
+    "carry_share": 0.0,
+    "ay_share": 0.437,
+    "targets": 8.0,
+    "carries": 0.0,
+    "pts": 6.3
+   },
+   "adds": 185160,
+   "drops": 180776,
+   "free": [
+    "1191912",
+    "1508881"
+   ],
+   "mine": [
+    "1395811"
+   ]
   },
   {
    "id": "TB",
@@ -6868,6 +6869,49 @@
    "mine": []
   },
   {
+   "id": "7049",
+   "name": "Jauan Jennings",
+   "pos": "WR",
+   "team": "MIN",
+   "injury": null,
+   "bye": 6,
+   "opp": "CHI",
+   "proj": {
+    "ppr": 9.1,
+    "half_ppr": 7.6,
+    "std": 6.2
+   },
+   "next3": {
+    "ppr": 26.9,
+    "half_ppr": 22.6,
+    "std": 18.4
+   },
+   "ros": {
+    "ppr": 8.6,
+    "half_ppr": 7.2,
+    "std": 5.8
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.48,
+    "tgt_share": 0.043,
+    "carry_share": 0.0,
+    "ay_share": 0.17,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": 107142,
+   "drops": 92722,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "5844",
    "name": "T.J. Hockenson",
    "pos": "TE",
@@ -6910,45 +6954,83 @@
    ]
   },
   {
-   "id": "7049",
-   "name": "Jauan Jennings",
-   "pos": "WR",
-   "team": "MIN",
+   "id": "7567",
+   "name": "Kenny Gainwell",
+   "pos": "RB",
+   "team": "TB",
    "injury": null,
-   "bye": 6,
-   "opp": "CHI",
+   "bye": 10,
+   "opp": "CLE",
    "proj": {
-    "ppr": 9.1,
-    "half_ppr": 7.6,
-    "std": 6.2
+    "ppr": 8.0,
+    "half_ppr": 7.0,
+    "std": 6.0
    },
    "next3": {
-    "ppr": 26.9,
-    "half_ppr": 22.6,
-    "std": 18.4
+    "ppr": 23.5,
+    "half_ppr": 20.3,
+    "std": 17.2
    },
    "ros": {
-    "ppr": 8.6,
+    "ppr": 8.3,
     "half_ppr": 7.2,
-    "std": 5.8
+    "std": 6.1
    },
    "usage": {
     "g": 1,
-    "snap": 0.48,
-    "tgt_share": 0.043,
-    "carry_share": 0.0,
-    "ay_share": 0.17,
+    "snap": 0.46,
+    "tgt_share": 0.037,
+    "carry_share": 0.25,
+    "ay_share": -0.035,
     "targets": 1.0,
-    "carries": 0.0,
-    "pts": 0.0
+    "carries": 5.0,
+    "pts": 2.8
    },
-   "adds": 107142,
-   "drops": 92722,
-   "free": [
-    "1398428734666579968",
+   "adds": null,
+   "drops": 294424,
+   "free": [],
+   "mine": [
     "1191912",
-    "1395811",
     "1508881"
+   ]
+  },
+  {
+   "id": "9480",
+   "name": "Brenton Strange",
+   "pos": "TE",
+   "team": "JAX",
+   "injury": null,
+   "bye": 7,
+   "opp": "DEN",
+   "proj": {
+    "ppr": 7.9,
+    "half_ppr": 6.2,
+    "std": 4.4
+   },
+   "next3": {
+    "ppr": 25.8,
+    "half_ppr": 20.6,
+    "std": 15.4
+   },
+   "ros": {
+    "ppr": 8.3,
+    "half_ppr": 6.6,
+    "std": 4.9
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.68,
+    "tgt_share": 0.143,
+    "carry_share": 0.0,
+    "ay_share": 0.14,
+    "targets": 3.0,
+    "carries": 0.0,
+    "pts": 10.3
+   },
+   "adds": 74556,
+   "drops": 121446,
+   "free": [
+    "1398428734666579968"
    ],
    "mine": []
   },
@@ -6994,87 +7076,6 @@
     "1508881"
    ],
    "mine": []
-  },
-  {
-   "id": "9480",
-   "name": "Brenton Strange",
-   "pos": "TE",
-   "team": "JAX",
-   "injury": null,
-   "bye": 7,
-   "opp": "DEN",
-   "proj": {
-    "ppr": 7.9,
-    "half_ppr": 6.2,
-    "std": 4.4
-   },
-   "next3": {
-    "ppr": 25.8,
-    "half_ppr": 20.6,
-    "std": 15.4
-   },
-   "ros": {
-    "ppr": 8.3,
-    "half_ppr": 6.6,
-    "std": 4.9
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.68,
-    "tgt_share": 0.143,
-    "carry_share": 0.0,
-    "ay_share": 0.14,
-    "targets": 3.0,
-    "carries": 0.0,
-    "pts": 10.3
-   },
-   "adds": 74556,
-   "drops": 121446,
-   "free": [
-    "1398428734666579968"
-   ],
-   "mine": []
-  },
-  {
-   "id": "7567",
-   "name": "Kenny Gainwell",
-   "pos": "RB",
-   "team": "TB",
-   "injury": null,
-   "bye": 10,
-   "opp": "CLE",
-   "proj": {
-    "ppr": 8.0,
-    "half_ppr": 7.0,
-    "std": 6.0
-   },
-   "next3": {
-    "ppr": 23.5,
-    "half_ppr": 20.3,
-    "std": 17.2
-   },
-   "ros": {
-    "ppr": 8.3,
-    "half_ppr": 7.2,
-    "std": 6.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.46,
-    "tgt_share": 0.037,
-    "carry_share": 0.25,
-    "ay_share": -0.035,
-    "targets": 1.0,
-    "carries": 5.0,
-    "pts": 2.8
-   },
-   "adds": null,
-   "drops": 294424,
-   "free": [],
-   "mine": [
-    "1191912",
-    "1508881"
-   ]
   },
   {
    "id": "9508",
@@ -7159,46 +7160,6 @@
    "mine": []
   },
   {
-   "id": "8676",
-   "name": "Rashid Shaheed",
-   "pos": "WR",
-   "team": "SEA",
-   "injury": null,
-   "bye": 11,
-   "opp": "ARI",
-   "proj": {
-    "ppr": 7.5,
-    "half_ppr": 6.3,
-    "std": 5.1
-   },
-   "next3": {
-    "ppr": 24.1,
-    "half_ppr": 20.4,
-    "std": 16.6
-   },
-   "ros": {
-    "ppr": 8.0,
-    "half_ppr": 6.8,
-    "std": 5.5
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.66,
-    "tgt_share": 0.125,
-    "carry_share": 0.0,
-    "ay_share": 0.123,
-    "targets": 3.0,
-    "carries": 0.0,
-    "pts": 1.4
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968"
-   ],
-   "mine": []
-  },
-  {
    "id": "9504",
    "name": "Kayshon Boutte",
    "pos": "WR",
@@ -7242,6 +7203,46 @@
    "mine": []
   },
   {
+   "id": "8676",
+   "name": "Rashid Shaheed",
+   "pos": "WR",
+   "team": "SEA",
+   "injury": null,
+   "bye": 11,
+   "opp": "ARI",
+   "proj": {
+    "ppr": 7.5,
+    "half_ppr": 6.3,
+    "std": 5.1
+   },
+   "next3": {
+    "ppr": 24.1,
+    "half_ppr": 20.4,
+    "std": 16.6
+   },
+   "ros": {
+    "ppr": 8.0,
+    "half_ppr": 6.8,
+    "std": 5.5
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.66,
+    "tgt_share": 0.125,
+    "carry_share": 0.0,
+    "ay_share": 0.123,
+    "targets": 3.0,
+    "carries": 0.0,
+    "pts": 1.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968"
+   ],
+   "mine": []
+  },
+  {
    "id": "LAR",
    "name": "Rams D/ST",
    "pos": "DEF",
@@ -7274,47 +7275,6 @@
     "1191912",
     "1395811"
    ]
-  },
-  {
-   "id": "12048",
-   "name": "George Holani",
-   "pos": "RB",
-   "team": "SEA",
-   "injury": null,
-   "bye": 11,
-   "opp": "ARI",
-   "proj": {
-    "ppr": 7.8,
-    "half_ppr": 7.0,
-    "std": 6.3
-   },
-   "next3": {
-    "ppr": 23.8,
-    "half_ppr": 21.4,
-    "std": 19.1
-   },
-   "ros": {
-    "ppr": 7.8,
-    "half_ppr": 7.0,
-    "std": 6.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.46,
-    "tgt_share": 0.042,
-    "carry_share": 0.364,
-    "ay_share": 0.039,
-    "targets": 1.0,
-    "carries": 8.0,
-    "pts": 2.9
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1191912",
-    "1508881"
-   ],
-   "mine": []
   },
   {
    "id": "13346",
@@ -7357,39 +7317,39 @@
    "mine": []
   },
   {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
+   "id": "12048",
+   "name": "George Holani",
+   "pos": "RB",
+   "team": "SEA",
    "injury": null,
-   "bye": 10,
-   "opp": "TEN",
+   "bye": 11,
+   "opp": "ARI",
    "proj": {
-    "ppr": 8.0,
-    "half_ppr": 6.7,
-    "std": 5.4
+    "ppr": 7.8,
+    "half_ppr": 7.0,
+    "std": 6.3
    },
    "next3": {
-    "ppr": 23.2,
-    "half_ppr": 19.4,
-    "std": 15.5
+    "ppr": 23.8,
+    "half_ppr": 21.4,
+    "std": 19.1
    },
    "ros": {
-    "ppr": 7.6,
-    "half_ppr": 6.3,
-    "std": 5.0
+    "ppr": 7.8,
+    "half_ppr": 7.0,
+    "std": 6.2
    },
    "usage": {
     "g": 1,
-    "snap": 0.91,
-    "tgt_share": 0.182,
-    "carry_share": 0.0,
-    "ay_share": 0.351,
-    "targets": 4.0,
-    "carries": 0.0,
-    "pts": 15.3
+    "snap": 0.46,
+    "tgt_share": 0.042,
+    "carry_share": 0.364,
+    "ay_share": 0.039,
+    "targets": 1.0,
+    "carries": 8.0,
+    "pts": 2.9
    },
-   "adds": 366213,
+   "adds": null,
    "drops": null,
    "free": [
     "1191912",
@@ -7483,80 +7443,42 @@
    "mine": []
   },
   {
-   "id": "6083",
-   "name": "Matt Gay",
-   "pos": "K",
-   "team": "LV",
-   "injury": null,
-   "bye": 13,
-   "opp": "LAC",
-   "proj": {
-    "ppr": 7.2,
-    "half_ppr": 7.2,
-    "std": 7.2
-   },
-   "next3": {
-    "ppr": 22.3,
-    "half_ppr": 22.3,
-    "std": 22.3
-   },
-   "ros": {
-    "ppr": 7.4,
-    "half_ppr": 7.4,
-    "std": 7.4
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": 99480,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11783",
-   "name": "Ryan Flournoy",
+   "id": "9486",
+   "name": "Dontayvion Wicks",
    "pos": "WR",
-   "team": "DAL",
+   "team": "PHI",
    "injury": null,
-   "bye": 14,
-   "opp": "WAS",
+   "bye": 10,
+   "opp": "TEN",
    "proj": {
     "ppr": 8.0,
     "half_ppr": 6.7,
     "std": 5.4
    },
    "next3": {
-    "ppr": 22.3,
-    "half_ppr": 18.4,
-    "std": 14.5
+    "ppr": 23.2,
+    "half_ppr": 19.4,
+    "std": 15.5
    },
    "ros": {
-    "ppr": 7.4,
-    "half_ppr": 6.1,
-    "std": 4.8
+    "ppr": 7.6,
+    "half_ppr": 6.3,
+    "std": 5.0
    },
    "usage": {
     "g": 1,
-    "snap": 0.71,
-    "tgt_share": 0.133,
+    "snap": 0.91,
+    "tgt_share": 0.182,
     "carry_share": 0.0,
-    "ay_share": 0.074,
+    "ay_share": 0.351,
     "targets": 4.0,
     "carries": 0.0,
-    "pts": 4.2
+    "pts": 15.3
    },
-   "adds": null,
+   "adds": 366213,
    "drops": null,
    "free": [
-    "1398428734666579968",
     "1191912",
-    "1395811",
     "1508881"
    ],
    "mine": []
@@ -7648,6 +7570,42 @@
    "mine": []
   },
   {
+   "id": "6083",
+   "name": "Matt Gay",
+   "pos": "K",
+   "team": "LV",
+   "injury": null,
+   "bye": 13,
+   "opp": "LAC",
+   "proj": {
+    "ppr": 7.2,
+    "half_ppr": 7.2,
+    "std": 7.2
+   },
+   "next3": {
+    "ppr": 22.3,
+    "half_ppr": 22.3,
+    "std": 22.3
+   },
+   "ros": {
+    "ppr": 7.4,
+    "half_ppr": 7.4,
+    "std": 7.4
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": 99480,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "10219",
    "name": "Chris Rodriguez",
    "pos": "RB",
@@ -7683,6 +7641,92 @@
    "adds": 36153,
    "drops": 313578,
    "free": [
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11783",
+   "name": "Ryan Flournoy",
+   "pos": "WR",
+   "team": "DAL",
+   "injury": null,
+   "bye": 14,
+   "opp": "WAS",
+   "proj": {
+    "ppr": 8.0,
+    "half_ppr": 6.7,
+    "std": 5.4
+   },
+   "next3": {
+    "ppr": 22.3,
+    "half_ppr": 18.4,
+    "std": 14.5
+   },
+   "ros": {
+    "ppr": 7.4,
+    "half_ppr": 6.1,
+    "std": 4.8
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.71,
+    "tgt_share": 0.133,
+    "carry_share": 0.0,
+    "ay_share": 0.074,
+    "targets": 4.0,
+    "carries": 0.0,
+    "pts": 4.2
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7571",
+   "name": "Rashod Bateman",
+   "pos": "WR",
+   "team": "BAL",
+   "injury": null,
+   "bye": 13,
+   "opp": "NO",
+   "proj": {
+    "ppr": 8.3,
+    "half_ppr": 7.0,
+    "std": 5.7
+   },
+   "next3": {
+    "ppr": 24.0,
+    "half_ppr": 20.3,
+    "std": 16.6
+   },
+   "ros": {
+    "ppr": 7.3,
+    "half_ppr": 6.1,
+    "std": 5.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.78,
+    "tgt_share": 0.042,
+    "carry_share": 0.0,
+    "ay_share": 0.086,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": 69382,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
     "1508881"
    ],
    "mine": []
@@ -7772,42 +7816,41 @@
    "mine": []
   },
   {
-   "id": "7571",
-   "name": "Rashod Bateman",
+   "id": "4177",
+   "name": "Mack Hollins",
    "pos": "WR",
-   "team": "BAL",
+   "team": "NE",
    "injury": null,
-   "bye": 13,
-   "opp": "NO",
+   "bye": 11,
+   "opp": "PIT",
    "proj": {
-    "ppr": 8.3,
-    "half_ppr": 7.0,
-    "std": 5.7
+    "ppr": 8.8,
+    "half_ppr": 7.2,
+    "std": 5.5
    },
    "next3": {
-    "ppr": 24.0,
-    "half_ppr": 20.3,
-    "std": 16.6
+    "ppr": 25.4,
+    "half_ppr": 20.7,
+    "std": 16.0
    },
    "ros": {
-    "ppr": 7.3,
-    "half_ppr": 6.1,
-    "std": 5.0
+    "ppr": 7.2,
+    "half_ppr": 5.9,
+    "std": 4.6
    },
    "usage": {
     "g": 1,
-    "snap": 0.78,
-    "tgt_share": 0.042,
+    "snap": 0.7,
+    "tgt_share": 0.161,
     "carry_share": 0.0,
-    "ay_share": 0.086,
-    "targets": 1.0,
+    "ay_share": 0.281,
+    "targets": 5.0,
     "carries": 0.0,
-    "pts": 0.0
+    "pts": 9.1
    },
-   "adds": 69382,
+   "adds": 462450,
    "drops": null,
    "free": [
-    "1398428734666579968",
     "1191912",
     "1395811",
     "1508881"
@@ -7851,64 +7894,22 @@
    "mine": []
   },
   {
-   "id": "4177",
-   "name": "Mack Hollins",
-   "pos": "WR",
-   "team": "NE",
-   "injury": null,
-   "bye": 11,
-   "opp": "PIT",
-   "proj": {
-    "ppr": 8.8,
-    "half_ppr": 7.2,
-    "std": 5.5
-   },
-   "next3": {
-    "ppr": 25.4,
-    "half_ppr": 20.7,
-    "std": 16.0
-   },
-   "ros": {
-    "ppr": 7.2,
-    "half_ppr": 5.9,
-    "std": 4.6
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.7,
-    "tgt_share": 0.161,
-    "carry_share": 0.0,
-    "ay_share": 0.281,
-    "targets": 5.0,
-    "carries": 0.0,
-    "pts": 9.1
-   },
-   "adds": 462450,
-   "drops": null,
-   "free": [
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "MIN",
-   "name": "Vikings D/ST",
+   "id": "SF",
+   "name": "49ers D/ST",
    "pos": "DEF",
-   "team": "MIN",
+   "team": "SF",
    "injury": null,
-   "bye": 6,
-   "opp": "CHI",
+   "bye": 8,
+   "opp": "MIA",
    "proj": {
-    "ppr": 6.5,
-    "half_ppr": 6.5,
-    "std": 6.5
+    "ppr": 9.4,
+    "half_ppr": 9.4,
+    "std": 9.4
    },
    "next3": {
-    "ppr": 21.2,
-    "half_ppr": 21.2,
-    "std": 21.2
+    "ppr": 23.6,
+    "half_ppr": 23.6,
+    "std": 23.6
    },
    "ros": {
     "ppr": 7.1,
@@ -7918,11 +7919,10 @@
    "usage": {
     "g": 0
    },
-   "adds": null,
-   "drops": 327185,
+   "adds": 962937,
+   "drops": null,
    "free": [
-    "1191912",
-    "1395811"
+    "1191912"
    ],
    "mine": []
   },
@@ -7962,22 +7962,22 @@
    ]
   },
   {
-   "id": "SF",
-   "name": "49ers D/ST",
+   "id": "MIN",
+   "name": "Vikings D/ST",
    "pos": "DEF",
-   "team": "SF",
+   "team": "MIN",
    "injury": null,
-   "bye": 8,
-   "opp": "MIA",
+   "bye": 6,
+   "opp": "CHI",
    "proj": {
-    "ppr": 9.4,
-    "half_ppr": 9.4,
-    "std": 9.4
+    "ppr": 6.5,
+    "half_ppr": 6.5,
+    "std": 6.5
    },
    "next3": {
-    "ppr": 23.6,
-    "half_ppr": 23.6,
-    "std": 23.6
+    "ppr": 21.2,
+    "half_ppr": 21.2,
+    "std": 21.2
    },
    "ros": {
     "ppr": 7.1,
@@ -7987,10 +7987,11 @@
    "usage": {
     "g": 0
    },
-   "adds": 962937,
-   "drops": null,
+   "adds": null,
+   "drops": 327185,
    "free": [
-    "1191912"
+    "1191912",
+    "1395811"
    ],
    "mine": []
   },
@@ -8030,6 +8031,39 @@
    "mine": []
   },
   {
+   "id": "3451",
+   "name": "Ka'imi Fairbairn",
+   "pos": "K",
+   "team": "HOU",
+   "injury": null,
+   "bye": 8,
+   "opp": "CIN",
+   "proj": {
+    "ppr": 7.3,
+    "half_ppr": 7.3,
+    "std": 7.3
+   },
+   "next3": {
+    "ppr": 21.1,
+    "half_ppr": 21.1,
+    "std": 21.1
+   },
+   "ros": {
+    "ppr": 7.0,
+    "half_ppr": 7.0,
+    "std": 7.0
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [],
+   "mine": [
+    "1398428734666579968"
+   ]
+  },
+  {
    "id": "GB",
    "name": "Packers D/ST",
    "pos": "DEF",
@@ -8062,39 +8096,6 @@
     "1395811"
    ],
    "mine": []
-  },
-  {
-   "id": "3451",
-   "name": "Ka'imi Fairbairn",
-   "pos": "K",
-   "team": "HOU",
-   "injury": null,
-   "bye": 8,
-   "opp": "CIN",
-   "proj": {
-    "ppr": 7.3,
-    "half_ppr": 7.3,
-    "std": 7.3
-   },
-   "next3": {
-    "ppr": 21.1,
-    "half_ppr": 21.1,
-    "std": 21.1
-   },
-   "ros": {
-    "ppr": 7.0,
-    "half_ppr": 7.0,
-    "std": 7.0
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [],
-   "mine": [
-    "1398428734666579968"
-   ]
   },
   {
    "id": "12015",
@@ -8130,37 +8131,43 @@
    ]
   },
   {
-   "id": "13968",
-   "name": "Drew Stevens",
-   "pos": "K",
-   "team": "WAS",
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
    "injury": null,
-   "bye": 7,
-   "opp": "DAL",
+   "bye": 13,
+   "opp": "GB",
    "proj": {
-    "ppr": 6.8,
-    "half_ppr": 6.8,
-    "std": 6.8
+    "ppr": 6.9,
+    "half_ppr": 5.8,
+    "std": 4.7
    },
    "next3": {
-    "ppr": 20.4,
-    "half_ppr": 20.4,
-    "std": 20.4
+    "ppr": 20.9,
+    "half_ppr": 17.7,
+    "std": 14.4
    },
    "ros": {
     "ppr": 6.8,
-    "half_ppr": 6.8,
-    "std": 6.8
+    "half_ppr": 5.8,
+    "std": 4.7
    },
    "usage": {
-    "g": 0
+    "g": 1,
+    "snap": 0.69,
+    "tgt_share": 0.13,
+    "carry_share": 0.0,
+    "ay_share": 0.351,
+    "targets": 3.0,
+    "carries": 0.0,
+    "pts": 9.0
    },
-   "adds": null,
+   "adds": 155264,
    "drops": null,
    "free": [
     "1398428734666579968",
     "1191912",
-    "1395811",
     "1508881"
    ],
    "mine": []
@@ -8206,43 +8213,37 @@
    "mine": []
   },
   {
-   "id": "11625",
-   "name": "Adonai Mitchell",
-   "pos": "WR",
-   "team": "NYJ",
+   "id": "13968",
+   "name": "Drew Stevens",
+   "pos": "K",
+   "team": "WAS",
    "injury": null,
-   "bye": 13,
-   "opp": "GB",
+   "bye": 7,
+   "opp": "DAL",
    "proj": {
-    "ppr": 6.9,
-    "half_ppr": 5.8,
-    "std": 4.7
+    "ppr": 6.8,
+    "half_ppr": 6.8,
+    "std": 6.8
    },
    "next3": {
-    "ppr": 20.9,
-    "half_ppr": 17.7,
-    "std": 14.4
+    "ppr": 20.4,
+    "half_ppr": 20.4,
+    "std": 20.4
    },
    "ros": {
     "ppr": 6.8,
-    "half_ppr": 5.8,
-    "std": 4.7
+    "half_ppr": 6.8,
+    "std": 6.8
    },
    "usage": {
-    "g": 1,
-    "snap": 0.69,
-    "tgt_share": 0.13,
-    "carry_share": 0.0,
-    "ay_share": 0.351,
-    "targets": 3.0,
-    "carries": 0.0,
-    "pts": 9.0
+    "g": 0
    },
-   "adds": 155264,
+   "adds": null,
    "drops": null,
    "free": [
     "1398428734666579968",
     "1191912",
+    "1395811",
     "1508881"
    ],
    "mine": []
@@ -8316,6 +8317,41 @@
    "mine": []
   },
   {
+   "id": "5189",
+   "name": "Eddy Pineiro",
+   "pos": "K",
+   "team": "SF",
+   "injury": "Questionable",
+   "bye": 8,
+   "opp": "MIA",
+   "proj": {
+    "ppr": 6.8,
+    "half_ppr": 6.8,
+    "std": 6.8
+   },
+   "next3": {
+    "ppr": 19.7,
+    "half_ppr": 19.7,
+    "std": 19.7
+   },
+   "ros": {
+    "ppr": 6.5,
+    "half_ppr": 6.5,
+    "std": 6.5
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": 78387,
+   "drops": null,
+   "free": [
+    "1398428734666579968"
+   ],
+   "mine": [
+    "1395811"
+   ]
+  },
+  {
    "id": "650",
    "name": "Nick Folk",
    "pos": "K",
@@ -8332,42 +8368,6 @@
     "ppr": 19.6,
     "half_ppr": 19.6,
     "std": 19.6
-   },
-   "ros": {
-    "ppr": 6.5,
-    "half_ppr": 6.5,
-    "std": 6.5
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12713",
-   "name": "Andy Borregales",
-   "pos": "K",
-   "team": "NE",
-   "injury": null,
-   "bye": 11,
-   "opp": "PIT",
-   "proj": {
-    "ppr": 6.2,
-    "half_ppr": 6.2,
-    "std": 6.2
-   },
-   "next3": {
-    "ppr": 19.3,
-    "half_ppr": 19.3,
-    "std": 19.3
    },
    "ros": {
     "ppr": 6.5,
@@ -8463,22 +8463,22 @@
    "mine": []
   },
   {
-   "id": "5189",
-   "name": "Eddy Pineiro",
+   "id": "12713",
+   "name": "Andy Borregales",
    "pos": "K",
-   "team": "SF",
-   "injury": "Questionable",
-   "bye": 8,
-   "opp": "MIA",
+   "team": "NE",
+   "injury": null,
+   "bye": 11,
+   "opp": "PIT",
    "proj": {
-    "ppr": 6.8,
-    "half_ppr": 6.8,
-    "std": 6.8
+    "ppr": 6.2,
+    "half_ppr": 6.2,
+    "std": 6.2
    },
    "next3": {
-    "ppr": 19.7,
-    "half_ppr": 19.7,
-    "std": 19.7
+    "ppr": 19.3,
+    "half_ppr": 19.3,
+    "std": 19.3
    },
    "ros": {
     "ppr": 6.5,
@@ -8488,32 +8488,75 @@
    "usage": {
     "g": 0
    },
-   "adds": 78387,
+   "adds": null,
    "drops": null,
    "free": [
-    "1398428734666579968"
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
    ],
-   "mine": [
-    "1395811"
-   ]
+   "mine": []
   },
   {
-   "id": "2020",
-   "name": "Cairo Santos",
-   "pos": "K",
-   "team": "CHI",
+   "id": "13285",
+   "name": "Malachi Fields",
+   "pos": "WR",
+   "team": "NYG",
    "injury": null,
-   "bye": 10,
-   "opp": "MIN",
+   "bye": 8,
+   "opp": "LAR",
    "proj": {
     "ppr": 6.4,
-    "half_ppr": 6.4,
-    "std": 6.4
+    "half_ppr": 5.2,
+    "std": 4.1
    },
    "next3": {
-    "ppr": 19.1,
-    "half_ppr": 19.1,
-    "std": 19.1
+    "ppr": 19.8,
+    "half_ppr": 16.3,
+    "std": 12.8
+   },
+   "ros": {
+    "ppr": 6.4,
+    "half_ppr": 5.3,
+    "std": 4.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.72,
+    "tgt_share": 0.138,
+    "carry_share": 0.0,
+    "ay_share": 0.29,
+    "targets": 4.0,
+    "carries": 0.0,
+    "pts": 4.5
+   },
+   "adds": 41825,
+   "drops": 135540,
+   "free": [
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7042",
+   "name": "Tyler Bass",
+   "pos": "K",
+   "team": "BUF",
+   "injury": null,
+   "bye": 7,
+   "opp": "DET",
+   "proj": {
+    "ppr": 6.6,
+    "half_ppr": 6.6,
+    "std": 6.6
+   },
+   "next3": {
+    "ppr": 19.4,
+    "half_ppr": 19.4,
+    "std": 19.4
    },
    "ros": {
     "ppr": 6.4,
@@ -8523,7 +8566,7 @@
    "usage": {
     "g": 0
    },
-   "adds": 313950,
+   "adds": 84930,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -8575,22 +8618,64 @@
    "mine": []
   },
   {
-   "id": "3678",
-   "name": "Wil Lutz",
-   "pos": "K",
-   "team": "DEN",
+   "id": "13311",
+   "name": "Chris Bell",
+   "pos": "WR",
+   "team": "MIA",
    "injury": null,
-   "bye": 10,
-   "opp": "JAX",
+   "bye": 6,
+   "opp": "SF",
    "proj": {
-    "ppr": 6.4,
-    "half_ppr": 6.4,
-    "std": 6.4
+    "ppr": 6.7,
+    "half_ppr": 5.5,
+    "std": 4.3
    },
    "next3": {
-    "ppr": 19.1,
-    "half_ppr": 19.1,
-    "std": 19.1
+    "ppr": 18.7,
+    "half_ppr": 15.3,
+    "std": 11.9
+   },
+   "ros": {
+    "ppr": 6.4,
+    "half_ppr": 5.3,
+    "std": 4.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.52,
+    "tgt_share": 0.074,
+    "carry_share": 0.0,
+    "ay_share": 0.136,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 3.5
+   },
+   "adds": 47656,
+   "drops": 243264,
+   "free": [
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "5095",
+   "name": "Daniel Carlson",
+   "pos": "K",
+   "team": "NO",
+   "injury": null,
+   "bye": 8,
+   "opp": "BAL",
+   "proj": {
+    "ppr": 5.8,
+    "half_ppr": 5.8,
+    "std": 5.8
+   },
+   "next3": {
+    "ppr": 18.8,
+    "half_ppr": 18.8,
+    "std": 18.8
    },
    "ros": {
     "ppr": 6.4,
@@ -8601,42 +8686,6 @@
     "g": 0
    },
    "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "7042",
-   "name": "Tyler Bass",
-   "pos": "K",
-   "team": "BUF",
-   "injury": null,
-   "bye": 7,
-   "opp": "DET",
-   "proj": {
-    "ppr": 6.6,
-    "half_ppr": 6.6,
-    "std": 6.6
-   },
-   "next3": {
-    "ppr": 19.4,
-    "half_ppr": 19.4,
-    "std": 19.4
-   },
-   "ros": {
-    "ppr": 6.4,
-    "half_ppr": 6.4,
-    "std": 6.4
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": 84930,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -8717,64 +8766,22 @@
    "mine": []
   },
   {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
-   "injury": null,
-   "bye": 8,
-   "opp": "LAR",
-   "proj": {
-    "ppr": 6.4,
-    "half_ppr": 5.2,
-    "std": 4.1
-   },
-   "next3": {
-    "ppr": 19.8,
-    "half_ppr": 16.3,
-    "std": 12.8
-   },
-   "ros": {
-    "ppr": 6.4,
-    "half_ppr": 5.3,
-    "std": 4.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.72,
-    "tgt_share": 0.138,
-    "carry_share": 0.0,
-    "ay_share": 0.29,
-    "targets": 4.0,
-    "carries": 0.0,
-    "pts": 4.5
-   },
-   "adds": 41825,
-   "drops": 135540,
-   "free": [
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "5095",
-   "name": "Daniel Carlson",
+   "id": "2020",
+   "name": "Cairo Santos",
    "pos": "K",
-   "team": "NO",
+   "team": "CHI",
    "injury": null,
-   "bye": 8,
-   "opp": "BAL",
+   "bye": 10,
+   "opp": "MIN",
    "proj": {
-    "ppr": 5.8,
-    "half_ppr": 5.8,
-    "std": 5.8
+    "ppr": 6.4,
+    "half_ppr": 6.4,
+    "std": 6.4
    },
    "next3": {
-    "ppr": 18.8,
-    "half_ppr": 18.8,
-    "std": 18.8
+    "ppr": 19.1,
+    "half_ppr": 19.1,
+    "std": 19.1
    },
    "ros": {
     "ppr": 6.4,
@@ -8784,7 +8791,7 @@
    "usage": {
     "g": 0
    },
-   "adds": null,
+   "adds": 313950,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -8829,84 +8836,37 @@
    "mine": []
   },
   {
-   "id": "13311",
-   "name": "Chris Bell",
-   "pos": "WR",
-   "team": "MIA",
+   "id": "3678",
+   "name": "Wil Lutz",
+   "pos": "K",
+   "team": "DEN",
    "injury": null,
-   "bye": 6,
-   "opp": "SF",
+   "bye": 10,
+   "opp": "JAX",
    "proj": {
-    "ppr": 6.7,
-    "half_ppr": 5.5,
-    "std": 4.3
+    "ppr": 6.4,
+    "half_ppr": 6.4,
+    "std": 6.4
    },
    "next3": {
-    "ppr": 18.7,
-    "half_ppr": 15.3,
-    "std": 11.9
+    "ppr": 19.1,
+    "half_ppr": 19.1,
+    "std": 19.1
    },
    "ros": {
     "ppr": 6.4,
-    "half_ppr": 5.3,
-    "std": 4.2
+    "half_ppr": 6.4,
+    "std": 6.4
    },
    "usage": {
-    "g": 1,
-    "snap": 0.52,
-    "tgt_share": 0.074,
-    "carry_share": 0.0,
-    "ay_share": 0.136,
-    "targets": 2.0,
-    "carries": 0.0,
-    "pts": 3.5
+    "g": 0
    },
-   "adds": 47656,
-   "drops": 243264,
+   "adds": null,
+   "drops": null,
    "free": [
+    "1398428734666579968",
     "1191912",
     "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "injury": null,
-   "bye": 7,
-   "opp": "LV",
-   "proj": {
-    "ppr": 6.3,
-    "half_ppr": 5.7,
-    "std": 5.0
-   },
-   "next3": {
-    "ppr": 19.4,
-    "half_ppr": 17.6,
-    "std": 15.8
-   },
-   "ros": {
-    "ppr": 6.3,
-    "half_ppr": 5.7,
-    "std": 5.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.31,
-    "tgt_share": 0.0,
-    "carry_share": 0.19,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 4.0,
-    "pts": 0.9
-   },
-   "adds": 57303,
-   "drops": 263043,
-   "free": [
-    "1191912",
     "1508881"
    ],
    "mine": []
@@ -9050,36 +9010,43 @@
    "mine": []
   },
   {
-   "id": "NYG",
-   "name": "Giants D/ST",
-   "pos": "DEF",
-   "team": "NYG",
+   "id": "9511",
+   "name": "Keaton Mitchell",
+   "pos": "RB",
+   "team": "LAC",
    "injury": null,
-   "bye": 8,
-   "opp": "LAR",
+   "bye": 7,
+   "opp": "LV",
    "proj": {
-    "ppr": 4.0,
-    "half_ppr": 4.0,
-    "std": 4.0
+    "ppr": 6.3,
+    "half_ppr": 5.7,
+    "std": 5.0
    },
    "next3": {
-    "ppr": 18.6,
-    "half_ppr": 18.6,
-    "std": 18.6
+    "ppr": 19.4,
+    "half_ppr": 17.6,
+    "std": 15.8
    },
    "ros": {
-    "ppr": 6.2,
-    "half_ppr": 6.2,
-    "std": 6.2
+    "ppr": 6.3,
+    "half_ppr": 5.7,
+    "std": 5.1
    },
    "usage": {
-    "g": 0
+    "g": 1,
+    "snap": 0.31,
+    "tgt_share": 0.0,
+    "carry_share": 0.19,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 4.0,
+    "pts": 0.9
    },
-   "adds": null,
-   "drops": null,
+   "adds": 57303,
+   "drops": 263043,
    "free": [
     "1191912",
-    "1395811"
+    "1508881"
    ],
    "mine": []
   },
@@ -9163,45 +9130,36 @@
    "mine": []
   },
   {
-   "id": "12961",
-   "name": "Ryan Fitzgerald",
-   "pos": "K",
-   "team": "CAR",
+   "id": "NYG",
+   "name": "Giants D/ST",
+   "pos": "DEF",
+   "team": "NYG",
    "injury": null,
-   "bye": 5,
-   "opp": "ATL",
+   "bye": 8,
+   "opp": "LAR",
    "proj": {
-    "ppr": 6.5,
-    "half_ppr": 6.5,
-    "std": 6.5
+    "ppr": 4.0,
+    "half_ppr": 4.0,
+    "std": 4.0
    },
    "next3": {
-    "ppr": 18.7,
-    "half_ppr": 18.7,
-    "std": 18.7
+    "ppr": 18.6,
+    "half_ppr": 18.6,
+    "std": 18.6
    },
    "ros": {
-    "ppr": 6.1,
-    "half_ppr": 6.1,
-    "std": 6.1
+    "ppr": 6.2,
+    "half_ppr": 6.2,
+    "std": 6.2
    },
    "usage": {
-    "g": 1,
-    "snap": 0.01,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 7.0
+    "g": 0
    },
    "adds": null,
    "drops": null,
    "free": [
-    "1398428734666579968",
     "1191912",
-    "1395811",
-    "1508881"
+    "1395811"
    ],
    "mine": []
   },
@@ -9241,6 +9199,42 @@
    "adds": 536720,
    "drops": 59864,
    "free": [
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11058",
+   "name": "Blake Grupe",
+   "pos": "K",
+   "team": "NYJ",
+   "injury": null,
+   "bye": 13,
+   "opp": "GB",
+   "proj": {
+    "ppr": 5.9,
+    "half_ppr": 5.9,
+    "std": 5.9
+   },
+   "next3": {
+    "ppr": 18.1,
+    "half_ppr": 18.1,
+    "std": 18.1
+   },
+   "ros": {
+    "ppr": 6.1,
+    "half_ppr": 6.1,
+    "std": 6.1
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
     "1191912",
     "1395811",
     "1508881"
@@ -9290,22 +9284,22 @@
    "mine": []
   },
   {
-   "id": "11058",
-   "name": "Blake Grupe",
+   "id": "12961",
+   "name": "Ryan Fitzgerald",
    "pos": "K",
-   "team": "NYJ",
+   "team": "CAR",
    "injury": null,
-   "bye": 13,
-   "opp": "GB",
+   "bye": 5,
+   "opp": "ATL",
    "proj": {
-    "ppr": 5.9,
-    "half_ppr": 5.9,
-    "std": 5.9
+    "ppr": 6.5,
+    "half_ppr": 6.5,
+    "std": 6.5
    },
    "next3": {
-    "ppr": 18.1,
-    "half_ppr": 18.1,
-    "std": 18.1
+    "ppr": 18.7,
+    "half_ppr": 18.7,
+    "std": 18.7
    },
    "ros": {
     "ppr": 6.1,
@@ -9313,7 +9307,14 @@
     "std": 6.1
    },
    "usage": {
-    "g": 0
+    "g": 1,
+    "snap": 0.01,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 7.0
    },
    "adds": null,
    "drops": null,
@@ -9367,110 +9368,6 @@
    "mine": []
   },
   {
-   "id": "NO",
-   "name": "Saints D/ST",
-   "pos": "DEF",
-   "team": "NO",
-   "injury": null,
-   "bye": 8,
-   "opp": "BAL",
-   "proj": {
-    "ppr": 4.9,
-    "half_ppr": 4.9,
-    "std": 4.9
-   },
-   "next3": {
-    "ppr": 18.8,
-    "half_ppr": 18.8,
-    "std": 18.8
-   },
-   "ros": {
-    "ppr": 6.0,
-    "half_ppr": 6.0,
-    "std": 6.0
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1191912",
-    "1395811"
-   ],
-   "mine": []
-  },
-  {
-   "id": "4195",
-   "name": "Jake Elliott",
-   "pos": "K",
-   "team": "PHI",
-   "injury": null,
-   "bye": 10,
-   "opp": "TEN",
-   "proj": {
-    "ppr": 6.0,
-    "half_ppr": 6.0,
-    "std": 6.0
-   },
-   "next3": {
-    "ppr": 17.9,
-    "half_ppr": 17.9,
-    "std": 17.9
-   },
-   "ros": {
-    "ppr": 6.0,
-    "half_ppr": 6.0,
-    "std": 6.0
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "1945",
-   "name": "Chris Boswell",
-   "pos": "K",
-   "team": "PIT",
-   "injury": null,
-   "bye": 9,
-   "opp": "NE",
-   "proj": {
-    "ppr": 5.4,
-    "half_ppr": 5.4,
-    "std": 5.4
-   },
-   "next3": {
-    "ppr": 17.6,
-    "half_ppr": 17.6,
-    "std": 17.6
-   },
-   "ros": {
-    "ppr": 6.0,
-    "half_ppr": 6.0,
-    "std": 6.0
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": 81720,
-   "free": [
-    "1191912",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "4981",
    "name": "Calvin Ridley",
    "pos": "WR",
@@ -9513,6 +9410,110 @@
    "mine": []
   },
   {
+   "id": "NO",
+   "name": "Saints D/ST",
+   "pos": "DEF",
+   "team": "NO",
+   "injury": null,
+   "bye": 8,
+   "opp": "BAL",
+   "proj": {
+    "ppr": 4.9,
+    "half_ppr": 4.9,
+    "std": 4.9
+   },
+   "next3": {
+    "ppr": 18.8,
+    "half_ppr": 18.8,
+    "std": 18.8
+   },
+   "ros": {
+    "ppr": 6.0,
+    "half_ppr": 6.0,
+    "std": 6.0
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1191912",
+    "1395811"
+   ],
+   "mine": []
+  },
+  {
+   "id": "1945",
+   "name": "Chris Boswell",
+   "pos": "K",
+   "team": "PIT",
+   "injury": null,
+   "bye": 9,
+   "opp": "NE",
+   "proj": {
+    "ppr": 5.4,
+    "half_ppr": 5.4,
+    "std": 5.4
+   },
+   "next3": {
+    "ppr": 17.6,
+    "half_ppr": 17.6,
+    "std": 17.6
+   },
+   "ros": {
+    "ppr": 6.0,
+    "half_ppr": 6.0,
+    "std": 6.0
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": 81720,
+   "free": [
+    "1191912",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "4195",
+   "name": "Jake Elliott",
+   "pos": "K",
+   "team": "PHI",
+   "injury": null,
+   "bye": 10,
+   "opp": "TEN",
+   "proj": {
+    "ppr": 6.0,
+    "half_ppr": 6.0,
+    "std": 6.0
+   },
+   "next3": {
+    "ppr": 17.9,
+    "half_ppr": 17.9,
+    "std": 17.9
+   },
+   "ros": {
+    "ppr": 6.0,
+    "half_ppr": 6.0,
+    "std": 6.0
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "5119",
    "name": "Jason Sanders",
    "pos": "K",
@@ -9529,6 +9530,42 @@
     "ppr": 17.7,
     "half_ppr": 17.7,
     "std": 17.7
+   },
+   "ros": {
+    "ppr": 5.9,
+    "half_ppr": 5.9,
+    "std": 5.9
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "10955",
+   "name": "Chad Ryland",
+   "pos": "K",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": "SEA",
+   "proj": {
+    "ppr": 5.8,
+    "half_ppr": 5.8,
+    "std": 5.8
+   },
+   "next3": {
+    "ppr": 17.6,
+    "half_ppr": 17.6,
+    "std": 17.6
    },
    "ros": {
     "ppr": 5.9,
@@ -9579,42 +9616,6 @@
    "free": [
     "1191912",
     "1395811"
-   ],
-   "mine": []
-  },
-  {
-   "id": "10955",
-   "name": "Chad Ryland",
-   "pos": "K",
-   "team": "ARI",
-   "injury": null,
-   "bye": 14,
-   "opp": "SEA",
-   "proj": {
-    "ppr": 5.8,
-    "half_ppr": 5.8,
-    "std": 5.8
-   },
-   "next3": {
-    "ppr": 17.6,
-    "half_ppr": 17.6,
-    "std": 17.6
-   },
-   "ros": {
-    "ppr": 5.9,
-    "half_ppr": 5.9,
-    "std": 5.9
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
    ],
    "mine": []
   },
@@ -9800,6 +9801,48 @@
    "mine": []
   },
   {
+   "id": "5995",
+   "name": "Justice Hill",
+   "pos": "RB",
+   "team": "BAL",
+   "injury": null,
+   "bye": 13,
+   "opp": "NO",
+   "proj": {
+    "ppr": 5.2,
+    "half_ppr": 4.5,
+    "std": 3.7
+   },
+   "next3": {
+    "ppr": 17.2,
+    "half_ppr": 14.8,
+    "std": 12.5
+   },
+   "ros": {
+    "ppr": 5.5,
+    "half_ppr": 4.8,
+    "std": 4.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.46,
+    "tgt_share": 0.042,
+    "carry_share": 0.162,
+    "ay_share": -0.004,
+    "targets": 1.0,
+    "carries": 6.0,
+    "pts": 3.8
+   },
+   "adds": 34884,
+   "drops": 62829,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "6528",
    "name": "Joey Slye",
    "pos": "K",
@@ -9866,48 +9909,6 @@
    "free": [
     "1191912",
     "1395811"
-   ],
-   "mine": []
-  },
-  {
-   "id": "5995",
-   "name": "Justice Hill",
-   "pos": "RB",
-   "team": "BAL",
-   "injury": null,
-   "bye": 13,
-   "opp": "NO",
-   "proj": {
-    "ppr": 5.2,
-    "half_ppr": 4.5,
-    "std": 3.7
-   },
-   "next3": {
-    "ppr": 17.2,
-    "half_ppr": 14.8,
-    "std": 12.5
-   },
-   "ros": {
-    "ppr": 5.5,
-    "half_ppr": 4.8,
-    "std": 4.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.46,
-    "tgt_share": 0.042,
-    "carry_share": 0.162,
-    "ay_share": -0.004,
-    "targets": 1.0,
-    "carries": 6.0,
-    "pts": 3.8
-   },
-   "adds": 34884,
-   "drops": 62829,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1508881"
    ],
    "mine": []
   },
@@ -10121,42 +10122,6 @@
    "mine": []
   },
   {
-   "id": "11261",
-   "name": "Andre Szmyt",
-   "pos": "K",
-   "team": "CLE",
-   "injury": null,
-   "bye": 11,
-   "opp": "TB",
-   "proj": {
-    "ppr": 4.8,
-    "half_ppr": 4.8,
-    "std": 4.8
-   },
-   "next3": {
-    "ppr": 15.6,
-    "half_ppr": 15.6,
-    "std": 15.6
-   },
-   "ros": {
-    "ppr": 5.3,
-    "half_ppr": 5.3,
-    "std": 5.3
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "6865",
    "name": "Colby Parkinson",
    "pos": "TE",
@@ -10200,37 +10165,30 @@
    "mine": []
   },
   {
-   "id": "8188",
-   "name": "Tyquan Thornton",
-   "pos": "WR",
-   "team": "KC",
+   "id": "11261",
+   "name": "Andre Szmyt",
+   "pos": "K",
+   "team": "CLE",
    "injury": null,
-   "bye": 5,
-   "opp": "IND",
+   "bye": 11,
+   "opp": "TB",
    "proj": {
-    "ppr": 6.5,
-    "half_ppr": 5.5,
-    "std": 4.5
+    "ppr": 4.8,
+    "half_ppr": 4.8,
+    "std": 4.8
    },
    "next3": {
-    "ppr": 17.2,
-    "half_ppr": 14.6,
-    "std": 12.1
+    "ppr": 15.6,
+    "half_ppr": 15.6,
+    "std": 15.6
    },
    "ros": {
-    "ppr": 5.2,
-    "half_ppr": 4.4,
-    "std": 3.7
+    "ppr": 5.3,
+    "half_ppr": 5.3,
+    "std": 5.3
    },
    "usage": {
-    "g": 1,
-    "snap": 0.68,
-    "tgt_share": 0.04,
-    "carry_share": 0.0,
-    "ay_share": 0.271,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 0.0
+    "g": 0
    },
    "adds": null,
    "drops": null,
@@ -10285,6 +10243,49 @@
    "mine": []
   },
   {
+   "id": "8188",
+   "name": "Tyquan Thornton",
+   "pos": "WR",
+   "team": "KC",
+   "injury": null,
+   "bye": 5,
+   "opp": "IND",
+   "proj": {
+    "ppr": 6.5,
+    "half_ppr": 5.5,
+    "std": 4.5
+   },
+   "next3": {
+    "ppr": 17.2,
+    "half_ppr": 14.6,
+    "std": 12.1
+   },
+   "ros": {
+    "ppr": 5.2,
+    "half_ppr": 4.4,
+    "std": 3.7
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.68,
+    "tgt_share": 0.04,
+    "carry_share": 0.0,
+    "ay_share": 0.271,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "13417",
    "name": "De'Zhaun Stribling",
    "pos": "WR",
@@ -10324,6 +10325,93 @@
     "1508881"
    ],
    "mine": []
+  },
+  {
+   "id": "12483",
+   "name": "Jack Bech",
+   "pos": "WR",
+   "team": "LV",
+   "injury": null,
+   "bye": 13,
+   "opp": "LAC",
+   "proj": {
+    "ppr": 4.5,
+    "half_ppr": 3.7,
+    "std": 2.8
+   },
+   "next3": {
+    "ppr": 14.8,
+    "half_ppr": 12.0,
+    "std": 9.2
+   },
+   "ros": {
+    "ppr": 5.1,
+    "half_ppr": 4.1,
+    "std": 3.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.4,
+    "tgt_share": 0.138,
+    "carry_share": 0.0,
+    "ay_share": 0.142,
+    "targets": 4.0,
+    "carries": 0.0,
+    "pts": 11.3
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
+   "injury": null,
+   "bye": 13,
+   "opp": "GB",
+   "proj": {
+    "ppr": 5.1,
+    "half_ppr": 4.0,
+    "std": 2.9
+   },
+   "next3": {
+    "ppr": 15.5,
+    "half_ppr": 12.2,
+    "std": 8.9
+   },
+   "ros": {
+    "ppr": 5.1,
+    "half_ppr": 4.0,
+    "std": 2.9
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.42,
+    "tgt_share": 0.13,
+    "carry_share": 0.026,
+    "ay_share": 0.0,
+    "targets": 3.0,
+    "carries": 1.0,
+    "pts": 11.4
+   },
+   "adds": 374643,
+   "drops": 69705,
+   "free": [
+    "1398428734666579968",
+    "1395811",
+    "1508881"
+   ],
+   "mine": [
+    "1191912"
+   ]
   },
   {
    "id": "3634",
@@ -10410,93 +10498,6 @@
    "mine": []
   },
   {
-   "id": "13330",
-   "name": "Kenyon Sadiq",
-   "pos": "TE",
-   "team": "NYJ",
-   "injury": null,
-   "bye": 13,
-   "opp": "GB",
-   "proj": {
-    "ppr": 5.1,
-    "half_ppr": 4.0,
-    "std": 2.9
-   },
-   "next3": {
-    "ppr": 15.5,
-    "half_ppr": 12.2,
-    "std": 8.9
-   },
-   "ros": {
-    "ppr": 5.1,
-    "half_ppr": 4.0,
-    "std": 2.9
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.42,
-    "tgt_share": 0.13,
-    "carry_share": 0.026,
-    "ay_share": 0.0,
-    "targets": 3.0,
-    "carries": 1.0,
-    "pts": 11.4
-   },
-   "adds": 374643,
-   "drops": 69705,
-   "free": [
-    "1398428734666579968",
-    "1395811",
-    "1508881"
-   ],
-   "mine": [
-    "1191912"
-   ]
-  },
-  {
-   "id": "12483",
-   "name": "Jack Bech",
-   "pos": "WR",
-   "team": "LV",
-   "injury": null,
-   "bye": 13,
-   "opp": "LAC",
-   "proj": {
-    "ppr": 4.5,
-    "half_ppr": 3.7,
-    "std": 2.8
-   },
-   "next3": {
-    "ppr": 14.8,
-    "half_ppr": 12.0,
-    "std": 9.2
-   },
-   "ros": {
-    "ppr": 5.1,
-    "half_ppr": 4.1,
-    "std": 3.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.4,
-    "tgt_share": 0.138,
-    "carry_share": 0.0,
-    "ay_share": 0.142,
-    "targets": 4.0,
-    "carries": 0.0,
-    "pts": 11.3
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "3161",
    "name": "Carson Wentz",
    "pos": "QB",
@@ -10536,40 +10537,6 @@
     "1191912",
     "1395811",
     "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "LV",
-   "name": "Raiders D/ST",
-   "pos": "DEF",
-   "team": "LV",
-   "injury": null,
-   "bye": 13,
-   "opp": "LAC",
-   "proj": {
-    "ppr": 4.3,
-    "half_ppr": 4.3,
-    "std": 4.3
-   },
-   "next3": {
-    "ppr": 14.5,
-    "half_ppr": 14.5,
-    "std": 14.5
-   },
-   "ros": {
-    "ppr": 5.0,
-    "half_ppr": 5.0,
-    "std": 5.0
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": 422046,
-   "free": [
-    "1191912",
-    "1395811"
    ],
    "mine": []
   },
@@ -10616,33 +10583,33 @@
    "mine": []
   },
   {
-   "id": "ARI",
-   "name": "Cardinals D/ST",
+   "id": "LV",
+   "name": "Raiders D/ST",
    "pos": "DEF",
-   "team": "ARI",
+   "team": "LV",
    "injury": null,
-   "bye": 14,
-   "opp": "SEA",
+   "bye": 13,
+   "opp": "LAC",
    "proj": {
-    "ppr": 4.4,
-    "half_ppr": 4.4,
-    "std": 4.4
+    "ppr": 4.3,
+    "half_ppr": 4.3,
+    "std": 4.3
    },
    "next3": {
-    "ppr": 15.1,
-    "half_ppr": 15.1,
-    "std": 15.1
+    "ppr": 14.5,
+    "half_ppr": 14.5,
+    "std": 14.5
    },
    "ros": {
-    "ppr": 4.9,
-    "half_ppr": 4.9,
-    "std": 4.9
+    "ppr": 5.0,
+    "half_ppr": 5.0,
+    "std": 5.0
    },
    "usage": {
     "g": 0
    },
    "adds": null,
-   "drops": null,
+   "drops": 422046,
    "free": [
     "1191912",
     "1395811"
@@ -10689,6 +10656,40 @@
     "1191912",
     "1395811",
     "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "ARI",
+   "name": "Cardinals D/ST",
+   "pos": "DEF",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": "SEA",
+   "proj": {
+    "ppr": 4.4,
+    "half_ppr": 4.4,
+    "std": 4.4
+   },
+   "next3": {
+    "ppr": 15.1,
+    "half_ppr": 15.1,
+    "std": 15.1
+   },
+   "ros": {
+    "ppr": 4.9,
+    "half_ppr": 4.9,
+    "std": 4.9
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1191912",
+    "1395811"
    ],
    "mine": []
   },
@@ -10813,49 +10814,6 @@
    "mine": []
   },
   {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "injury": null,
-   "bye": 14,
-   "opp": "SEA",
-   "proj": {
-    "ppr": 4.2,
-    "half_ppr": 3.3,
-    "std": 2.5
-   },
-   "next3": {
-    "ppr": 13.7,
-    "half_ppr": 11.1,
-    "std": 8.4
-   },
-   "ros": {
-    "ppr": 4.6,
-    "half_ppr": 3.7,
-    "std": 2.9
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.67,
-    "tgt_share": 0.216,
-    "carry_share": 0.0,
-    "ay_share": 0.141,
-    "targets": 8.0,
-    "carries": 0.0,
-    "pts": 15.5
-   },
-   "adds": 233583,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "8225",
    "name": "Daniel Bellinger",
    "pos": "TE",
@@ -10889,6 +10847,49 @@
     "pts": 1.7
    },
    "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": "SEA",
+   "proj": {
+    "ppr": 4.2,
+    "half_ppr": 3.3,
+    "std": 2.5
+   },
+   "next3": {
+    "ppr": 13.7,
+    "half_ppr": 11.1,
+    "std": 8.4
+   },
+   "ros": {
+    "ppr": 4.6,
+    "half_ppr": 3.7,
+    "std": 2.9
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.67,
+    "tgt_share": 0.216,
+    "carry_share": 0.0,
+    "ay_share": 0.141,
+    "targets": 8.0,
+    "carries": 0.0,
+    "pts": 15.5
+   },
+   "adds": 233583,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -11316,6 +11317,49 @@
    "mine": []
   },
   {
+   "id": "13421",
+   "name": "Eli Raridon",
+   "pos": "TE",
+   "team": "NE",
+   "injury": null,
+   "bye": 11,
+   "opp": "PIT",
+   "proj": {
+    "ppr": 3.9,
+    "half_ppr": 3.1,
+    "std": 2.3
+   },
+   "next3": {
+    "ppr": 11.3,
+    "half_ppr": 8.9,
+    "std": 6.5
+   },
+   "ros": {
+    "ppr": 4.1,
+    "half_ppr": 3.2,
+    "std": 2.4
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.54,
+    "tgt_share": 0.032,
+    "carry_share": 0.0,
+    "ay_share": 0.009,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 7.2
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "13434",
    "name": "Will Kacmarek",
    "pos": "TE",
@@ -11395,39 +11439,39 @@
    ]
   },
   {
-   "id": "13421",
-   "name": "Eli Raridon",
-   "pos": "TE",
-   "team": "NE",
+   "id": "10218",
+   "name": "Xavier Hutchinson",
+   "pos": "WR",
+   "team": "HOU",
    "injury": null,
-   "bye": 11,
-   "opp": "PIT",
+   "bye": 8,
+   "opp": "CIN",
    "proj": {
-    "ppr": 3.9,
-    "half_ppr": 3.1,
-    "std": 2.3
+    "ppr": 5.5,
+    "half_ppr": 4.7,
+    "std": 3.8
    },
    "next3": {
-    "ppr": 11.3,
-    "half_ppr": 8.9,
-    "std": 6.5
+    "ppr": 13.5,
+    "half_ppr": 11.3,
+    "std": 9.1
    },
    "ros": {
-    "ppr": 4.1,
-    "half_ppr": 3.2,
-    "std": 2.4
+    "ppr": 4.0,
+    "half_ppr": 3.3,
+    "std": 2.7
    },
    "usage": {
     "g": 1,
-    "snap": 0.54,
-    "tgt_share": 0.032,
+    "snap": 0.56,
+    "tgt_share": 0.162,
     "carry_share": 0.0,
-    "ay_share": 0.009,
-    "targets": 1.0,
+    "ay_share": 0.177,
+    "targets": 6.0,
     "carries": 0.0,
-    "pts": 7.2
+    "pts": 6.2
    },
-   "adds": null,
+   "adds": 152348,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -11480,92 +11524,6 @@
    "mine": []
   },
   {
-   "id": "10218",
-   "name": "Xavier Hutchinson",
-   "pos": "WR",
-   "team": "HOU",
-   "injury": null,
-   "bye": 8,
-   "opp": "CIN",
-   "proj": {
-    "ppr": 5.5,
-    "half_ppr": 4.7,
-    "std": 3.8
-   },
-   "next3": {
-    "ppr": 13.5,
-    "half_ppr": 11.3,
-    "std": 9.1
-   },
-   "ros": {
-    "ppr": 4.0,
-    "half_ppr": 3.3,
-    "std": 2.7
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.56,
-    "tgt_share": 0.162,
-    "carry_share": 0.0,
-    "ay_share": 0.177,
-    "targets": 6.0,
-    "carries": 0.0,
-    "pts": 6.2
-   },
-   "adds": 152348,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "9494",
-   "name": "Marvin Mims",
-   "pos": "WR",
-   "team": "DEN",
-   "injury": "Questionable",
-   "bye": 10,
-   "opp": "JAX",
-   "proj": {
-    "ppr": 3.1,
-    "half_ppr": 2.5,
-    "std": 1.9
-   },
-   "next3": {
-    "ppr": 11.7,
-    "half_ppr": 9.5,
-    "std": 7.4
-   },
-   "ros": {
-    "ppr": 4.0,
-    "half_ppr": 3.3,
-    "std": 2.5
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.18,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": 62577,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "9482",
    "name": "Michael Mayer",
    "pos": "TE",
@@ -11608,40 +11566,40 @@
    "mine": []
   },
   {
-   "id": "11637",
-   "name": "Keon Coleman",
+   "id": "9494",
+   "name": "Marvin Mims",
    "pos": "WR",
-   "team": "BUF",
-   "injury": null,
-   "bye": 7,
-   "opp": "DET",
+   "team": "DEN",
+   "injury": "Questionable",
+   "bye": 10,
+   "opp": "JAX",
    "proj": {
     "ppr": 3.1,
-    "half_ppr": 2.6,
-    "std": 2.1
+    "half_ppr": 2.5,
+    "std": 1.9
    },
    "next3": {
-    "ppr": 11.1,
-    "half_ppr": 9.3,
-    "std": 7.5
+    "ppr": 11.7,
+    "half_ppr": 9.5,
+    "std": 7.4
    },
    "ros": {
-    "ppr": 3.9,
+    "ppr": 4.0,
     "half_ppr": 3.3,
-    "std": 2.6
+    "std": 2.5
    },
    "usage": {
     "g": 1,
-    "snap": 0.5,
-    "tgt_share": 0.036,
+    "snap": 0.18,
+    "tgt_share": 0.0,
     "carry_share": 0.0,
-    "ay_share": 0.01,
-    "targets": 1.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
     "carries": 0.0,
-    "pts": 1.1
+    "pts": 0.0
    },
    "adds": null,
-   "drops": 61488,
+   "drops": 62577,
    "free": [
     "1398428734666579968",
     "1191912",
@@ -11693,6 +11651,49 @@
    "mine": []
   },
   {
+   "id": "11637",
+   "name": "Keon Coleman",
+   "pos": "WR",
+   "team": "BUF",
+   "injury": null,
+   "bye": 7,
+   "opp": "DET",
+   "proj": {
+    "ppr": 3.1,
+    "half_ppr": 2.6,
+    "std": 2.1
+   },
+   "next3": {
+    "ppr": 11.1,
+    "half_ppr": 9.3,
+    "std": 7.5
+   },
+   "ros": {
+    "ppr": 3.9,
+    "half_ppr": 3.3,
+    "std": 2.6
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.5,
+    "tgt_share": 0.036,
+    "carry_share": 0.0,
+    "ay_share": 0.01,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 1.1
+   },
+   "adds": null,
+   "drops": 61488,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "8127",
    "name": "Charlie Kolar",
    "pos": "TE",
@@ -11722,49 +11723,6 @@
     "carry_share": 0.0,
     "ay_share": 0.0,
     "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11626",
-   "name": "Xavier Legette",
-   "pos": "WR",
-   "team": "CAR",
-   "injury": null,
-   "bye": 5,
-   "opp": "ATL",
-   "proj": {
-    "ppr": 4.8,
-    "half_ppr": 4.0,
-    "std": 3.2
-   },
-   "next3": {
-    "ppr": 12.5,
-    "half_ppr": 10.3,
-    "std": 8.1
-   },
-   "ros": {
-    "ppr": 3.8,
-    "half_ppr": 3.2,
-    "std": 2.5
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.53,
-    "tgt_share": 0.059,
-    "carry_share": 0.0,
-    "ay_share": 0.055,
-    "targets": 2.0,
     "carries": 0.0,
     "pts": 0.0
    },
@@ -11858,80 +11816,37 @@
    "mine": []
   },
   {
-   "id": "11575",
-   "name": "Ray Davis",
-   "pos": "RB",
-   "team": "BUF",
+   "id": "11626",
+   "name": "Xavier Legette",
+   "pos": "WR",
+   "team": "CAR",
    "injury": null,
-   "bye": 7,
-   "opp": "DET",
+   "bye": 5,
+   "opp": "ATL",
    "proj": {
-    "ppr": 3.9,
-    "half_ppr": 3.5,
+    "ppr": 4.8,
+    "half_ppr": 4.0,
     "std": 3.2
    },
    "next3": {
-    "ppr": 11.4,
-    "half_ppr": 10.4,
-    "std": 9.4
+    "ppr": 12.5,
+    "half_ppr": 10.3,
+    "std": 8.1
    },
    "ros": {
-    "ppr": 3.7,
-    "half_ppr": 3.3,
-    "std": 3.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.09,
-    "tgt_share": 0.0,
-    "carry_share": 0.048,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 1.0,
-    "pts": 0.3
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12499",
-   "name": "Elic Ayomanor",
-   "pos": "WR",
-   "team": "TEN",
-   "injury": null,
-   "bye": 9,
-   "opp": "PHI",
-   "proj": {
-    "ppr": 3.0,
-    "half_ppr": 2.5,
-    "std": 2.0
-   },
-   "next3": {
-    "ppr": 10.4,
-    "half_ppr": 8.7,
-    "std": 7.0
-   },
-   "ros": {
-    "ppr": 3.7,
-    "half_ppr": 3.1,
+    "ppr": 3.8,
+    "half_ppr": 3.2,
     "std": 2.5
    },
    "usage": {
     "g": 1,
-    "snap": 0.52,
-    "tgt_share": 0.107,
+    "snap": 0.53,
+    "tgt_share": 0.059,
     "carry_share": 0.0,
-    "ay_share": 0.216,
-    "targets": 3.0,
+    "ay_share": 0.055,
+    "targets": 2.0,
     "carries": 0.0,
-    "pts": 8.1
+    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -11987,6 +11902,92 @@
    "mine": []
   },
   {
+   "id": "12499",
+   "name": "Elic Ayomanor",
+   "pos": "WR",
+   "team": "TEN",
+   "injury": null,
+   "bye": 9,
+   "opp": "PHI",
+   "proj": {
+    "ppr": 3.0,
+    "half_ppr": 2.5,
+    "std": 2.0
+   },
+   "next3": {
+    "ppr": 10.4,
+    "half_ppr": 8.7,
+    "std": 7.0
+   },
+   "ros": {
+    "ppr": 3.7,
+    "half_ppr": 3.1,
+    "std": 2.5
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.52,
+    "tgt_share": 0.107,
+    "carry_share": 0.0,
+    "ay_share": 0.216,
+    "targets": 3.0,
+    "carries": 0.0,
+    "pts": 8.1
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11575",
+   "name": "Ray Davis",
+   "pos": "RB",
+   "team": "BUF",
+   "injury": null,
+   "bye": 7,
+   "opp": "DET",
+   "proj": {
+    "ppr": 3.9,
+    "half_ppr": 3.5,
+    "std": 3.2
+   },
+   "next3": {
+    "ppr": 11.4,
+    "half_ppr": 10.4,
+    "std": 9.4
+   },
+   "ros": {
+    "ppr": 3.7,
+    "half_ppr": 3.3,
+    "std": 3.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.09,
+    "tgt_share": 0.0,
+    "carry_share": 0.048,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 1.0,
+    "pts": 0.3
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "4033",
    "name": "David Njoku",
    "pos": "TE",
@@ -12030,44 +12031,42 @@
    "mine": []
   },
   {
-   "id": "6271",
-   "name": "Olamide Zaccheaus",
-   "pos": "WR",
-   "team": "ATL",
+   "id": "12487",
+   "name": "Terrance Ferguson",
+   "pos": "TE",
+   "team": "LAR",
    "injury": null,
    "bye": 11,
-   "opp": "CAR",
+   "opp": "NYG",
    "proj": {
-    "ppr": 3.3,
-    "half_ppr": 2.7,
-    "std": 2.1
+    "ppr": 3.6,
+    "half_ppr": 2.9,
+    "std": 2.3
    },
    "next3": {
-    "ppr": 10.5,
-    "half_ppr": 8.5,
-    "std": 6.5
+    "ppr": 9.8,
+    "half_ppr": 8.0,
+    "std": 6.1
    },
    "ros": {
     "ppr": 3.6,
-    "half_ppr": 3.0,
+    "half_ppr": 2.9,
     "std": 2.3
    },
    "usage": {
     "g": 1,
-    "snap": 0.3,
-    "tgt_share": 0.053,
+    "snap": 0.51,
+    "tgt_share": 0.037,
     "carry_share": 0.0,
-    "ay_share": 0.065,
+    "ay_share": 0.094,
     "targets": 1.0,
     "carries": 0.0,
-    "pts": 1.5
+    "pts": 0.0
    },
    "adds": null,
-   "drops": null,
+   "drops": 188736,
    "free": [
     "1398428734666579968",
-    "1191912",
-    "1395811",
     "1508881"
    ],
    "mine": []
@@ -12116,42 +12115,44 @@
    "mine": []
   },
   {
-   "id": "12487",
-   "name": "Terrance Ferguson",
-   "pos": "TE",
-   "team": "LAR",
+   "id": "6271",
+   "name": "Olamide Zaccheaus",
+   "pos": "WR",
+   "team": "ATL",
    "injury": null,
    "bye": 11,
-   "opp": "NYG",
+   "opp": "CAR",
    "proj": {
-    "ppr": 3.6,
-    "half_ppr": 2.9,
-    "std": 2.3
+    "ppr": 3.3,
+    "half_ppr": 2.7,
+    "std": 2.1
    },
    "next3": {
-    "ppr": 9.8,
-    "half_ppr": 8.0,
-    "std": 6.1
+    "ppr": 10.5,
+    "half_ppr": 8.5,
+    "std": 6.5
    },
    "ros": {
     "ppr": 3.6,
-    "half_ppr": 2.9,
+    "half_ppr": 3.0,
     "std": 2.3
    },
    "usage": {
     "g": 1,
-    "snap": 0.51,
-    "tgt_share": 0.037,
+    "snap": 0.3,
+    "tgt_share": 0.053,
     "carry_share": 0.0,
-    "ay_share": 0.094,
+    "ay_share": 0.065,
     "targets": 1.0,
     "carries": 0.0,
-    "pts": 0.0
+    "pts": 1.5
    },
    "adds": null,
-   "drops": 188736,
+   "drops": null,
    "free": [
     "1398428734666579968",
+    "1191912",
+    "1395811",
     "1508881"
    ],
    "mine": []
@@ -12328,38 +12329,43 @@
    "mine": []
   },
   {
-   "id": "12497",
-   "name": "Tory Horton",
-   "pos": "WR",
-   "team": "SEA",
+   "id": "9225",
+   "name": "Tank Bigsby",
+   "pos": "RB",
+   "team": "PHI",
    "injury": null,
-   "bye": 11,
-   "opp": "ARI",
+   "bye": 10,
+   "opp": "TEN",
    "proj": {
-    "ppr": 2.0,
-    "half_ppr": 1.7,
-    "std": 1.3
+    "ppr": 3.5,
+    "half_ppr": 3.3,
+    "std": 3.1
    },
    "next3": {
-    "ppr": 8.8,
-    "half_ppr": 7.4,
-    "std": 5.9
+    "ppr": 9.5,
+    "half_ppr": 9.0,
+    "std": 8.4
    },
    "ros": {
     "ppr": 3.2,
-    "half_ppr": 2.6,
-    "std": 2.1
+    "half_ppr": 3.0,
+    "std": 2.8
    },
    "usage": {
-    "g": 0
+    "g": 1,
+    "snap": 0.11,
+    "tgt_share": 0.0,
+    "carry_share": 0.04,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 1.0,
+    "pts": 0.3
    },
    "adds": null,
-   "drops": null,
+   "drops": 206584,
    "free": [
-    "1398428734666579968",
     "1191912",
-    "1395811",
-    "1508881"
+    "1395811"
    ],
    "mine": []
   },
@@ -12447,43 +12453,38 @@
    "mine": []
   },
   {
-   "id": "9225",
-   "name": "Tank Bigsby",
-   "pos": "RB",
-   "team": "PHI",
+   "id": "12497",
+   "name": "Tory Horton",
+   "pos": "WR",
+   "team": "SEA",
    "injury": null,
-   "bye": 10,
-   "opp": "TEN",
+   "bye": 11,
+   "opp": "ARI",
    "proj": {
-    "ppr": 3.5,
-    "half_ppr": 3.3,
-    "std": 3.1
+    "ppr": 2.0,
+    "half_ppr": 1.7,
+    "std": 1.3
    },
    "next3": {
-    "ppr": 9.5,
-    "half_ppr": 9.0,
-    "std": 8.4
+    "ppr": 8.8,
+    "half_ppr": 7.4,
+    "std": 5.9
    },
    "ros": {
     "ppr": 3.2,
-    "half_ppr": 3.0,
-    "std": 2.8
+    "half_ppr": 2.6,
+    "std": 2.1
    },
    "usage": {
-    "g": 1,
-    "snap": 0.11,
-    "tgt_share": 0.0,
-    "carry_share": 0.04,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 1.0,
-    "pts": 0.3
+    "g": 0
    },
    "adds": null,
-   "drops": 206584,
+   "drops": null,
    "free": [
+    "1398428734666579968",
     "1191912",
-    "1395811"
+    "1395811",
+    "1508881"
    ],
    "mine": []
   },
@@ -12523,11 +12524,10 @@
    "adds": null,
    "drops": null,
    "free": [
+    "1395811",
     "1508881"
    ],
-   "mine": [
-    "1395811"
-   ]
+   "mine": []
   },
   {
    "id": "10231",
@@ -12780,49 +12780,6 @@
    "mine": []
   },
   {
-   "id": "13424",
-   "name": "Seth McGowan",
-   "pos": "RB",
-   "team": "IND",
-   "injury": null,
-   "bye": 13,
-   "opp": "KC",
-   "proj": {
-    "ppr": 2.4,
-    "half_ppr": 2.2,
-    "std": 1.9
-   },
-   "next3": {
-    "ppr": 7.6,
-    "half_ppr": 6.9,
-    "std": 6.2
-   },
-   "ros": {
-    "ppr": 2.6,
-    "half_ppr": 2.3,
-    "std": 2.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.11,
-    "tgt_share": 0.034,
-    "carry_share": 0.0,
-    "ay_share": -0.01,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 1.0
-   },
-   "adds": 31928,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "12495",
    "name": "Ollie Gordon",
    "pos": "RB",
@@ -12856,6 +12813,49 @@
     "pts": 0.0
    },
    "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13424",
+   "name": "Seth McGowan",
+   "pos": "RB",
+   "team": "IND",
+   "injury": null,
+   "bye": 13,
+   "opp": "KC",
+   "proj": {
+    "ppr": 2.4,
+    "half_ppr": 2.2,
+    "std": 1.9
+   },
+   "next3": {
+    "ppr": 7.6,
+    "half_ppr": 6.9,
+    "std": 6.2
+   },
+   "ros": {
+    "ppr": 2.6,
+    "half_ppr": 2.3,
+    "std": 2.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.11,
+    "tgt_share": 0.034,
+    "carry_share": 0.0,
+    "ay_share": -0.01,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 1.0
+   },
+   "adds": 31928,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -12909,37 +12909,73 @@
    "mine": []
   },
   {
-   "id": "11627",
-   "name": "Troy Franklin",
+   "id": "8147",
+   "name": "John Metchie",
    "pos": "WR",
-   "team": "DEN",
+   "team": "CAR",
    "injury": null,
-   "bye": 10,
-   "opp": "JAX",
+   "bye": 5,
+   "opp": "ATL",
    "proj": {
-    "ppr": 1.4,
-    "half_ppr": 1.1,
-    "std": 0.9
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.3
    },
    "next3": {
-    "ppr": 6.9,
-    "half_ppr": 5.7,
-    "std": 4.5
+    "ppr": 6.4,
+    "half_ppr": 5.1,
+    "std": 3.9
    },
    "ros": {
     "ppr": 2.5,
     "half_ppr": 2.0,
-    "std": 1.6
+    "std": 1.5
+   },
+   "usage": {
+    "g": 0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "12544",
+   "name": "LeQuint Allen",
+   "pos": "RB",
+   "team": "JAX",
+   "injury": "Questionable",
+   "bye": 7,
+   "opp": "DEN",
+   "proj": {
+    "ppr": 2.2,
+    "half_ppr": 1.7,
+    "std": 1.2
+   },
+   "next3": {
+    "ppr": 7.8,
+    "half_ppr": 6.2,
+    "std": 4.6
+   },
+   "ros": {
+    "ppr": 2.5,
+    "half_ppr": 2.0,
+    "std": 1.5
    },
    "usage": {
     "g": 1,
-    "snap": 0.33,
-    "tgt_share": 0.037,
-    "carry_share": 0.067,
-    "ay_share": 0.337,
-    "targets": 1.0,
-    "carries": 1.0,
-    "pts": 0.5
+    "snap": 0.02,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -12983,6 +13019,93 @@
     "targets": 4.0,
     "carries": 0.0,
     "pts": 4.2
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11655",
+   "name": "Tyrone Tracy",
+   "pos": "RB",
+   "team": "NYG",
+   "injury": "Questionable",
+   "bye": 8,
+   "opp": "LAR",
+   "proj": {
+    "ppr": 1.9,
+    "half_ppr": 1.6,
+    "std": 1.4
+   },
+   "next3": {
+    "ppr": 7.7,
+    "half_ppr": 7.0,
+    "std": 6.2
+   },
+   "ros": {
+    "ppr": 2.5,
+    "half_ppr": 2.3,
+    "std": 2.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.03,
+    "tgt_share": 0.0,
+    "carry_share": 0.054,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 2.0,
+    "pts": -0.6
+   },
+   "adds": null,
+   "drops": 115738,
+   "free": [
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "11627",
+   "name": "Troy Franklin",
+   "pos": "WR",
+   "team": "DEN",
+   "injury": null,
+   "bye": 10,
+   "opp": "JAX",
+   "proj": {
+    "ppr": 1.4,
+    "half_ppr": 1.1,
+    "std": 0.9
+   },
+   "next3": {
+    "ppr": 6.9,
+    "half_ppr": 5.7,
+    "std": 4.5
+   },
+   "ros": {
+    "ppr": 2.5,
+    "half_ppr": 2.0,
+    "std": 1.6
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.33,
+    "tgt_share": 0.037,
+    "carry_share": 0.067,
+    "ay_share": 0.337,
+    "targets": 1.0,
+    "carries": 1.0,
+    "pts": 0.5
    },
    "adds": null,
    "drops": null,
@@ -13081,120 +13204,40 @@
    "mine": []
   },
   {
-   "id": "12544",
-   "name": "LeQuint Allen",
-   "pos": "RB",
-   "team": "JAX",
-   "injury": "Questionable",
-   "bye": 7,
-   "opp": "DEN",
-   "proj": {
-    "ppr": 2.2,
-    "half_ppr": 1.7,
-    "std": 1.2
-   },
-   "next3": {
-    "ppr": 7.8,
-    "half_ppr": 6.2,
-    "std": 4.6
-   },
-   "ros": {
-    "ppr": 2.5,
-    "half_ppr": 2.0,
-    "std": 1.5
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.02,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11655",
-   "name": "Tyrone Tracy",
-   "pos": "RB",
-   "team": "NYG",
-   "injury": "Questionable",
-   "bye": 8,
-   "opp": "LAR",
-   "proj": {
-    "ppr": 1.9,
-    "half_ppr": 1.6,
-    "std": 1.4
-   },
-   "next3": {
-    "ppr": 7.7,
-    "half_ppr": 7.0,
-    "std": 6.2
-   },
-   "ros": {
-    "ppr": 2.5,
-    "half_ppr": 2.3,
-    "std": 2.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.03,
-    "tgt_share": 0.0,
-    "carry_share": 0.054,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 2.0,
-    "pts": -0.6
-   },
-   "adds": null,
-   "drops": 115738,
-   "free": [
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": [
-    "1398428734666579968"
-   ]
-  },
-  {
-   "id": "8147",
-   "name": "John Metchie",
+   "id": "12540",
+   "name": "Chimere Dike",
    "pos": "WR",
-   "team": "CAR",
+   "team": "TEN",
    "injury": null,
-   "bye": 5,
-   "opp": "ATL",
+   "bye": 9,
+   "opp": "PHI",
    "proj": {
-    "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.3
+    "ppr": 1.5,
+    "half_ppr": 1.2,
+    "std": 0.9
    },
    "next3": {
-    "ppr": 6.4,
-    "half_ppr": 5.1,
-    "std": 3.9
+    "ppr": 6.6,
+    "half_ppr": 5.4,
+    "std": 4.2
    },
    "ros": {
-    "ppr": 2.5,
+    "ppr": 2.4,
     "half_ppr": 2.0,
-    "std": 1.5
+    "std": 1.6
    },
    "usage": {
-    "g": 0
+    "g": 1,
+    "snap": 0.08,
+    "tgt_share": 0.036,
+    "carry_share": 0.0,
+    "ay_share": 0.016,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": -0.3
    },
    "adds": null,
-   "drops": null,
+   "drops": 85104,
    "free": [
     "1398428734666579968",
     "1191912",
@@ -13231,49 +13274,6 @@
    },
    "adds": null,
    "drops": 74997,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12540",
-   "name": "Chimere Dike",
-   "pos": "WR",
-   "team": "TEN",
-   "injury": null,
-   "bye": 9,
-   "opp": "PHI",
-   "proj": {
-    "ppr": 1.5,
-    "half_ppr": 1.2,
-    "std": 0.9
-   },
-   "next3": {
-    "ppr": 6.6,
-    "half_ppr": 5.4,
-    "std": 4.2
-   },
-   "ros": {
-    "ppr": 2.4,
-    "half_ppr": 2.0,
-    "std": 1.6
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.08,
-    "tgt_share": 0.036,
-    "carry_share": 0.0,
-    "ay_share": 0.016,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": -0.3
-   },
-   "adds": null,
-   "drops": 85104,
    "free": [
     "1398428734666579968",
     "1191912",
@@ -13362,49 +13362,6 @@
    "mine": []
   },
   {
-   "id": "13533",
-   "name": "Barion Brown",
-   "pos": "WR",
-   "team": "NO",
-   "injury": null,
-   "bye": 8,
-   "opp": "BAL",
-   "proj": {
-    "ppr": 3.2,
-    "half_ppr": 2.5,
-    "std": 1.9
-   },
-   "next3": {
-    "ppr": 7.2,
-    "half_ppr": 5.8,
-    "std": 4.3
-   },
-   "ros": {
-    "ppr": 2.2,
-    "half_ppr": 1.7,
-    "std": 1.3
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.08,
-    "tgt_share": 0.0,
-    "carry_share": 0.04,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 1.0,
-    "pts": 0.3
-   },
-   "adds": null,
-   "drops": 72135,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "12718",
    "name": "Konata Mumpfield",
    "pos": "WR",
@@ -13448,37 +13405,73 @@
    "mine": []
   },
   {
-   "id": "4144",
-   "name": "Jonnu Smith",
-   "pos": "TE",
-   "team": "GB",
+   "id": "13533",
+   "name": "Barion Brown",
+   "pos": "WR",
+   "team": "NO",
    "injury": null,
-   "bye": 11,
-   "opp": "NYJ",
+   "bye": 8,
+   "opp": "BAL",
    "proj": {
-    "ppr": 4.3,
-    "half_ppr": 3.4,
-    "std": 2.5
+    "ppr": 3.2,
+    "half_ppr": 2.5,
+    "std": 1.9
    },
    "next3": {
-    "ppr": 7.9,
-    "half_ppr": 6.3,
-    "std": 4.6
+    "ppr": 7.2,
+    "half_ppr": 5.8,
+    "std": 4.3
    },
    "ros": {
-    "ppr": 2.1,
+    "ppr": 2.2,
     "half_ppr": 1.7,
-    "std": 1.2
+    "std": 1.3
    },
    "usage": {
     "g": 1,
-    "snap": 0.47,
-    "tgt_share": 0.075,
-    "carry_share": 0.0,
-    "ay_share": 0.051,
-    "targets": 3.0,
-    "carries": 0.0,
-    "pts": 7.0
+    "snap": 0.08,
+    "tgt_share": 0.0,
+    "carry_share": 0.04,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 1.0,
+    "pts": 0.3
+   },
+   "adds": null,
+   "drops": 72135,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11629",
+   "name": "Devontez Walker",
+   "pos": "WR",
+   "team": "BAL",
+   "injury": null,
+   "bye": 13,
+   "opp": "NO",
+   "proj": {
+    "ppr": 2.9,
+    "half_ppr": 2.4,
+    "std": 2.0
+   },
+   "next3": {
+    "ppr": 7.2,
+    "half_ppr": 6.1,
+    "std": 5.0
+   },
+   "ros": {
+    "ppr": 2.1,
+    "half_ppr": 1.8,
+    "std": 1.5
+   },
+   "usage": {
+    "g": 0
    },
    "adds": null,
    "drops": null,
@@ -13534,42 +13527,6 @@
    "mine": []
   },
   {
-   "id": "11629",
-   "name": "Devontez Walker",
-   "pos": "WR",
-   "team": "BAL",
-   "injury": null,
-   "bye": 13,
-   "opp": "NO",
-   "proj": {
-    "ppr": 2.9,
-    "half_ppr": 2.4,
-    "std": 2.0
-   },
-   "next3": {
-    "ppr": 7.2,
-    "half_ppr": 6.1,
-    "std": 5.0
-   },
-   "ros": {
-    "ppr": 2.1,
-    "half_ppr": 1.8,
-    "std": 1.5
-   },
-   "usage": {
-    "g": 0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "5848",
    "name": "Marquise Brown",
    "pos": "WR",
@@ -13606,37 +13563,37 @@
    "mine": []
   },
   {
-   "id": "12503",
-   "name": "Isaiah Bond",
-   "pos": "WR",
-   "team": "CLE",
+   "id": "4144",
+   "name": "Jonnu Smith",
+   "pos": "TE",
+   "team": "GB",
    "injury": null,
    "bye": 11,
-   "opp": "TB",
+   "opp": "NYJ",
    "proj": {
-    "ppr": 2.0,
-    "half_ppr": 1.8,
-    "std": 1.5
+    "ppr": 4.3,
+    "half_ppr": 3.4,
+    "std": 2.5
    },
    "next3": {
-    "ppr": 5.9,
-    "half_ppr": 5.1,
-    "std": 4.3
+    "ppr": 7.9,
+    "half_ppr": 6.3,
+    "std": 4.6
    },
    "ros": {
-    "ppr": 2.0,
+    "ppr": 2.1,
     "half_ppr": 1.7,
-    "std": 1.5
+    "std": 1.2
    },
    "usage": {
     "g": 1,
-    "snap": 0.14,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
+    "snap": 0.47,
+    "tgt_share": 0.075,
+    "carry_share": 0.0,
+    "ay_share": 0.051,
+    "targets": 3.0,
+    "carries": 0.0,
+    "pts": 7.0
    },
    "adds": null,
    "drops": null,
@@ -13778,37 +13735,37 @@
    "mine": []
   },
   {
-   "id": "7670",
-   "name": "Joshua Palmer",
+   "id": "12503",
+   "name": "Isaiah Bond",
    "pos": "WR",
-   "team": "BUF",
+   "team": "CLE",
    "injury": null,
-   "bye": 7,
-   "opp": "DET",
+   "bye": 11,
+   "opp": "TB",
    "proj": {
-    "ppr": 1.9,
-    "half_ppr": 1.6,
-    "std": 1.2
+    "ppr": 2.0,
+    "half_ppr": 1.8,
+    "std": 1.5
    },
    "next3": {
-    "ppr": 5.7,
-    "half_ppr": 4.7,
-    "std": 3.7
+    "ppr": 5.9,
+    "half_ppr": 5.1,
+    "std": 4.3
    },
    "ros": {
-    "ppr": 1.9,
-    "half_ppr": 1.5,
-    "std": 1.2
+    "ppr": 2.0,
+    "half_ppr": 1.7,
+    "std": 1.5
    },
    "usage": {
     "g": 1,
-    "snap": 0.31,
+    "snap": 0.14,
     "tgt_share": null,
     "carry_share": null,
     "ay_share": null,
     "targets": null,
     "carries": null,
-    "pts": 10.4
+    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -13864,6 +13821,49 @@
    "mine": []
   },
   {
+   "id": "7670",
+   "name": "Joshua Palmer",
+   "pos": "WR",
+   "team": "BUF",
+   "injury": null,
+   "bye": 7,
+   "opp": "DET",
+   "proj": {
+    "ppr": 1.9,
+    "half_ppr": 1.6,
+    "std": 1.2
+   },
+   "next3": {
+    "ppr": 5.7,
+    "half_ppr": 4.7,
+    "std": 3.7
+   },
+   "ros": {
+    "ppr": 1.9,
+    "half_ppr": 1.5,
+    "std": 1.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.31,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 10.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "11577",
    "name": "Will Shipley",
    "pos": "RB",
@@ -13895,264 +13895,6 @@
     "targets": 1.0,
     "carries": 2.0,
     "pts": 2.2
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12485",
-   "name": "Tez Johnson",
-   "pos": "WR",
-   "team": "TB",
-   "injury": null,
-   "bye": 10,
-   "opp": "CLE",
-   "proj": {
-    "ppr": 1.7,
-    "half_ppr": 1.4,
-    "std": 1.1
-   },
-   "next3": {
-    "ppr": 5.2,
-    "half_ppr": 4.3,
-    "std": 3.5
-   },
-   "ros": {
-    "ppr": 1.8,
-    "half_ppr": 1.5,
-    "std": 1.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.23,
-    "tgt_share": 0.037,
-    "carry_share": 0.05,
-    "ay_share": 0.063,
-    "targets": 1.0,
-    "carries": 1.0,
-    "pts": -0.4
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11608",
-   "name": "Isaiah Williams",
-   "pos": "WR",
-   "team": "NYJ",
-   "injury": null,
-   "bye": 13,
-   "opp": "GB",
-   "proj": {
-    "ppr": 1.8,
-    "half_ppr": 1.4,
-    "std": 1.0
-   },
-   "next3": {
-    "ppr": 5.4,
-    "half_ppr": 4.2,
-    "std": 3.1
-   },
-   "ros": {
-    "ppr": 1.8,
-    "half_ppr": 1.4,
-    "std": 1.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.6,
-    "tgt_share": 0.043,
-    "carry_share": 0.0,
-    "ay_share": 0.042,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 1.7
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13420",
-   "name": "Bryce Lance",
-   "pos": "WR",
-   "team": "NO",
-   "injury": null,
-   "bye": 8,
-   "opp": "BAL",
-   "proj": {
-    "ppr": 2.0,
-    "half_ppr": 1.6,
-    "std": 1.2
-   },
-   "next3": {
-    "ppr": 5.5,
-    "half_ppr": 4.5,
-    "std": 3.4
-   },
-   "ros": {
-    "ppr": 1.8,
-    "half_ppr": 1.4,
-    "std": 1.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.69,
-    "tgt_share": 0.077,
-    "carry_share": 0.0,
-    "ay_share": 0.083,
-    "targets": 4.0,
-    "carries": 0.0,
-    "pts": 7.2
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11599",
-   "name": "Cade Stover",
-   "pos": "TE",
-   "team": "HOU",
-   "injury": null,
-   "bye": 8,
-   "opp": "CIN",
-   "proj": {
-    "ppr": 1.8,
-    "half_ppr": 1.5,
-    "std": 1.1
-   },
-   "next3": {
-    "ppr": 5.5,
-    "half_ppr": 4.4,
-    "std": 3.3
-   },
-   "ros": {
-    "ppr": 1.8,
-    "half_ppr": 1.4,
-    "std": 1.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.3,
-    "tgt_share": 0.027,
-    "carry_share": 0.0,
-    "ay_share": -0.006,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 0.8
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8698",
-   "name": "Jake Tonges",
-   "pos": "TE",
-   "team": "SF",
-   "injury": "IR",
-   "bye": 8,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 4.1,
-    "half_ppr": 3.2,
-    "std": 2.4
-   },
-   "ros": {
-    "ppr": 1.8,
-    "half_ppr": 1.5,
-    "std": 1.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.12,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": 74215,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12496",
-   "name": "Tai Felton",
-   "pos": "WR",
-   "team": "MIN",
-   "injury": null,
-   "bye": 6,
-   "opp": "CHI",
-   "proj": {
-    "ppr": 1.9,
-    "half_ppr": 1.5,
-    "std": 1.1
-   },
-   "next3": {
-    "ppr": 5.8,
-    "half_ppr": 4.6,
-    "std": 3.3
-   },
-   "ros": {
-    "ppr": 1.8,
-    "half_ppr": 1.4,
-    "std": 1.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.05,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -14208,6 +13950,178 @@
    "mine": []
   },
   {
+   "id": "11599",
+   "name": "Cade Stover",
+   "pos": "TE",
+   "team": "HOU",
+   "injury": null,
+   "bye": 8,
+   "opp": "CIN",
+   "proj": {
+    "ppr": 1.8,
+    "half_ppr": 1.5,
+    "std": 1.1
+   },
+   "next3": {
+    "ppr": 5.5,
+    "half_ppr": 4.4,
+    "std": 3.3
+   },
+   "ros": {
+    "ppr": 1.8,
+    "half_ppr": 1.4,
+    "std": 1.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.3,
+    "tgt_share": 0.027,
+    "carry_share": 0.0,
+    "ay_share": -0.006,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.8
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11608",
+   "name": "Isaiah Williams",
+   "pos": "WR",
+   "team": "NYJ",
+   "injury": null,
+   "bye": 13,
+   "opp": "GB",
+   "proj": {
+    "ppr": 1.8,
+    "half_ppr": 1.4,
+    "std": 1.0
+   },
+   "next3": {
+    "ppr": 5.4,
+    "half_ppr": 4.2,
+    "std": 3.1
+   },
+   "ros": {
+    "ppr": 1.8,
+    "half_ppr": 1.4,
+    "std": 1.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.6,
+    "tgt_share": 0.043,
+    "carry_share": 0.0,
+    "ay_share": 0.042,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 1.7
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "12485",
+   "name": "Tez Johnson",
+   "pos": "WR",
+   "team": "TB",
+   "injury": null,
+   "bye": 10,
+   "opp": "CLE",
+   "proj": {
+    "ppr": 1.7,
+    "half_ppr": 1.4,
+    "std": 1.1
+   },
+   "next3": {
+    "ppr": 5.2,
+    "half_ppr": 4.3,
+    "std": 3.5
+   },
+   "ros": {
+    "ppr": 1.8,
+    "half_ppr": 1.5,
+    "std": 1.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.23,
+    "tgt_share": 0.037,
+    "carry_share": 0.05,
+    "ay_share": 0.063,
+    "targets": 1.0,
+    "carries": 1.0,
+    "pts": -0.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8698",
+   "name": "Jake Tonges",
+   "pos": "TE",
+   "team": "SF",
+   "injury": "IR",
+   "bye": 8,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 4.1,
+    "half_ppr": 3.2,
+    "std": 2.4
+   },
+   "ros": {
+    "ppr": 1.8,
+    "half_ppr": 1.5,
+    "std": 1.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.12,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": 74215,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "11435",
    "name": "Emanuel Wilson",
    "pos": "RB",
@@ -14242,6 +14156,178 @@
    },
    "adds": null,
    "drops": 86535,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "12496",
+   "name": "Tai Felton",
+   "pos": "WR",
+   "team": "MIN",
+   "injury": null,
+   "bye": 6,
+   "opp": "CHI",
+   "proj": {
+    "ppr": 1.9,
+    "half_ppr": 1.5,
+    "std": 1.1
+   },
+   "next3": {
+    "ppr": 5.8,
+    "half_ppr": 4.6,
+    "std": 3.3
+   },
+   "ros": {
+    "ppr": 1.8,
+    "half_ppr": 1.4,
+    "std": 1.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.05,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13420",
+   "name": "Bryce Lance",
+   "pos": "WR",
+   "team": "NO",
+   "injury": null,
+   "bye": 8,
+   "opp": "BAL",
+   "proj": {
+    "ppr": 2.0,
+    "half_ppr": 1.6,
+    "std": 1.2
+   },
+   "next3": {
+    "ppr": 5.5,
+    "half_ppr": 4.5,
+    "std": 3.4
+   },
+   "ros": {
+    "ppr": 1.8,
+    "half_ppr": 1.4,
+    "std": 1.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.69,
+    "tgt_share": 0.077,
+    "carry_share": 0.0,
+    "ay_share": 0.083,
+    "targets": 4.0,
+    "carries": 0.0,
+    "pts": 7.2
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "5854",
+   "name": "Drew Lock",
+   "pos": "QB",
+   "team": "SEA",
+   "injury": null,
+   "bye": 11,
+   "opp": "ARI",
+   "proj": {
+    "ppr": 13.3,
+    "half_ppr": 13.3,
+    "std": 13.3
+   },
+   "next3": {
+    "ppr": 13.3,
+    "half_ppr": 13.3,
+    "std": 13.3
+   },
+   "ros": {
+    "ppr": 1.7,
+    "half_ppr": 1.7,
+    "std": 1.7
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.9,
+    "tgt_share": 0.0,
+    "carry_share": 0.091,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 2.0,
+    "pts": 12.8
+   },
+   "adds": 109848,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "3271",
+   "name": "Tyler Higbee",
+   "pos": "TE",
+   "team": "LAR",
+   "injury": null,
+   "bye": 11,
+   "opp": "NYG",
+   "proj": {
+    "ppr": 1.7,
+    "half_ppr": 1.4,
+    "std": 1.0
+   },
+   "next3": {
+    "ppr": 4.7,
+    "half_ppr": 3.7,
+    "std": 2.8
+   },
+   "ros": {
+    "ppr": 1.7,
+    "half_ppr": 1.3,
+    "std": 1.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.2,
+    "tgt_share": 0.074,
+    "carry_share": 0.0,
+    "ay_share": 0.035,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 1.2
+   },
+   "adds": null,
+   "drops": null,
    "free": [
     "1398428734666579968",
     "1191912",
@@ -14337,6 +14423,49 @@
    "mine": []
   },
   {
+   "id": "13394",
+   "name": "Josh Cameron",
+   "pos": "WR",
+   "team": "JAX",
+   "injury": null,
+   "bye": 7,
+   "opp": "DEN",
+   "proj": {
+    "ppr": 1.4,
+    "half_ppr": 1.2,
+    "std": 0.9
+   },
+   "next3": {
+    "ppr": 5.1,
+    "half_ppr": 4.3,
+    "std": 3.4
+   },
+   "ros": {
+    "ppr": 1.7,
+    "half_ppr": 1.4,
+    "std": 1.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.33,
+    "tgt_share": 0.095,
+    "carry_share": 0.0,
+    "ay_share": 0.074,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 10.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "12658",
    "name": "Jackson Hawes",
    "pos": "TE",
@@ -14413,135 +14542,6 @@
     "pts": 15.8
    },
    "adds": 44048,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
-   "injury": null,
-   "bye": 11,
-   "opp": "ARI",
-   "proj": {
-    "ppr": 13.3,
-    "half_ppr": 13.3,
-    "std": 13.3
-   },
-   "next3": {
-    "ppr": 13.3,
-    "half_ppr": 13.3,
-    "std": 13.3
-   },
-   "ros": {
-    "ppr": 1.7,
-    "half_ppr": 1.7,
-    "std": 1.7
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.9,
-    "tgt_share": 0.0,
-    "carry_share": 0.091,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 2.0,
-    "pts": 12.8
-   },
-   "adds": 109848,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13394",
-   "name": "Josh Cameron",
-   "pos": "WR",
-   "team": "JAX",
-   "injury": null,
-   "bye": 7,
-   "opp": "DEN",
-   "proj": {
-    "ppr": 1.4,
-    "half_ppr": 1.2,
-    "std": 0.9
-   },
-   "next3": {
-    "ppr": 5.1,
-    "half_ppr": 4.3,
-    "std": 3.4
-   },
-   "ros": {
-    "ppr": 1.7,
-    "half_ppr": 1.4,
-    "std": 1.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.33,
-    "tgt_share": 0.095,
-    "carry_share": 0.0,
-    "ay_share": 0.074,
-    "targets": 2.0,
-    "carries": 0.0,
-    "pts": 10.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "3271",
-   "name": "Tyler Higbee",
-   "pos": "TE",
-   "team": "LAR",
-   "injury": null,
-   "bye": 11,
-   "opp": "NYG",
-   "proj": {
-    "ppr": 1.7,
-    "half_ppr": 1.4,
-    "std": 1.0
-   },
-   "next3": {
-    "ppr": 4.7,
-    "half_ppr": 3.7,
-    "std": 2.8
-   },
-   "ros": {
-    "ppr": 1.7,
-    "half_ppr": 1.3,
-    "std": 1.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.2,
-    "tgt_share": 0.074,
-    "carry_share": 0.0,
-    "ay_share": 0.035,
-    "targets": 2.0,
-    "carries": 0.0,
-    "pts": 1.2
-   },
-   "adds": null,
    "drops": null,
    "free": [
     "1398428734666579968",
@@ -14680,49 +14680,6 @@
    "mine": []
   },
   {
-   "id": "10871",
-   "name": "Luke Schoonmaker",
-   "pos": "TE",
-   "team": "DAL",
-   "injury": null,
-   "bye": 14,
-   "opp": "WAS",
-   "proj": {
-    "ppr": 1.7,
-    "half_ppr": 1.4,
-    "std": 1.0
-   },
-   "next3": {
-    "ppr": 4.6,
-    "half_ppr": 3.6,
-    "std": 2.7
-   },
-   "ros": {
-    "ppr": 1.5,
-    "half_ppr": 1.2,
-    "std": 0.9
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.22,
-    "tgt_share": 0.033,
-    "carry_share": 0.0,
-    "ay_share": 0.039,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 2.2
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "12641",
    "name": "Jaylin Lane",
    "pos": "WR",
@@ -14754,6 +14711,49 @@
     "targets": 1.0,
     "carries": 0.0,
     "pts": 1.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "10871",
+   "name": "Luke Schoonmaker",
+   "pos": "TE",
+   "team": "DAL",
+   "injury": null,
+   "bye": 14,
+   "opp": "WAS",
+   "proj": {
+    "ppr": 1.7,
+    "half_ppr": 1.4,
+    "std": 1.0
+   },
+   "next3": {
+    "ppr": 4.6,
+    "half_ppr": 3.6,
+    "std": 2.7
+   },
+   "ros": {
+    "ppr": 1.5,
+    "half_ppr": 1.2,
+    "std": 0.9
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.22,
+    "tgt_share": 0.033,
+    "carry_share": 0.0,
+    "ay_share": 0.039,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 2.2
    },
    "adds": null,
    "drops": null,
@@ -15103,6 +15103,49 @@
    "mine": []
   },
   {
+   "id": "6427",
+   "name": "Ashton Dulin",
+   "pos": "WR",
+   "team": "IND",
+   "injury": "Questionable",
+   "bye": 13,
+   "opp": "KC",
+   "proj": {
+    "ppr": 1.0,
+    "half_ppr": 0.8,
+    "std": 0.7
+   },
+   "next3": {
+    "ppr": 3.2,
+    "half_ppr": 2.7,
+    "std": 2.1
+   },
+   "ros": {
+    "ppr": 1.1,
+    "half_ppr": 0.9,
+    "std": 0.7
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.19,
+    "tgt_share": 0.034,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "12543",
    "name": "Tahj Brooks",
    "pos": "RB",
@@ -15189,35 +15232,35 @@
    "mine": []
   },
   {
-   "id": "6427",
-   "name": "Ashton Dulin",
+   "id": "11168",
+   "name": "Xavier Smith",
    "pos": "WR",
-   "team": "IND",
-   "injury": "Questionable",
-   "bye": 13,
-   "opp": "KC",
+   "team": "LAR",
+   "injury": null,
+   "bye": 11,
+   "opp": "NYG",
    "proj": {
     "ppr": 1.0,
-    "half_ppr": 0.8,
+    "half_ppr": 0.9,
     "std": 0.7
    },
    "next3": {
-    "ppr": 3.2,
-    "half_ppr": 2.7,
-    "std": 2.1
+    "ppr": 2.9,
+    "half_ppr": 2.4,
+    "std": 1.9
    },
    "ros": {
-    "ppr": 1.1,
+    "ppr": 1.0,
     "half_ppr": 0.9,
     "std": 0.7
    },
    "usage": {
     "g": 1,
-    "snap": 0.19,
-    "tgt_share": 0.034,
+    "snap": 0.26,
+    "tgt_share": 0.0,
     "carry_share": 0.0,
     "ay_share": 0.0,
-    "targets": 1.0,
+    "targets": 0.0,
     "carries": 0.0,
     "pts": 0.0
    },
@@ -15275,37 +15318,37 @@
    "mine": []
   },
   {
-   "id": "11168",
-   "name": "Xavier Smith",
-   "pos": "WR",
-   "team": "LAR",
+   "id": "8181",
+   "name": "Connor Heyward",
+   "pos": "RB",
+   "team": "LV",
    "injury": null,
-   "bye": 11,
-   "opp": "NYG",
+   "bye": 13,
+   "opp": "LAC",
    "proj": {
-    "ppr": 1.0,
-    "half_ppr": 0.9,
-    "std": 0.7
+    "ppr": 0.9,
+    "half_ppr": 0.7,
+    "std": 0.6
    },
    "next3": {
-    "ppr": 2.9,
-    "half_ppr": 2.4,
-    "std": 1.9
+    "ppr": 2.6,
+    "half_ppr": 2.2,
+    "std": 1.8
    },
    "ros": {
-    "ppr": 1.0,
-    "half_ppr": 0.9,
-    "std": 0.7
+    "ppr": 0.9,
+    "half_ppr": 0.8,
+    "std": 0.6
    },
    "usage": {
     "g": 1,
-    "snap": 0.26,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
+    "snap": 0.47,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.1
    },
    "adds": null,
    "drops": null,
@@ -15361,22 +15404,22 @@
    "mine": []
   },
   {
-   "id": "8181",
-   "name": "Connor Heyward",
-   "pos": "RB",
-   "team": "LV",
+   "id": "12523",
+   "name": "Jimmy Horn",
+   "pos": "WR",
+   "team": "CLE",
    "injury": null,
-   "bye": 13,
-   "opp": "LAC",
+   "bye": 11,
+   "opp": null,
    "proj": {
-    "ppr": 0.9,
-    "half_ppr": 0.7,
-    "std": 0.6
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
    },
    "next3": {
-    "ppr": 2.6,
-    "half_ppr": 2.2,
-    "std": 1.8
+    "ppr": 2.5,
+    "half_ppr": 2.1,
+    "std": 1.7
    },
    "ros": {
     "ppr": 0.9,
@@ -15385,13 +15428,13 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.47,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.1
+    "snap": null,
+    "tgt_share": 0.029,
+    "carry_share": 0.0,
+    "ay_share": 0.008,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": -2.0
    },
    "adds": null,
    "drops": null,
@@ -15447,92 +15490,6 @@
    "mine": []
   },
   {
-   "id": "12523",
-   "name": "Jimmy Horn",
-   "pos": "WR",
-   "team": "CLE",
-   "injury": null,
-   "bye": 11,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 2.5,
-    "half_ppr": 2.1,
-    "std": 1.7
-   },
-   "ros": {
-    "ppr": 0.9,
-    "half_ppr": 0.8,
-    "std": 0.6
-   },
-   "usage": {
-    "g": 1,
-    "snap": null,
-    "tgt_share": 0.029,
-    "carry_share": 0.0,
-    "ay_share": 0.008,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": -2.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "10214",
-   "name": "Davis Allen",
-   "pos": "TE",
-   "team": "LAR",
-   "injury": null,
-   "bye": 11,
-   "opp": "NYG",
-   "proj": {
-    "ppr": 0.8,
-    "half_ppr": 0.6,
-    "std": 0.4
-   },
-   "next3": {
-    "ppr": 2.1,
-    "half_ppr": 1.7,
-    "std": 1.2
-   },
-   "ros": {
-    "ppr": 0.8,
-    "half_ppr": 0.6,
-    "std": 0.4
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.34,
-    "tgt_share": 0.037,
-    "carry_share": 0.0,
-    "ay_share": -0.004,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 2.3
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "6931",
    "name": "DeeJay Dallas",
    "pos": "RB",
@@ -15576,117 +15533,31 @@
    "mine": []
   },
   {
-   "id": "5985",
-   "name": "Foster Moreau",
+   "id": "7075",
+   "name": "Charlie Woerner",
    "pos": "TE",
-   "team": "HOU",
+   "team": "ATL",
    "injury": null,
-   "bye": 8,
-   "opp": "CIN",
-   "proj": {
-    "ppr": 1.3,
-    "half_ppr": 1.1,
-    "std": 0.8
-   },
-   "next3": {
-    "ppr": 2.9,
-    "half_ppr": 2.4,
-    "std": 1.9
-   },
-   "ros": {
-    "ppr": 0.8,
-    "half_ppr": 0.7,
-    "std": 0.5
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.44,
-    "tgt_share": 0.054,
-    "carry_share": 0.0,
-    "ay_share": 0.022,
-    "targets": 2.0,
-    "carries": 0.0,
-    "pts": 3.5
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11647",
-   "name": "Kimani Vidal",
-   "pos": "RB",
-   "team": "LAC",
-   "injury": null,
-   "bye": 7,
-   "opp": "LV",
-   "proj": {
-    "ppr": 0.8,
-    "half_ppr": 0.7,
-    "std": 0.6
-   },
-   "next3": {
-    "ppr": 2.4,
-    "half_ppr": 2.1,
-    "std": 1.9
-   },
-   "ros": {
-    "ppr": 0.8,
-    "half_ppr": 0.7,
-    "std": 0.6
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.07,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": 71890,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13477",
-   "name": "Colbie Young",
-   "pos": "WR",
-   "team": "CIN",
-   "injury": null,
-   "bye": 6,
-   "opp": "HOU",
+   "bye": 11,
+   "opp": "CAR",
    "proj": {
     "ppr": 0.7,
-    "half_ppr": 0.6,
+    "half_ppr": 0.5,
     "std": 0.4
    },
    "next3": {
     "ppr": 2.2,
-    "half_ppr": 1.8,
-    "std": 1.4
+    "half_ppr": 1.7,
+    "std": 1.2
    },
    "ros": {
     "ppr": 0.8,
     "half_ppr": 0.6,
-    "std": 0.5
+    "std": 0.4
    },
    "usage": {
     "g": 1,
-    "snap": 0.14,
+    "snap": 0.62,
     "tgt_share": null,
     "carry_share": null,
     "ay_share": null,
@@ -15748,6 +15619,49 @@
    "mine": []
   },
   {
+   "id": "13477",
+   "name": "Colbie Young",
+   "pos": "WR",
+   "team": "CIN",
+   "injury": null,
+   "bye": 6,
+   "opp": "HOU",
+   "proj": {
+    "ppr": 0.7,
+    "half_ppr": 0.6,
+    "std": 0.4
+   },
+   "next3": {
+    "ppr": 2.2,
+    "half_ppr": 1.8,
+    "std": 1.4
+   },
+   "ros": {
+    "ppr": 0.8,
+    "half_ppr": 0.6,
+    "std": 0.5
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.14,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "5008",
    "name": "Durham Smythe",
    "pos": "TE",
@@ -15791,20 +15705,63 @@
    "mine": []
   },
   {
-   "id": "7075",
-   "name": "Charlie Woerner",
+   "id": "5985",
+   "name": "Foster Moreau",
    "pos": "TE",
-   "team": "ATL",
+   "team": "HOU",
+   "injury": null,
+   "bye": 8,
+   "opp": "CIN",
+   "proj": {
+    "ppr": 1.3,
+    "half_ppr": 1.1,
+    "std": 0.8
+   },
+   "next3": {
+    "ppr": 2.9,
+    "half_ppr": 2.4,
+    "std": 1.9
+   },
+   "ros": {
+    "ppr": 0.8,
+    "half_ppr": 0.7,
+    "std": 0.5
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.44,
+    "tgt_share": 0.054,
+    "carry_share": 0.0,
+    "ay_share": 0.022,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 3.5
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "10214",
+   "name": "Davis Allen",
+   "pos": "TE",
+   "team": "LAR",
    "injury": null,
    "bye": 11,
-   "opp": "CAR",
+   "opp": "NYG",
    "proj": {
-    "ppr": 0.7,
-    "half_ppr": 0.5,
+    "ppr": 0.8,
+    "half_ppr": 0.6,
     "std": 0.4
    },
    "next3": {
-    "ppr": 2.2,
+    "ppr": 2.1,
     "half_ppr": 1.7,
     "std": 1.2
    },
@@ -15815,7 +15772,50 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.62,
+    "snap": 0.34,
+    "tgt_share": 0.037,
+    "carry_share": 0.0,
+    "ay_share": -0.004,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 2.3
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11647",
+   "name": "Kimani Vidal",
+   "pos": "RB",
+   "team": "LAC",
+   "injury": null,
+   "bye": 7,
+   "opp": "LV",
+   "proj": {
+    "ppr": 0.8,
+    "half_ppr": 0.7,
+    "std": 0.6
+   },
+   "next3": {
+    "ppr": 2.4,
+    "half_ppr": 2.1,
+    "std": 1.9
+   },
+   "ros": {
+    "ppr": 0.8,
+    "half_ppr": 0.7,
+    "std": 0.6
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.07,
     "tgt_share": null,
     "carry_share": null,
     "ay_share": null,
@@ -15824,7 +15824,7 @@
     "pts": 0.0
    },
    "adds": null,
-   "drops": null,
+   "drops": 71890,
    "free": [
     "1398428734666579968",
     "1191912",
@@ -15865,92 +15865,6 @@
     "targets": 0.0,
     "carries": 6.0,
     "pts": 1.1
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13423",
-   "name": "Eli Heidenreich",
-   "pos": "RB",
-   "team": "PIT",
-   "injury": null,
-   "bye": 9,
-   "opp": "NE",
-   "proj": {
-    "ppr": 0.6,
-    "half_ppr": 0.5,
-    "std": 0.4
-   },
-   "next3": {
-    "ppr": 1.8,
-    "half_ppr": 1.5,
-    "std": 1.2
-   },
-   "ros": {
-    "ppr": 0.6,
-    "half_ppr": 0.5,
-    "std": 0.4
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.04,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11201",
-   "name": "Blake Whiteheart",
-   "pos": "TE",
-   "team": "CLE",
-   "injury": null,
-   "bye": 11,
-   "opp": "TB",
-   "proj": {
-    "ppr": 1.6,
-    "half_ppr": 1.3,
-    "std": 1.0
-   },
-   "next3": {
-    "ppr": 2.5,
-    "half_ppr": 2.0,
-    "std": 1.5
-   },
-   "ros": {
-    "ppr": 0.6,
-    "half_ppr": 0.5,
-    "std": 0.4
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.39,
-    "tgt_share": 0.045,
-    "carry_share": 0.0,
-    "ay_share": 0.026,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 2.4
    },
    "adds": null,
    "drops": null,
@@ -16006,22 +15920,151 @@
    "mine": []
   },
   {
-   "id": "13150",
-   "name": "Darius Cooper",
-   "pos": "WR",
-   "team": "PHI",
+   "id": "11201",
+   "name": "Blake Whiteheart",
+   "pos": "TE",
+   "team": "CLE",
    "injury": null,
-   "bye": 10,
-   "opp": "TEN",
+   "bye": 11,
+   "opp": "TB",
+   "proj": {
+    "ppr": 1.6,
+    "half_ppr": 1.3,
+    "std": 1.0
+   },
+   "next3": {
+    "ppr": 2.5,
+    "half_ppr": 2.0,
+    "std": 1.5
+   },
+   "ros": {
+    "ppr": 0.6,
+    "half_ppr": 0.5,
+    "std": 0.4
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.39,
+    "tgt_share": 0.045,
+    "carry_share": 0.0,
+    "ay_share": 0.026,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 2.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13423",
+   "name": "Eli Heidenreich",
+   "pos": "RB",
+   "team": "PIT",
+   "injury": null,
+   "bye": 9,
+   "opp": "NE",
+   "proj": {
+    "ppr": 0.6,
+    "half_ppr": 0.5,
+    "std": 0.4
+   },
+   "next3": {
+    "ppr": 1.8,
+    "half_ppr": 1.5,
+    "std": 1.2
+   },
+   "ros": {
+    "ppr": 0.6,
+    "half_ppr": 0.5,
+    "std": 0.4
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.04,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8204",
+   "name": "Bo Melton",
+   "pos": "WR",
+   "team": "GB",
+   "injury": null,
+   "bye": 11,
+   "opp": "NYJ",
    "proj": {
     "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.3
+    "half_ppr": 0.5,
+    "std": 0.4
    },
    "next3": {
     "ppr": 1.5,
-    "half_ppr": 1.2,
-    "std": 0.9
+    "half_ppr": 1.3,
+    "std": 1.1
+   },
+   "ros": {
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.4
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.12,
+    "tgt_share": 0.025,
+    "carry_share": 0.0,
+    "ay_share": 0.021,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 2.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8527",
+   "name": "Dareke Young",
+   "pos": "WR",
+   "team": "LV",
+   "injury": null,
+   "bye": 13,
+   "opp": "LAC",
+   "proj": {
+    "ppr": 0.4,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "next3": {
+    "ppr": 1.4,
+    "half_ppr": 1.1,
+    "std": 0.8
    },
    "ros": {
     "ppr": 0.5,
@@ -16092,37 +16135,37 @@
    "mine": []
   },
   {
-   "id": "13264",
-   "name": "Dohnte Meyers",
+   "id": "11994",
+   "name": "Kameron Johnson",
    "pos": "WR",
-   "team": "CIN",
+   "team": "TB",
    "injury": null,
-   "bye": 6,
-   "opp": "HOU",
+   "bye": 10,
+   "opp": "CLE",
    "proj": {
     "ppr": 0.5,
     "half_ppr": 0.4,
     "std": 0.3
    },
    "next3": {
-    "ppr": 1.5,
+    "ppr": 1.4,
     "half_ppr": 1.2,
     "std": 1.0
    },
    "ros": {
     "ppr": 0.5,
-    "half_ppr": 0.5,
-    "std": 0.4
+    "half_ppr": 0.4,
+    "std": 0.3
    },
    "usage": {
     "g": 1,
-    "snap": 0.16,
-    "tgt_share": 0.029,
-    "carry_share": 0.037,
-    "ay_share": 0.009,
-    "targets": 1.0,
-    "carries": 1.0,
-    "pts": 3.8
+    "snap": 0.09,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -16135,22 +16178,65 @@
    "mine": []
   },
   {
-   "id": "8527",
-   "name": "Dareke Young",
+   "id": "7587",
+   "name": "Dyami Brown",
    "pos": "WR",
-   "team": "LV",
+   "team": "WAS",
    "injury": null,
-   "bye": 13,
-   "opp": "LAC",
+   "bye": 7,
+   "opp": "DAL",
    "proj": {
-    "ppr": 0.4,
-    "half_ppr": 0.3,
-    "std": 0.2
+    "ppr": 1.1,
+    "half_ppr": 0.9,
+    "std": 0.7
    },
    "next3": {
-    "ppr": 1.4,
-    "half_ppr": 1.1,
-    "std": 0.8
+    "ppr": 1.9,
+    "half_ppr": 1.6,
+    "std": 1.2
+   },
+   "ros": {
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.3
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.53,
+    "tgt_share": 0.069,
+    "carry_share": 0.0,
+    "ay_share": 0.202,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13150",
+   "name": "Darius Cooper",
+   "pos": "WR",
+   "team": "PHI",
+   "injury": null,
+   "bye": 10,
+   "opp": "TEN",
+   "proj": {
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.3
+   },
+   "next3": {
+    "ppr": 1.5,
+    "half_ppr": 1.2,
+    "std": 0.9
    },
    "ros": {
     "ppr": 0.5,
@@ -16264,123 +16350,37 @@
    "mine": []
   },
   {
-   "id": "10225",
-   "name": "Jonathan Mingo",
+   "id": "13264",
+   "name": "Dohnte Meyers",
    "pos": "WR",
-   "team": "DAL",
+   "team": "CIN",
    "injury": null,
-   "bye": 14,
-   "opp": "WAS",
-   "proj": {
-    "ppr": 0.5,
-    "half_ppr": 0.5,
-    "std": 0.4
-   },
-   "next3": {
-    "ppr": 1.4,
-    "half_ppr": 1.2,
-    "std": 0.9
-   },
-   "ros": {
-    "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.3
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.19,
-    "tgt_share": 0.033,
-    "carry_share": 0.0,
-    "ay_share": 0.036,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 2.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "7587",
-   "name": "Dyami Brown",
-   "pos": "WR",
-   "team": "WAS",
-   "injury": null,
-   "bye": 7,
-   "opp": "DAL",
-   "proj": {
-    "ppr": 1.1,
-    "half_ppr": 0.9,
-    "std": 0.7
-   },
-   "next3": {
-    "ppr": 1.9,
-    "half_ppr": 1.6,
-    "std": 1.2
-   },
-   "ros": {
-    "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.3
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.53,
-    "tgt_share": 0.069,
-    "carry_share": 0.0,
-    "ay_share": 0.202,
-    "targets": 2.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11994",
-   "name": "Kameron Johnson",
-   "pos": "WR",
-   "team": "TB",
-   "injury": null,
-   "bye": 10,
-   "opp": "CLE",
+   "bye": 6,
+   "opp": "HOU",
    "proj": {
     "ppr": 0.5,
     "half_ppr": 0.4,
     "std": 0.3
    },
    "next3": {
-    "ppr": 1.4,
+    "ppr": 1.5,
     "half_ppr": 1.2,
     "std": 1.0
    },
    "ros": {
     "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.3
+    "half_ppr": 0.5,
+    "std": 0.4
    },
    "usage": {
     "g": 1,
-    "snap": 0.09,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
+    "snap": 0.16,
+    "tgt_share": 0.029,
+    "carry_share": 0.037,
+    "ay_share": 0.009,
+    "targets": 1.0,
+    "carries": 1.0,
+    "pts": 3.8
    },
    "adds": null,
    "drops": null,
@@ -16436,34 +16436,34 @@
    "mine": []
   },
   {
-   "id": "8204",
-   "name": "Bo Melton",
+   "id": "10225",
+   "name": "Jonathan Mingo",
    "pos": "WR",
-   "team": "GB",
+   "team": "DAL",
    "injury": null,
-   "bye": 11,
-   "opp": "NYJ",
+   "bye": 14,
+   "opp": "WAS",
    "proj": {
     "ppr": 0.5,
     "half_ppr": 0.5,
     "std": 0.4
    },
    "next3": {
-    "ppr": 1.5,
-    "half_ppr": 1.3,
-    "std": 1.1
+    "ppr": 1.4,
+    "half_ppr": 1.2,
+    "std": 0.9
    },
    "ros": {
     "ppr": 0.5,
     "half_ppr": 0.4,
-    "std": 0.4
+    "std": 0.3
    },
    "usage": {
     "g": 1,
-    "snap": 0.12,
-    "tgt_share": 0.025,
+    "snap": 0.19,
+    "tgt_share": 0.033,
     "carry_share": 0.0,
-    "ay_share": 0.021,
+    "ay_share": 0.036,
     "targets": 1.0,
     "carries": 0.0,
     "pts": 2.0
@@ -16479,36 +16479,79 @@
    "mine": []
   },
   {
-   "id": "10212",
-   "name": "Josh Whyle",
-   "pos": "TE",
-   "team": "GB",
+   "id": "6828",
+   "name": "AJ Dillon",
+   "pos": "RB",
+   "team": "CAR",
    "injury": null,
-   "bye": 11,
-   "opp": "NYJ",
+   "bye": 5,
+   "opp": "ATL",
    "proj": {
-    "ppr": 0.4,
-    "half_ppr": 0.3,
-    "std": 0.2
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.4
    },
    "next3": {
-    "ppr": 1.2,
-    "half_ppr": 0.9,
-    "std": 0.7
+    "ppr": 1.4,
+    "half_ppr": 1.2,
+    "std": 1.1
    },
    "ros": {
     "ppr": 0.4,
-    "half_ppr": 0.3,
-    "std": 0.2
+    "half_ppr": 0.4,
+    "std": 0.4
    },
    "usage": {
     "g": 1,
-    "snap": 0.16,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
+    "snap": 0.1,
+    "tgt_share": 0.0,
+    "carry_share": 0.227,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 5.0,
+    "pts": 2.8
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11574",
+   "name": "Dylan Laube",
+   "pos": "RB",
+   "team": "LV",
+   "injury": null,
+   "bye": 13,
+   "opp": "LAC",
+   "proj": {
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.4
+   },
+   "next3": {
+    "ppr": 1.3,
+    "half_ppr": 1.1,
+    "std": 1.0
+   },
+   "ros": {
+    "ppr": 0.4,
+    "half_ppr": 0.4,
+    "std": 0.4
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.15,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
     "pts": 0.0
    },
    "adds": null,
@@ -16565,22 +16608,22 @@
    "mine": []
   },
   {
-   "id": "5133",
-   "name": "Tyler Conklin",
-   "pos": "TE",
-   "team": "DET",
+   "id": "5121",
+   "name": "Braxton Berrios",
+   "pos": "WR",
+   "team": "NYG",
    "injury": null,
-   "bye": 6,
-   "opp": "BUF",
+   "bye": 8,
+   "opp": null,
    "proj": {
-    "ppr": 0.3,
-    "half_ppr": 0.2,
-    "std": 0.2
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
    },
    "next3": {
     "ppr": 1.0,
     "half_ppr": 0.8,
-    "std": 0.6
+    "std": 0.5
    },
    "ros": {
     "ppr": 0.4,
@@ -16589,97 +16632,11 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.13,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11574",
-   "name": "Dylan Laube",
-   "pos": "RB",
-   "team": "LV",
-   "injury": null,
-   "bye": 13,
-   "opp": "LAC",
-   "proj": {
-    "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.4
-   },
-   "next3": {
-    "ppr": 1.3,
-    "half_ppr": 1.1,
-    "std": 1.0
-   },
-   "ros": {
-    "ppr": 0.4,
-    "half_ppr": 0.4,
-    "std": 0.4
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.15,
+    "snap": 0.17,
     "tgt_share": 0.0,
     "carry_share": 0.0,
     "ay_share": 0.0,
     "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8168",
-   "name": "Skyy Moore",
-   "pos": "WR",
-   "team": "GB",
-   "injury": null,
-   "bye": 11,
-   "opp": "NYJ",
-   "proj": {
-    "ppr": 1.1,
-    "half_ppr": 0.9,
-    "std": 0.8
-   },
-   "next3": {
-    "ppr": 1.6,
-    "half_ppr": 1.3,
-    "std": 1.1
-   },
-   "ros": {
-    "ppr": 0.4,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.06,
-    "tgt_share": 0.025,
-    "carry_share": 0.0,
-    "ay_share": 0.026,
-    "targets": 1.0,
     "carries": 0.0,
     "pts": 0.0
    },
@@ -16737,22 +16694,22 @@
    "mine": []
   },
   {
-   "id": "5121",
-   "name": "Braxton Berrios",
-   "pos": "WR",
-   "team": "NYG",
+   "id": "5133",
+   "name": "Tyler Conklin",
+   "pos": "TE",
+   "team": "DET",
    "injury": null,
-   "bye": 8,
-   "opp": null,
+   "bye": 6,
+   "opp": "BUF",
    "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
+    "ppr": 0.3,
+    "half_ppr": 0.2,
+    "std": 0.2
    },
    "next3": {
     "ppr": 1.0,
     "half_ppr": 0.8,
-    "std": 0.5
+    "std": 0.6
    },
    "ros": {
     "ppr": 0.4,
@@ -16761,179 +16718,7 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.17,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "6828",
-   "name": "AJ Dillon",
-   "pos": "RB",
-   "team": "CAR",
-   "injury": null,
-   "bye": 5,
-   "opp": "ATL",
-   "proj": {
-    "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.4
-   },
-   "next3": {
-    "ppr": 1.4,
-    "half_ppr": 1.2,
-    "std": 1.1
-   },
-   "ros": {
-    "ppr": 0.4,
-    "half_ppr": 0.4,
-    "std": 0.4
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.1,
-    "tgt_share": 0.0,
-    "carry_share": 0.227,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 5.0,
-    "pts": 2.8
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "2359",
-   "name": "Ameer Abdullah",
-   "pos": "RB",
-   "team": "JAX",
-   "injury": null,
-   "bye": 7,
-   "opp": "DEN",
-   "proj": {
-    "ppr": 0.3,
-    "half_ppr": 0.2,
-    "std": 0.2
-   },
-   "next3": {
-    "ppr": 0.9,
-    "half_ppr": 0.8,
-    "std": 0.6
-   },
-   "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.09,
-    "tgt_share": 0.048,
-    "carry_share": 0.125,
-    "ay_share": -0.012,
-    "targets": 1.0,
-    "carries": 4.0,
-    "pts": 4.2
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11573",
-   "name": "Frank Gore",
-   "pos": "RB",
-   "team": "BUF",
-   "injury": null,
-   "bye": 7,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.8,
-    "half_ppr": 0.7,
-    "std": 0.6
-   },
-   "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.19,
-    "tgt_share": 0.0,
-    "carry_share": 0.048,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 1.0,
-    "pts": 0.3
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "4995",
-   "name": "Ian Thomas",
-   "pos": "TE",
-   "team": "LV",
-   "injury": null,
-   "bye": 13,
-   "opp": "LAC",
-   "proj": {
-    "ppr": 0.3,
-    "half_ppr": 0.2,
-    "std": 0.1
-   },
-   "next3": {
-    "ppr": 0.9,
-    "half_ppr": 0.7,
-    "std": 0.5
-   },
-   "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.2,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.46,
+    "snap": 0.13,
     "tgt_share": null,
     "carry_share": null,
     "ay_share": null,
@@ -16952,166 +16737,80 @@
    "mine": []
   },
   {
-   "id": "7039",
-   "name": "Cody White",
+   "id": "8168",
+   "name": "Skyy Moore",
    "pos": "WR",
-   "team": "LV",
+   "team": "GB",
    "injury": null,
-   "bye": 13,
-   "opp": null,
+   "bye": 11,
+   "opp": "NYJ",
    "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
+    "ppr": 1.1,
+    "half_ppr": 0.9,
+    "std": 0.8
    },
    "next3": {
-    "ppr": 0.7,
-    "half_ppr": 0.6,
-    "std": 0.4
+    "ppr": 1.6,
+    "half_ppr": 1.3,
+    "std": 1.1
    },
    "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.2,
+    "ppr": 0.4,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.06,
+    "tgt_share": 0.025,
+    "carry_share": 0.0,
+    "ay_share": 0.026,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "10212",
+   "name": "Josh Whyle",
+   "pos": "TE",
+   "team": "GB",
+   "injury": null,
+   "bye": 11,
+   "opp": "NYJ",
+   "proj": {
+    "ppr": 0.4,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "next3": {
+    "ppr": 1.2,
+    "half_ppr": 0.9,
+    "std": 0.7
+   },
+   "ros": {
+    "ppr": 0.4,
+    "half_ppr": 0.3,
     "std": 0.2
    },
    "usage": {
     "g": 1,
     "snap": 0.16,
-    "tgt_share": 0.034,
-    "carry_share": 0.0,
-    "ay_share": 0.013,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12539",
-   "name": "Arian Smith",
-   "pos": "WR",
-   "team": "NYJ",
-   "injury": null,
-   "bye": 13,
-   "opp": "GB",
-   "proj": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "next3": {
-    "ppr": 1.0,
-    "half_ppr": 0.9,
-    "std": 0.7
-   },
-   "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.03,
-    "tgt_share": 0.043,
-    "carry_share": 0.0,
-    "ay_share": 0.024,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8219",
-   "name": "Jelani Woods",
-   "pos": "TE",
-   "team": "NYJ",
-   "injury": null,
-   "bye": 13,
-   "opp": "GB",
-   "proj": {
-    "ppr": 0.3,
-    "half_ppr": 0.2,
-    "std": 0.2
-   },
-   "next3": {
-    "ppr": 0.9,
-    "half_ppr": 0.8,
-    "std": 0.6
-   },
-   "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.24,
     "tgt_share": null,
     "carry_share": null,
     "ay_share": null,
     "targets": null,
     "carries": null,
     "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13277",
-   "name": "CJ Donaldson",
-   "pos": "RB",
-   "team": "NO",
-   "injury": null,
-   "bye": 8,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.7,
-    "half_ppr": 0.6,
-    "std": 0.5
-   },
-   "ros": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.17,
-    "tgt_share": 0.038,
-    "carry_share": 0.08,
-    "ay_share": 0.01,
-    "targets": 2.0,
-    "carries": 2.0,
-    "pts": 1.2
    },
    "adds": null,
    "drops": null,
@@ -17155,6 +16854,49 @@
     "targets": 0.0,
     "carries": 0.0,
     "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "2359",
+   "name": "Ameer Abdullah",
+   "pos": "RB",
+   "team": "JAX",
+   "injury": null,
+   "bye": 7,
+   "opp": "DEN",
+   "proj": {
+    "ppr": 0.3,
+    "half_ppr": 0.2,
+    "std": 0.2
+   },
+   "next3": {
+    "ppr": 0.9,
+    "half_ppr": 0.8,
+    "std": 0.6
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.09,
+    "tgt_share": 0.048,
+    "carry_share": 0.125,
+    "ay_share": -0.012,
+    "targets": 1.0,
+    "carries": 4.0,
+    "pts": 4.2
    },
    "adds": null,
    "drops": null,
@@ -17253,6 +16995,350 @@
    "mine": []
   },
   {
+   "id": "13277",
+   "name": "CJ Donaldson",
+   "pos": "RB",
+   "team": "NO",
+   "injury": null,
+   "bye": 8,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.7,
+    "half_ppr": 0.6,
+    "std": 0.5
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.17,
+    "tgt_share": 0.038,
+    "carry_share": 0.08,
+    "ay_share": 0.01,
+    "targets": 2.0,
+    "carries": 2.0,
+    "pts": 1.2
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7039",
+   "name": "Cody White",
+   "pos": "WR",
+   "team": "LV",
+   "injury": null,
+   "bye": 13,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.7,
+    "half_ppr": 0.6,
+    "std": 0.4
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.2,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.16,
+    "tgt_share": 0.034,
+    "carry_share": 0.0,
+    "ay_share": 0.013,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "4995",
+   "name": "Ian Thomas",
+   "pos": "TE",
+   "team": "LV",
+   "injury": null,
+   "bye": 13,
+   "opp": "LAC",
+   "proj": {
+    "ppr": 0.3,
+    "half_ppr": 0.2,
+    "std": 0.1
+   },
+   "next3": {
+    "ppr": 0.9,
+    "half_ppr": 0.7,
+    "std": 0.5
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.2,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.46,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "12539",
+   "name": "Arian Smith",
+   "pos": "WR",
+   "team": "NYJ",
+   "injury": null,
+   "bye": 13,
+   "opp": "GB",
+   "proj": {
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "next3": {
+    "ppr": 1.0,
+    "half_ppr": 0.9,
+    "std": 0.7
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.03,
+    "tgt_share": 0.043,
+    "carry_share": 0.0,
+    "ay_share": 0.024,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11573",
+   "name": "Frank Gore",
+   "pos": "RB",
+   "team": "BUF",
+   "injury": null,
+   "bye": 7,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.8,
+    "half_ppr": 0.7,
+    "std": 0.6
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.19,
+    "tgt_share": 0.0,
+    "carry_share": 0.048,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 1.0,
+    "pts": 0.3
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8219",
+   "name": "Jelani Woods",
+   "pos": "TE",
+   "team": "NYJ",
+   "injury": null,
+   "bye": 13,
+   "opp": "GB",
+   "proj": {
+    "ppr": 0.3,
+    "half_ppr": 0.2,
+    "std": 0.2
+   },
+   "next3": {
+    "ppr": 0.9,
+    "half_ppr": 0.8,
+    "std": 0.6
+   },
+   "ros": {
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.24,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "12817",
+   "name": "Jake Briningstool",
+   "pos": "TE",
+   "team": "KC",
+   "injury": null,
+   "bye": 5,
+   "opp": "IND",
+   "proj": {
+    "ppr": 0.2,
+    "half_ppr": 0.2,
+    "std": 0.1
+   },
+   "next3": {
+    "ppr": 0.7,
+    "half_ppr": 0.6,
+    "std": 0.4
+   },
+   "ros": {
+    "ppr": 0.2,
+    "half_ppr": 0.2,
+    "std": 0.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.19,
+    "tgt_share": 0.04,
+    "carry_share": 0.0,
+    "ay_share": 0.03,
+    "targets": 1.0,
+    "carries": 0.0,
+    "pts": 1.9
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13433",
+   "name": "Riley Nowakowski",
+   "pos": "TE",
+   "team": "PIT",
+   "injury": null,
+   "bye": 9,
+   "opp": "NE",
+   "proj": {
+    "ppr": 0.2,
+    "half_ppr": 0.2,
+    "std": 0.1
+   },
+   "next3": {
+    "ppr": 0.6,
+    "half_ppr": 0.5,
+    "std": 0.4
+   },
+   "ros": {
+    "ppr": 0.2,
+    "half_ppr": 0.2,
+    "std": 0.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.12,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
    "id": "11157",
    "name": "Brycen Tremayne",
    "pos": "WR",
@@ -17283,6 +17369,49 @@
     "ay_share": 0.0,
     "targets": 0.0,
     "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8200",
+   "name": "Kevin Austin",
+   "pos": "WR",
+   "team": "NO",
+   "injury": null,
+   "bye": 8,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.5,
+    "half_ppr": 0.4,
+    "std": 0.3
+   },
+   "ros": {
+    "ppr": 0.2,
+    "half_ppr": 0.2,
+    "std": 0.1
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.06,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
     "pts": 0.0
    },
    "adds": null,
@@ -17370,135 +17499,6 @@
     "targets": 2.0,
     "carries": 0.0,
     "pts": 3.5
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8200",
-   "name": "Kevin Austin",
-   "pos": "WR",
-   "team": "NO",
-   "injury": null,
-   "bye": 8,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.5,
-    "half_ppr": 0.4,
-    "std": 0.3
-   },
-   "ros": {
-    "ppr": 0.2,
-    "half_ppr": 0.2,
-    "std": 0.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.06,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13433",
-   "name": "Riley Nowakowski",
-   "pos": "TE",
-   "team": "PIT",
-   "injury": null,
-   "bye": 9,
-   "opp": "NE",
-   "proj": {
-    "ppr": 0.2,
-    "half_ppr": 0.2,
-    "std": 0.1
-   },
-   "next3": {
-    "ppr": 0.6,
-    "half_ppr": 0.5,
-    "std": 0.4
-   },
-   "ros": {
-    "ppr": 0.2,
-    "half_ppr": 0.2,
-    "std": 0.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.12,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12817",
-   "name": "Jake Briningstool",
-   "pos": "TE",
-   "team": "KC",
-   "injury": null,
-   "bye": 5,
-   "opp": "IND",
-   "proj": {
-    "ppr": 0.2,
-    "half_ppr": 0.2,
-    "std": 0.1
-   },
-   "next3": {
-    "ppr": 0.7,
-    "half_ppr": 0.6,
-    "std": 0.4
-   },
-   "ros": {
-    "ppr": 0.2,
-    "half_ppr": 0.2,
-    "std": 0.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.19,
-    "tgt_share": 0.04,
-    "carry_share": 0.0,
-    "ay_share": 0.03,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 1.9
    },
    "adds": null,
    "drops": null,
@@ -17633,49 +17633,6 @@
    "mine": []
   },
   {
-   "id": "13308",
-   "name": "Bauer Sharp",
-   "pos": "TE",
-   "team": "TB",
-   "injury": null,
-   "bye": 10,
-   "opp": "CLE",
-   "proj": {
-    "ppr": 0.1,
-    "half_ppr": 0.1,
-    "std": 0.1
-   },
-   "next3": {
-    "ppr": 0.3,
-    "half_ppr": 0.3,
-    "std": 0.2
-   },
-   "ros": {
-    "ppr": 0.1,
-    "half_ppr": 0.1,
-    "std": 0.1
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.02,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "13075",
    "name": "Myles Price",
    "pos": "WR",
@@ -17762,22 +17719,22 @@
    "mine": []
   },
   {
-   "id": "11616",
-   "name": "Jacob Cowing",
-   "pos": "WR",
-   "team": "SF",
+   "id": "13308",
+   "name": "Bauer Sharp",
+   "pos": "TE",
+   "team": "TB",
    "injury": null,
-   "bye": 8,
-   "opp": "MIA",
+   "bye": 10,
+   "opp": "CLE",
    "proj": {
-    "ppr": 0.6,
-    "half_ppr": 0.5,
-    "std": 0.4
+    "ppr": 0.1,
+    "half_ppr": 0.1,
+    "std": 0.1
    },
    "next3": {
-    "ppr": 0.7,
-    "half_ppr": 0.5,
-    "std": 0.4
+    "ppr": 0.3,
+    "half_ppr": 0.3,
+    "std": 0.2
    },
    "ros": {
     "ppr": 0.1,
@@ -17786,7 +17743,7 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.08,
+    "snap": 0.02,
     "tgt_share": 0.0,
     "carry_share": 0.0,
     "ay_share": 0.0,
@@ -17848,117 +17805,31 @@
    "mine": []
   },
   {
-   "id": "7521",
-   "name": "Chris Blair",
+   "id": "11616",
+   "name": "Jacob Cowing",
    "pos": "WR",
-   "team": "ATL",
+   "team": "SF",
    "injury": null,
-   "bye": 11,
-   "opp": null,
+   "bye": 8,
+   "opp": "MIA",
    "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
+    "ppr": 0.6,
+    "half_ppr": 0.5,
+    "std": 0.4
    },
    "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
+    "ppr": 0.7,
+    "half_ppr": 0.5,
+    "std": 0.4
    },
    "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
+    "ppr": 0.1,
+    "half_ppr": 0.1,
+    "std": 0.1
    },
    "usage": {
     "g": 1,
-    "snap": 0.17,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8755",
-   "name": "Kaden Davis",
-   "pos": "WR",
-   "team": "CHI",
-   "injury": null,
-   "bye": 10,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.13,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 1.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11273",
-   "name": "Ben VanSumeren",
-   "pos": "RB",
-   "team": "KC",
-   "injury": null,
-   "bye": 5,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.04,
+    "snap": 0.08,
     "tgt_share": 0.0,
     "carry_share": 0.0,
     "ay_share": 0.0,
@@ -18020,49 +17891,6 @@
    "mine": []
   },
   {
-   "id": "10857",
-   "name": "Stetson Bennett",
-   "pos": "QB",
-   "team": "LAR",
-   "injury": null,
-   "bye": 11,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.16,
-    "tgt_share": 0.0,
-    "carry_share": 0.034,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 1.0,
-    "pts": 1.4
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
    "id": "13329",
    "name": "Malik Benson",
    "pos": "WR",
@@ -18106,12 +17934,98 @@
    "mine": []
   },
   {
-   "id": "7812",
-   "name": "Simi Fehoko",
-   "pos": "WR",
-   "team": "ARI",
+   "id": "12765",
+   "name": "Keleki Latu",
+   "pos": "TE",
+   "team": "BUF",
    "injury": null,
-   "bye": 14,
+   "bye": 7,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.07,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "13554",
+   "name": "CJ Williams",
+   "pos": "WR",
+   "team": "JAX",
+   "injury": null,
+   "bye": 7,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.18,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8523",
+   "name": "Nick Muse",
+   "pos": "TE",
+   "team": "ATL",
+   "injury": null,
+   "bye": 11,
    "opp": null,
    "proj": {
     "ppr": 0.0,
@@ -18137,6 +18051,49 @@
     "targets": 0.0,
     "carries": 0.0,
     "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11280",
+   "name": "Brady Russell",
+   "pos": "RB",
+   "team": "SEA",
+   "injury": null,
+   "bye": 11,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.34,
+    "tgt_share": 0.083,
+    "carry_share": 0.0,
+    "ay_share": 0.039,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 4.0
    },
    "adds": null,
    "drops": null,
@@ -18192,12 +18149,12 @@
    "mine": []
   },
   {
-   "id": "7535",
-   "name": "Hunter Long",
-   "pos": "TE",
-   "team": "ARI",
+   "id": "5773",
+   "name": "KhaDarel Hodge",
+   "pos": "WR",
+   "team": "SF",
    "injury": null,
-   "bye": 14,
+   "bye": 8,
    "opp": null,
    "proj": {
     "ppr": 0.0,
@@ -18216,7 +18173,7 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.35,
+    "snap": 0.02,
     "tgt_share": 0.0,
     "carry_share": 0.0,
     "ay_share": 0.0,
@@ -18278,12 +18235,12 @@
    "mine": []
   },
   {
-   "id": "12969",
-   "name": "Lan Larison",
+   "id": "6323",
+   "name": "Andrew Beck",
    "pos": "RB",
-   "team": "NE",
+   "team": "NYJ",
    "injury": null,
-   "bye": 11,
+   "bye": 13,
    "opp": null,
    "proj": {
     "ppr": 0.0,
@@ -18302,13 +18259,99 @@
    },
    "usage": {
     "g": 1,
-    "snap": 0.04,
-    "tgt_share": 0.065,
+    "snap": 0.13,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7591",
+   "name": "Justin Fields",
+   "pos": "QB",
+   "team": "KC",
+   "injury": null,
+   "bye": 5,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.01,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "3155",
+   "name": "Laquon Treadwell",
+   "pos": "WR",
+   "team": "IND",
+   "injury": null,
+   "bye": 13,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.35,
+    "tgt_share": 0.034,
     "carry_share": 0.0,
-    "ay_share": -0.014,
-    "targets": 2.0,
+    "ay_share": 0.02,
+    "targets": 1.0,
     "carries": 0.0,
-    "pts": 2.9
+    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -18352,6 +18395,479 @@
     "targets": 1.0,
     "carries": 0.0,
     "pts": 2.2
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8122",
+   "name": "Zonovan Knight",
+   "pos": "RB",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.04,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7812",
+   "name": "Simi Fehoko",
+   "pos": "WR",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.08,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11304",
+   "name": "E.J. Jenkins",
+   "pos": "TE",
+   "team": "PHI",
+   "injury": null,
+   "bye": 10,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.02,
+    "tgt_share": null,
+    "carry_share": null,
+    "ay_share": null,
+    "targets": null,
+    "carries": null,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "10857",
+   "name": "Stetson Bennett",
+   "pos": "QB",
+   "team": "LAR",
+   "injury": null,
+   "bye": 11,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.16,
+    "tgt_share": 0.0,
+    "carry_share": 0.034,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 1.0,
+    "pts": 1.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7535",
+   "name": "Hunter Long",
+   "pos": "TE",
+   "team": "ARI",
+   "injury": null,
+   "bye": 14,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.35,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "12969",
+   "name": "Lan Larison",
+   "pos": "RB",
+   "team": "NE",
+   "injury": null,
+   "bye": 11,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.04,
+    "tgt_share": 0.065,
+    "carry_share": 0.0,
+    "ay_share": -0.014,
+    "targets": 2.0,
+    "carries": 0.0,
+    "pts": 2.9
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11273",
+   "name": "Ben VanSumeren",
+   "pos": "RB",
+   "team": "KC",
+   "injury": null,
+   "bye": 5,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.04,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "11942",
+   "name": "Colson Yankoff",
+   "pos": "TE",
+   "team": "WAS",
+   "injury": null,
+   "bye": 7,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.03,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8160",
+   "name": "Kenny Pickett",
+   "pos": "QB",
+   "team": "CAR",
+   "injury": null,
+   "bye": 5,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.1,
+    "tgt_share": 0.0,
+    "carry_share": 0.045,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 1.0,
+    "pts": 2.4
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "8755",
+   "name": "Kaden Davis",
+   "pos": "WR",
+   "team": "CHI",
+   "injury": null,
+   "bye": 10,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.13,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 1.0
+   },
+   "adds": null,
+   "drops": null,
+   "free": [
+    "1398428734666579968",
+    "1191912",
+    "1395811",
+    "1508881"
+   ],
+   "mine": []
+  },
+  {
+   "id": "7521",
+   "name": "Chris Blair",
+   "pos": "WR",
+   "team": "ATL",
+   "injury": null,
+   "bye": 11,
+   "opp": null,
+   "proj": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "next3": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "ros": {
+    "ppr": 0.0,
+    "half_ppr": 0.0,
+    "std": 0.0
+   },
+   "usage": {
+    "g": 1,
+    "snap": 0.17,
+    "tgt_share": 0.0,
+    "carry_share": 0.0,
+    "ay_share": 0.0,
+    "targets": 0.0,
+    "carries": 0.0,
+    "pts": 0.0
    },
    "adds": null,
    "drops": null,
@@ -18432,522 +18948,6 @@
    "usage": {
     "g": 1,
     "snap": 0.11,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8122",
-   "name": "Zonovan Knight",
-   "pos": "RB",
-   "team": "ARI",
-   "injury": null,
-   "bye": 14,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.04,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "7591",
-   "name": "Justin Fields",
-   "pos": "QB",
-   "team": "KC",
-   "injury": null,
-   "bye": 5,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.01,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "5773",
-   "name": "KhaDarel Hodge",
-   "pos": "WR",
-   "team": "SF",
-   "injury": null,
-   "bye": 8,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.02,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11304",
-   "name": "E.J. Jenkins",
-   "pos": "TE",
-   "team": "PHI",
-   "injury": null,
-   "bye": 10,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.02,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "13554",
-   "name": "CJ Williams",
-   "pos": "WR",
-   "team": "JAX",
-   "injury": null,
-   "bye": 7,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.18,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "6323",
-   "name": "Andrew Beck",
-   "pos": "RB",
-   "team": "NYJ",
-   "injury": null,
-   "bye": 13,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.13,
-    "tgt_share": null,
-    "carry_share": null,
-    "ay_share": null,
-    "targets": null,
-    "carries": null,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "12765",
-   "name": "Keleki Latu",
-   "pos": "TE",
-   "team": "BUF",
-   "injury": null,
-   "bye": 7,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.07,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11280",
-   "name": "Brady Russell",
-   "pos": "RB",
-   "team": "SEA",
-   "injury": null,
-   "bye": 11,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.34,
-    "tgt_share": 0.083,
-    "carry_share": 0.0,
-    "ay_share": 0.039,
-    "targets": 2.0,
-    "carries": 0.0,
-    "pts": 4.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "3155",
-   "name": "Laquon Treadwell",
-   "pos": "WR",
-   "team": "IND",
-   "injury": null,
-   "bye": 13,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.35,
-    "tgt_share": 0.034,
-    "carry_share": 0.0,
-    "ay_share": 0.02,
-    "targets": 1.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8160",
-   "name": "Kenny Pickett",
-   "pos": "QB",
-   "team": "CAR",
-   "injury": null,
-   "bye": 5,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.1,
-    "tgt_share": 0.0,
-    "carry_share": 0.045,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 1.0,
-    "pts": 2.4
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "11942",
-   "name": "Colson Yankoff",
-   "pos": "TE",
-   "team": "WAS",
-   "injury": null,
-   "bye": 7,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.03,
-    "tgt_share": 0.0,
-    "carry_share": 0.0,
-    "ay_share": 0.0,
-    "targets": 0.0,
-    "carries": 0.0,
-    "pts": 0.0
-   },
-   "adds": null,
-   "drops": null,
-   "free": [
-    "1398428734666579968",
-    "1191912",
-    "1395811",
-    "1508881"
-   ],
-   "mine": []
-  },
-  {
-   "id": "8523",
-   "name": "Nick Muse",
-   "pos": "TE",
-   "team": "ATL",
-   "injury": null,
-   "bye": 11,
-   "opp": null,
-   "proj": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "next3": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "ros": {
-    "ppr": 0.0,
-    "half_ppr": 0.0,
-    "std": 0.0
-   },
-   "usage": {
-    "g": 1,
-    "snap": 0.08,
     "tgt_share": 0.0,
     "carry_share": 0.0,
     "ay_share": 0.0,
