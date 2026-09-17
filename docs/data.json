@@ -1,0 +1,1075 @@
+{
+ "generated_at": "2026-09-17T18:00:25+00:00",
+ "season": "2026",
+ "week": 2,
+ "short_weeks": [
+  2,
+  3,
+  4
+ ],
+ "long_weeks": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "leagues": [
+  {
+   "platform": "sleeper",
+   "id": "1398428734666579968",
+   "name": "New York's Finest",
+   "team_name": "Shu Not Disturb",
+   "url": "https://sleeper.com/leagues/1398428734666579968/team",
+   "record": "1-0",
+   "points_for": 117.9,
+   "rank": 5,
+   "teams": 12,
+   "scoring": "ppr",
+   "slots": {
+    "QB": 1,
+    "RB": 2,
+    "WR": 2,
+    "TE": 1,
+    "FLEX": 1,
+    "K": 1
+   },
+   "bench": 7,
+   "ir_slots": 2,
+   "waiver": {
+    "priority": 6,
+    "faab_left": 100
+   },
+   "alerts": [
+    {
+     "level": "medium",
+     "text": "Ladd McConkey is Questionable. Check before kickoff"
+    }
+   ],
+   "moves": [],
+   "watch": [
+    {
+     "id": "7049",
+     "name": "Jauan Jennings",
+     "pos": "WR",
+     "team": "MIN",
+     "injury": null,
+     "bye": 6,
+     "opp": "CHI",
+     "proj": 9.1,
+     "next": [
+      9.1,
+      8.8,
+      9.0
+     ],
+     "ros": 8.6,
+     "last": {
+      "w": 1,
+      "pts": 0.0,
+      "snap": 0.48,
+      "touches": 1
+     },
+     "adds": 107982,
+     "drops": 94969,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "108K adds in 48h"
+      }
+     ]
+    },
+    {
+     "id": "6804",
+     "name": "Jordan Love",
+     "pos": "QB",
+     "team": "GB",
+     "injury": null,
+     "bye": 11,
+     "opp": "NYJ",
+     "proj": 19.6,
+     "next": [
+      19.6,
+      18.4,
+      18.8
+     ],
+     "ros": 18.7,
+     "last": {
+      "w": 1,
+      "pts": 20.5,
+      "snap": 1.0,
+      "touches": 1
+     },
+     "adds": 38395,
+     "drops": null,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "38K adds in 48h"
+      }
+     ]
+    },
+    {
+     "id": "9480",
+     "name": "Brenton Strange",
+     "pos": "TE",
+     "team": "JAX",
+     "injury": null,
+     "bye": 7,
+     "opp": "DEN",
+     "proj": 7.9,
+     "next": [
+      7.9,
+      8.8,
+      9.2
+     ],
+     "ros": 8.3,
+     "last": {
+      "w": 1,
+      "pts": 10.3,
+      "snap": 0.68,
+      "touches": 3
+     },
+     "adds": 75861,
+     "drops": 122679,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "76K adds in 48h"
+      },
+      {
+       "kind": "usage",
+       "text": "68% of snaps in Wk 1"
+      }
+     ]
+    },
+    {
+     "id": "1479",
+     "name": "Keenan Allen",
+     "pos": "WR",
+     "team": "IND",
+     "injury": null,
+     "bye": 13,
+     "opp": "KC",
+     "proj": 7.3,
+     "next": [
+      7.3,
+      7.3,
+      9.1
+     ],
+     "ros": 8.0,
+     "last": {
+      "w": 1,
+      "pts": 9.2,
+      "snap": 0.67,
+      "touches": 6
+     },
+     "adds": 33956,
+     "drops": 70292,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "34K adds in 48h"
+      },
+      {
+       "kind": "usage",
+       "text": "67% of snaps in Wk 1"
+      }
+     ]
+    },
+    {
+     "id": "5001",
+     "name": "Dalton Schultz",
+     "pos": "TE",
+     "team": "HOU",
+     "injury": null,
+     "bye": 8,
+     "opp": "CIN",
+     "proj": 9.8,
+     "next": [
+      9.8,
+      9.4,
+      10.6
+     ],
+     "ros": 9.4,
+     "last": {
+      "w": 1,
+      "pts": 7.5,
+      "snap": 0.66,
+      "touches": 8
+     },
+     "adds": null,
+     "drops": null,
+     "tags": [
+      {
+       "kind": "usage",
+       "text": "66% of snaps in Wk 1"
+      }
+     ]
+    },
+    {
+     "id": "9758",
+     "name": "C.J. Stroud",
+     "pos": "QB",
+     "team": "HOU",
+     "injury": null,
+     "bye": 8,
+     "opp": "CIN",
+     "proj": 17.9,
+     "next": [
+      17.9,
+      15.3,
+      18.2
+     ],
+     "ros": 16.5,
+     "last": {
+      "w": 1,
+      "pts": 16.5,
+      "snap": 1.0,
+      "touches": 2
+     },
+     "adds": 178801,
+     "drops": null,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "179K adds in 48h"
+      }
+     ]
+    },
+    {
+     "id": "4147",
+     "name": "Samaje Perine",
+     "pos": "RB",
+     "team": "CIN",
+     "injury": null,
+     "bye": 6,
+     "opp": "HOU",
+     "proj": 5.2,
+     "next": [
+      5.2,
+      5.1,
+      5.1
+     ],
+     "ros": 5.5,
+     "last": {
+      "w": 1,
+      "pts": 8.0,
+      "snap": 0.28,
+      "touches": 8
+     },
+     "adds": 54088,
+     "drops": null,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "54K adds in 48h"
+      }
+     ]
+    },
+    {
+     "id": "5995",
+     "name": "Justice Hill",
+     "pos": "RB",
+     "team": "BAL",
+     "injury": null,
+     "bye": 13,
+     "opp": "NO",
+     "proj": 5.2,
+     "next": [
+      5.2,
+      6.0,
+      5.9
+     ],
+     "ros": 5.5,
+     "last": {
+      "w": 1,
+      "pts": 3.8,
+      "snap": 0.46,
+      "touches": 7
+     },
+     "adds": 35460,
+     "drops": 64053,
+     "tags": [
+      {
+       "kind": "trend",
+       "text": "35K adds in 48h"
+      }
+     ]
+    }
+   ],
+   "drop_candidates": [
+    {
+     "id": "11655",
+     "name": "Tyrone Tracy",
+     "pos": "RB",
+     "team": "NYG",
+     "injury": "Questionable",
+     "bye": 8,
+     "opp": "LAR",
+     "proj": 1.9,
+     "next": [
+      1.9,
+      3.0,
+      2.8
+     ],
+     "ros": 2.5,
+     "last": {
+      "w": 1,
+      "pts": -0.6,
+      "snap": 0.03,
+      "touches": 2
+     },
+     "adds": null,
+     "drops": 118414
+    },
+    {
+     "id": "6130",
+     "name": "Devin Singletary",
+     "pos": "RB",
+     "team": "NYG",
+     "injury": null,
+     "bye": 8,
+     "opp": "LAR",
+     "proj": 3.4,
+     "next": [
+      3.4,
+      4.2,
+      4.0
+     ],
+     "ros": 3.7,
+     "last": {
+      "w": 1,
+      "pts": 13.8,
+      "snap": 0.36,
+      "touches": 10
+     },
+     "adds": 1924182,
+     "drops": 139545
+    },
+    {
+     "id": "12489",
+     "name": "RJ Harvey",
+     "pos": "RB",
+     "team": "DEN",
+     "injury": "Questionable",
+     "bye": 10,
+     "opp": "JAX",
+     "proj": 9.3,
+     "next": [
+      9.3,
+      9.6,
+      10.4
+     ],
+     "ros": 9.8,
+     "last": {
+      "w": 1,
+      "pts": 8.1,
+      "snap": 0.51,
+      "touches": 7
+     },
+     "adds": null,
+     "drops": null
+    }
+   ],
+   "roster": [
+    {
+     "id": "8183",
+     "name": "Brock Purdy",
+     "pos": "QB",
+     "team": "SF",
+     "injury": null,
+     "bye": 8,
+     "opp": "MIA",
+     "proj": 20.0,
+     "next": [
+      20.0,
+      19.0,
+      16.7
+     ],
+     "ros": 18.7,
+     "last": {
+      "w": 1,
+      "pts": 22.1,
+      "snap": 1.0,
+      "touches": 5
+     },
+     "adds": 117056,
+     "drops": null,
+     "slot": "QB",
+     "optimal": true
+    },
+    {
+     "id": "4034",
+     "name": "Christian McCaffrey",
+     "pos": "RB",
+     "team": "SF",
+     "injury": null,
+     "bye": 8,
+     "opp": "MIA",
+     "proj": 19.8,
+     "next": [
+      19.8,
+      20.1,
+      16.5
+     ],
+     "ros": 18.7,
+     "last": {
+      "w": 1,
+      "pts": 13.8,
+      "snap": 0.55,
+      "touches": 18
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "RB",
+     "optimal": true
+    },
+    {
+     "id": "8150",
+     "name": "Kyren Williams",
+     "pos": "RB",
+     "team": "LAR",
+     "injury": null,
+     "bye": 11,
+     "opp": "NYG",
+     "proj": 17.0,
+     "next": [
+      17.0,
+      12.6,
+      13.1
+     ],
+     "ros": 14.7,
+     "last": {
+      "w": 1,
+      "pts": 15.5,
+      "snap": 0.64,
+      "touches": 14
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "RB",
+     "optimal": true
+    },
+    {
+     "id": "11635",
+     "name": "Ladd McConkey",
+     "pos": "WR",
+     "team": "LAC",
+     "injury": "Questionable",
+     "bye": 7,
+     "opp": "LV",
+     "proj": 13.1,
+     "next": [
+      13.1,
+      12.6,
+      12.0
+     ],
+     "ros": 12.6,
+     "last": {
+      "w": 1,
+      "pts": 19.2,
+      "snap": 0.49,
+      "touches": 7
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "WR",
+     "optimal": true
+    },
+    {
+     "id": "12519",
+     "name": "Luther Burden",
+     "pos": "WR",
+     "team": "CHI",
+     "injury": null,
+     "bye": 10,
+     "opp": "MIN",
+     "proj": 11.2,
+     "next": [
+      11.2,
+      11.2,
+      13.4
+     ],
+     "ros": 12.4,
+     "last": {
+      "w": 1,
+      "pts": 9.5,
+      "snap": 0.73,
+      "touches": 6
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "WR",
+     "optimal": true
+    },
+    {
+     "id": "9484",
+     "name": "Tucker Kraft",
+     "pos": "TE",
+     "team": "GB",
+     "injury": null,
+     "bye": 11,
+     "opp": "NYJ",
+     "proj": 11.8,
+     "next": [
+      11.8,
+      12.8,
+      13.3
+     ],
+     "ros": 13.0,
+     "last": {
+      "w": 1,
+      "pts": 9.5,
+      "snap": 0.66,
+      "touches": 6
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "TE",
+     "optimal": true
+    },
+    {
+     "id": "11584",
+     "name": "Bucky Irving",
+     "pos": "RB",
+     "team": "TB",
+     "injury": null,
+     "bye": 10,
+     "opp": "CLE",
+     "proj": 13.8,
+     "next": [
+      13.8,
+      12.4,
+      13.5
+     ],
+     "ros": 14.1,
+     "last": {
+      "w": 1,
+      "pts": 20.3,
+      "snap": 0.61,
+      "touches": 15
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "FLEX",
+     "optimal": true
+    },
+    {
+     "id": "3451",
+     "name": "Ka'imi Fairbairn",
+     "pos": "K",
+     "team": "HOU",
+     "injury": null,
+     "bye": 8,
+     "opp": "CIN",
+     "proj": 7.3,
+     "next": [
+      7.3,
+      6.9,
+      6.9
+     ],
+     "ros": 7.0,
+     "last": {
+      "w": 1,
+      "pts": 9.0,
+      "snap": null,
+      "touches": 0
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "K",
+     "optimal": true
+    },
+    {
+     "id": "421",
+     "name": "Matthew Stafford",
+     "pos": "QB",
+     "team": "LAR",
+     "injury": null,
+     "bye": 11,
+     "opp": "NYG",
+     "proj": 16.8,
+     "next": [
+      16.8,
+      15.1,
+      15.6
+     ],
+     "ros": 16.6,
+     "last": {
+      "w": 1,
+      "pts": 5.1,
+      "snap": 0.84,
+      "touches": 2
+     },
+     "adds": null,
+     "drops": 145917,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "12533",
+     "name": "Jacory Croskey-Merritt",
+     "pos": "RB",
+     "team": "WAS",
+     "injury": null,
+     "bye": 7,
+     "opp": "DAL",
+     "proj": 12.5,
+     "next": [
+      12.5,
+      9.8,
+      11.4
+     ],
+     "ros": 11.4,
+     "last": {
+      "w": 1,
+      "pts": 12.6,
+      "snap": 0.49,
+      "touches": 17
+     },
+     "adds": 219438,
+     "drops": null,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "3214",
+     "name": "Hunter Henry",
+     "pos": "TE",
+     "team": "NE",
+     "injury": null,
+     "bye": 11,
+     "opp": "PIT",
+     "proj": 10.2,
+     "next": [
+      10.2,
+      9.7,
+      9.9
+     ],
+     "ros": 10.3,
+     "last": {
+      "w": 1,
+      "pts": 5.6,
+      "snap": 0.76,
+      "touches": 3
+     },
+     "adds": 48909,
+     "drops": null,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "8110",
+     "name": "Jake Ferguson",
+     "pos": "TE",
+     "team": "DAL",
+     "injury": null,
+     "bye": 14,
+     "opp": "WAS",
+     "proj": 10.0,
+     "next": [
+      10.0,
+      9.7,
+      9.1
+     ],
+     "ros": 9.7,
+     "last": {
+      "w": 1,
+      "pts": 2.6,
+      "snap": 0.76,
+      "touches": 2
+     },
+     "adds": null,
+     "drops": 121585,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "12489",
+     "name": "RJ Harvey",
+     "pos": "RB",
+     "team": "DEN",
+     "injury": "Questionable",
+     "bye": 10,
+     "opp": "JAX",
+     "proj": 9.3,
+     "next": [
+      9.3,
+      9.6,
+      10.4
+     ],
+     "ros": 9.8,
+     "last": {
+      "w": 1,
+      "pts": 8.1,
+      "snap": 0.51,
+      "touches": 7
+     },
+     "adds": null,
+     "drops": null,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "6130",
+     "name": "Devin Singletary",
+     "pos": "RB",
+     "team": "NYG",
+     "injury": null,
+     "bye": 8,
+     "opp": "LAR",
+     "proj": 3.4,
+     "next": [
+      3.4,
+      4.2,
+      4.0
+     ],
+     "ros": 3.7,
+     "last": {
+      "w": 1,
+      "pts": 13.8,
+      "snap": 0.36,
+      "touches": 10
+     },
+     "adds": 1924182,
+     "drops": 139545,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "11655",
+     "name": "Tyrone Tracy",
+     "pos": "RB",
+     "team": "NYG",
+     "injury": "Questionable",
+     "bye": 8,
+     "opp": "LAR",
+     "proj": 1.9,
+     "next": [
+      1.9,
+      3.0,
+      2.8
+     ],
+     "ros": 2.5,
+     "last": {
+      "w": 1,
+      "pts": -0.6,
+      "snap": 0.03,
+      "touches": 2
+     },
+     "adds": null,
+     "drops": 118414,
+     "slot": "BN",
+     "optimal": false
+    },
+    {
+     "id": "13281",
+     "name": "Jordyn Tyson",
+     "pos": "WR",
+     "team": "NO",
+     "injury": "IR",
+     "bye": 8,
+     "opp": null,
+     "proj": 0.0,
+     "next": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "ros": 4.1,
+     "last": {
+      "w": 1,
+      "pts": 0.0,
+      "snap": null,
+      "touches": 0
+     },
+     "adds": null,
+     "drops": 78112,
+     "slot": "IR",
+     "optimal": false
+    }
+   ],
+   "projected": 114.0
+  },
+  {
+   "platform": "espn",
+   "id": "1191912",
+   "name": "ESPN league 1191912",
+   "error": "This ESPN league is private. Add the ESPN_S2 and ESPN_SWID secrets to load it.",
+   "needs_login": true
+  },
+  {
+   "platform": "espn",
+   "id": "1395811",
+   "name": "ESPN league 1395811",
+   "error": "This ESPN league is private. Add the ESPN_S2 and ESPN_SWID secrets to load it.",
+   "needs_login": true
+  },
+  {
+   "platform": "espn",
+   "id": "1508881",
+   "name": "ESPN league 1508881",
+   "error": "This ESPN league is private. Add the ESPN_S2 and ESPN_SWID secrets to load it.",
+   "needs_login": true
+  }
+ ],
+ "trending": [
+  {
+   "id": "11834",
+   "name": "Devaughn Vele",
+   "pos": "WR",
+   "team": "NO",
+   "injury": null,
+   "adds": 2447207,
+   "available": []
+  },
+  {
+   "id": "13296",
+   "name": "Caleb Douglas",
+   "pos": "WR",
+   "team": "MIA",
+   "injury": null,
+   "adds": 2148512,
+   "available": []
+  },
+  {
+   "id": "6130",
+   "name": "Devin Singletary",
+   "pos": "RB",
+   "team": "NYG",
+   "injury": null,
+   "adds": 1924182,
+   "available": []
+  },
+  {
+   "id": "TB",
+   "name": "Buccaneers D/ST",
+   "pos": "DEF",
+   "team": "TB",
+   "injury": null,
+   "adds": 1797090,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "13414",
+   "name": "Kaelon Black",
+   "pos": "RB",
+   "team": "SF",
+   "injury": null,
+   "adds": 1272845,
+   "available": []
+  },
+  {
+   "id": "12472",
+   "name": "Raheim Sanders",
+   "pos": "RB",
+   "team": "CLE",
+   "injury": null,
+   "adds": 1108288,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "3161",
+   "name": "Carson Wentz",
+   "pos": "QB",
+   "team": "MIN",
+   "injury": null,
+   "adds": 1029138,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "SF",
+   "name": "49ers D/ST",
+   "pos": "DEF",
+   "team": "SF",
+   "injury": null,
+   "adds": 994428,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "13337",
+   "name": "Emmett Johnson",
+   "pos": "RB",
+   "team": "KC",
+   "injury": null,
+   "adds": 596430,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "3286",
+   "name": "Demarcus Robinson",
+   "pos": "WR",
+   "team": "SF",
+   "injury": null,
+   "adds": 589950,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "12492",
+   "name": "Pat Bryant",
+   "pos": "WR",
+   "team": "DEN",
+   "injury": null,
+   "adds": 550784,
+   "available": []
+  },
+  {
+   "id": "4177",
+   "name": "Mack Hollins",
+   "pos": "WR",
+   "team": "NE",
+   "injury": null,
+   "adds": 471480,
+   "available": []
+  },
+  {
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
+   "injury": null,
+   "adds": 438256,
+   "available": []
+  },
+  {
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
+   "injury": null,
+   "adds": 379953,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "injury": null,
+   "adds": 377493,
+   "available": []
+  },
+  {
+   "id": "9228",
+   "name": "Bryce Young",
+   "pos": "QB",
+   "team": "CAR",
+   "injury": null,
+   "adds": 346020,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "11729",
+   "name": "Sione Vaki",
+   "pos": "RB",
+   "team": "DET",
+   "injury": null,
+   "adds": 331667,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "2020",
+   "name": "Cairo Santos",
+   "pos": "K",
+   "team": "CHI",
+   "injury": null,
+   "adds": 316533,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "injury": null,
+   "adds": 301064,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "12545",
+   "name": "Tyler Shough",
+   "pos": "QB",
+   "team": "NO",
+   "injury": null,
+   "adds": 293184,
+   "available": []
+  },
+  {
+   "id": "12501",
+   "name": "Matthew Golden",
+   "pos": "WR",
+   "team": "GB",
+   "injury": null,
+   "adds": 289772,
+   "available": []
+  },
+  {
+   "id": "3634",
+   "name": "Kalif Raymond",
+   "pos": "WR",
+   "team": "CHI",
+   "injury": null,
+   "adds": 241520,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "injury": null,
+   "adds": 241305,
+   "available": [
+    "1398428734666579968"
+   ]
+  },
+  {
+   "id": "12533",
+   "name": "Jacory Croskey-Merritt",
+   "pos": "RB",
+   "team": "WAS",
+   "injury": null,
+   "adds": 219438,
+   "available": []
+  },
+  {
+   "id": "8134",
+   "name": "Khalil Shakir",
+   "pos": "WR",
+   "team": "BUF",
+   "injury": null,
+   "adds": 204984,
+   "available": []
+  }
+ ],
+ "checked_leagues": [
+  "1398428734666579968"
+ ]
+}

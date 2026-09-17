@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fantasy Dashboard</title>
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🏈</text></svg>">
+<style>
+  :root {
+    --bg: #f4f5f7; --surface: #ffffff; --surface-2: #f8f9fb; --border: #e2e5ea;
+    --text: #15181d; --muted: #646c7a; --accent: #1b7f4b; --accent-soft: #e6f4ec;
+    --high: #c0392b; --high-soft: #fbeae8; --medium: #9a6700; --medium-soft: #fdf4e0;
+    --chip: #eef0f4; --shadow: 0 1px 2px rgba(15,20,30,.06), 0 4px 12px rgba(15,20,30,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216; --surface: #171b21; --surface-2: #1c2129; --border: #272d37;
+      --text: #e8eaee; --muted: #98a1b0; --accent: #46c583; --accent-soft: #14301f;
+      --high: #ff7b6b; --high-soft: #331a18; --medium: #e0b252; --medium-soft: #2e2617;
+      --chip: #232932; --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: 15px; margin: 28px 0 10px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  h3 { font-size: 16px; margin: 0 0 2px; }
+  a { color: inherit; }
+  .muted { color: var(--muted); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  header { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; justify-content: space-between; }
+  header .sub { color: var(--muted); font-size: 13px; }
+
+  nav { display: flex; gap: 6px; overflow-x: auto; margin: 18px -16px 0; padding: 0 16px 4px; scrollbar-width: none; }
+  nav::-webkit-scrollbar { display: none; }
+  nav button {
+    flex: 0 0 auto; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer;
+    background: transparent; border: 1px solid transparent; border-radius: 999px; padding: 7px 14px;
+  }
+  nav button:hover { color: var(--text); }
+  nav button[aria-selected="true"] { background: var(--surface); border-color: var(--border); color: var(--text); box-shadow: var(--shadow); }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+  .league-card { padding: 14px 16px; text-align: left; font: inherit; color: inherit; cursor: pointer; width: 100%; }
+  .league-card:hover { border-color: var(--accent); }
+  .league-card .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .league-card .headline { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+
+  .chip { display: inline-flex; align-items: center; gap: 4px; background: var(--chip); border-radius: 999px;
+          padding: 2px 8px; font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .chip.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .chip.warn { background: var(--high-soft); color: var(--high); }
+
+  .alert { display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .alert:last-child { border-bottom: 0; }
+  .alert .dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 7px; flex: 0 0 auto; background: var(--muted); }
+  .alert.high .dot { background: var(--high); }
+  .alert.medium .dot { background: var(--medium); }
+
+  .move { padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .move:last-child { border-bottom: 0; }
+  .move .gain { color: var(--accent); font-weight: 650; font-size: 13px; }
+  .swap { display: grid; grid-template-columns: 22px 1fr auto; gap: 8px 10px; align-items: center; margin-top: 8px; }
+  .swap .sign { text-align: center; font-weight: 700; color: var(--muted); }
+  .swap .sign.add { color: var(--accent); }
+  .reasons { margin: 10px 0 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+  .reasons li { margin: 2px 0; }
+
+  .player { display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .player img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; background: var(--chip); flex: 0 0 auto; }
+  .player .meta { min-width: 0; }
+  .player .nm { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .player .sm { font-size: 12px; color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--muted); }
+  .tag.trend { background: var(--medium-soft); color: var(--medium); }
+  .tag.opportunity, .tag.usage { background: var(--accent-soft); color: var(--accent); }
+  .tag.injury, .tag.bye { background: var(--high-soft); color: var(--high); }
+
+  .watch-row { display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+  .watch-row:last-child { border-bottom: 0; }
+  .watch-row .figs { text-align: right; font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: right; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 10px 8px; border-bottom: 1px solid var(--border); }
+  th:first-child, td:first-child { text-align: left; padding-left: 16px; }
+  th:nth-child(2), td:nth-child(2) { text-align: left; }
+  th:last-child, td:last-child { padding-right: 16px; }
+  td { text-align: right; padding: 8px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: 0; }
+  tbody tr.bench td { color: var(--muted); }
+  tbody tr.bench td.name-cell .nm { font-weight: 500; }
+  .slot { font-size: 11px; font-weight: 700; letter-spacing: .03em; color: var(--muted); }
+  th.slot-cell, td.slot-cell { width: 44px; padding-right: 0; }
+  .slot.start { color: var(--accent); }
+  .inj { font-size: 11px; font-weight: 700; color: var(--high); }
+  .name-cell { width: 42%; }
+  .empty { padding: 16px; color: var(--muted); font-size: 14px; }
+  .error { padding: 16px; }
+  .error code { background: var(--chip); padding: 1px 6px; border-radius: 5px; font-size: 13px; }
+  footer { margin-top: 40px; font-size: 12px; color: var(--muted); line-height: 1.7; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; }
+  @media (max-width: 640px) {
+    .hide-sm { display: none; }
+    .name-cell { width: auto; }
+    .player img { width: 28px; height: 28px; }
+    .player .nm { max-width: 46vw; }
+    th, td { padding: 8px 6px; }
+    th:first-child, td:first-child { padding-left: 12px; }
+    th:last-child, td:last-child { padding-right: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🏈 Fantasy Dashboard</h1>
+    <div class="sub" id="stamp">Loading…</div>
+  </header>
+  <nav id="tabs" role="tablist"></nav>
+  <main id="view"><p class="muted">Loading your leagues…</p></main>
+  <footer>
+    <p id="method"></p>
+    <p>Data from the Sleeper and ESPN fantasy APIs. Projections are Sleeper's, converted to each league's scoring.
+       This is a personal dashboard and is not affiliated with ESPN or Sleeper.</p>
+  </footer>
+</div>
+
+<script>
+const $ = (sel) => document.querySelector(sel);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const num = (n) => (n ?? 0).toFixed(1);
+const compact = (n) => n >= 1e6 ? (n/1e6).toFixed(1) + "M" : n >= 1e3 ? Math.round(n/1e3) + "K" : String(n);
+
+let DATA = null, active = "overview";
+
+const headshot = (p) => p.pos === "DEF"
+  ? `https://sleepercdn.com/images/team_logos/nfl/${String(p.team || "").toLowerCase()}.png`
+  : `https://sleepercdn.com/content/nfl/players/thumb/${p.id}.jpg`;
+
+function playerCell(p, extra = "") {
+  const inj = p.injury ? ` <span class="inj">${esc(p.injury)}</span>` : "";
+  const line = [p.pos, p.team, p.opp ? "vs " + p.opp : null].filter(Boolean).join(" · ");
+  return `<div class="player">
+    <img loading="lazy" src="${headshot(p)}" alt="" onerror="this.style.visibility='hidden'">
+    <div class="meta"><div class="nm">${esc(p.name)}${inj}</div><div class="sm">${esc(line)}${extra}</div></div>
+  </div>`;
+}
+
+const tagList = (tags) => !tags?.length ? "" :
+  `<div class="tags">${tags.map(t => `<span class="tag ${esc(t.kind)}">${esc(t.text)}</span>`).join("")}</div>`;
+
+function leagueMeta(lg) {
+  const bits = [`${esc(lg.record)} · ${lg.rank} of ${lg.teams}`, esc(lg.scoring.replace("_", " ").toUpperCase())];
+  if (lg.waiver?.faab_left != null) bits.push(`$${lg.waiver.faab_left} FAAB left`);
+  else if (lg.waiver?.priority != null) bits.push(`Waiver #${lg.waiver.priority}`);
+  return bits.join(" &nbsp;·&nbsp; ");
+}
+
+function overview() {
+  const cards = DATA.leagues.map(lg => {
+    if (lg.error) return `<button class="card league-card" data-tab="${esc(lg.id)}">
+        <div class="row"><h3>${esc(lg.name)}</h3><span class="chip warn">needs login</span></div>
+        <div class="sm muted">${esc(lg.error)}</div></button>`;
+    const high = lg.alerts.filter(a => a.level === "high").length;
+    const med = lg.alerts.filter(a => a.level === "medium").length;
+    const chips = [
+      high ? `<span class="chip warn">${high} to fix</span>` : "",
+      med ? `<span class="chip">${med} to check</span>` : "",
+      (!high && !med) ? `<span class="chip on">lineup set</span>` : "",
+    ].join(" ");
+    const top = lg.moves[0]
+      ? `Top move: <strong>+${esc(lg.moves[0].add.name)}</strong>${lg.moves[0].drop ? " for " + esc(lg.moves[0].drop.name) : ""} (+${num(lg.moves[0].gain)})`
+      : lg.watch[0] ? `Watching: <strong>${esc(lg.watch[0].name)}</strong>, ${esc(lg.watch[0].pos)} ${esc(lg.watch[0].team)}`
+      : "No moves suggested";
+    return `<button class="card league-card" data-tab="${esc(lg.id)}">
+      <div class="row"><h3>${esc(lg.team_name)}</h3><span class="num muted">${num(lg.projected)} proj</span></div>
+      <div class="sm muted">${esc(lg.name)} · ${esc(lg.record)} · ${lg.rank} of ${lg.teams}</div>
+      <div style="margin-top:8px">${chips}</div>
+      <div class="headline">${top}</div>
+    </button>`;
+  }).join("");
+
+  const rows = DATA.trending.map(t => {
+    const where = DATA.checked_leagues.map(id => {
+      const lg = DATA.leagues.find(l => l.id === id);
+      const free = t.available.includes(id);
+      return `<span class="chip ${free ? "on" : ""}">${esc((lg?.team_name || id).slice(0, 18))}${free ? " ✓" : " ✗"}</span>`;
+    }).join(" ");
+    return `<tr>
+      <td class="name-cell">${playerCell(t)}</td>
+      <td class="num">${compact(t.adds)}</td>
+      <td style="text-align:right">${where || '<span class="muted">—</span>'}</td>
+    </tr>`;
+  }).join("");
+
+  return `<h2>Your teams</h2><div class="grid">${cards}</div>
+    <h2>Most added across Sleeper (48h)</h2>
+    <div class="card table-wrap"><table>
+      <thead><tr><th>Player</th><th>Adds</th><th>Free in</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>`;
+}
+
+function leagueView(lg) {
+  if (lg.error) {
+    return `<h2>${esc(lg.name)}</h2><div class="card error">
+      <p>${esc(lg.error)}</p>
+      ${lg.needs_login ? `<p class="muted">Add the <code>ESPN_S2</code> and <code>ESPN_SWID</code> secrets in the
+        repository settings, then run the update job again. The README has the steps.</p>` : ""}
+    </div>`;
+  }
+  const weeks = DATA.short_weeks;
+  const alerts = lg.alerts.length
+    ? `<div class="card">${lg.alerts.map(a =>
+        `<div class="alert ${esc(a.level)}"><span class="dot"></span><span>${esc(a.text)}</span></div>`).join("")}</div>`
+    : `<div class="card empty">Nothing needs attention. Lineup looks set.</div>`;
+
+  const moves = lg.moves.length ? `<div class="card">${lg.moves.map(m => `
+      <div class="move">
+        <div class="gain">+${num(m.gain)} projected points over Wk ${weeks[0]}–${weeks[weeks.length - 1]}</div>
+        <div class="swap">
+          <span class="sign add">+</span>${playerCell(m.add)}<span class="num muted">${num(m.add.proj)}</span>
+          ${m.drop ? `<span class="sign">−</span>${playerCell(m.drop)}<span class="num muted">${num(m.drop.proj)}</span>`
+                   : `<span class="sign">+</span><span class="muted">Open roster spot</span><span></span>`}
+        </div>
+        ${m.reasons.length ? `<ul class="reasons">${m.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+        ${tagList(m.tags)}
+      </div>`).join("")}</div>`
+    : `<div class="card empty">No free agent would improve your starting lineup over the next
+       ${weeks.length} weeks. The watch list below is where the value is.</div>`;
+
+  const watch = lg.watch.length ? `<div class="card">${lg.watch.map(w => `
+      <div class="watch-row">
+        <div>${playerCell(w)}${tagList(w.tags)}</div>
+        <div class="figs"><span class="num">${num(w.ros)}</span>/wk<br>
+          <span class="num">${w.next.map(num).join(" · ")}</span></div>
+      </div>`).join("")}</div>` : "";
+
+  const drops = lg.drop_candidates?.length
+    ? `<p class="muted" style="font-size:13px;margin:8px 2px 0">Roster spots to use:
+        ${lg.drop_candidates.map(d => `${esc(d.name)} (${num(d.ros)}/wk)`).join(", ")}</p>`
+    : "";
+
+  const rows = lg.roster.map(p => {
+    const bench = ["BN", "IR", "TAXI"].includes(p.slot);
+    const bye = p.bye ? (p.bye <= weeks[weeks.length - 1] ? `<strong>${p.bye}</strong>` : p.bye) : "—";
+    return `<tr class="${bench ? "bench" : ""}">
+      <td class="slot-cell"><span class="slot ${p.optimal ? "start" : ""}">${esc(p.slot)}</span></td>
+      <td class="name-cell">${playerCell(p)}</td>
+      <td class="num">${num(p.proj)}</td>
+      <td class="num hide-sm">${num(p.next[1])}</td>
+      <td class="num hide-sm">${num(p.next[2])}</td>
+      <td class="num hide-sm">${num(p.ros)}</td>
+      <td class="num hide-sm">${p.last ? num(p.last.pts) : "—"}</td>
+      <td class="num hide-sm">${p.last?.snap != null ? Math.round(p.last.snap * 100) + "%" : "—"}</td>
+      <td class="num">${bye}</td>
+    </tr>`;
+  }).join("");
+
+  return `<h2>${esc(lg.team_name)}</h2>
+    <p class="muted" style="margin:-4px 0 0">${leagueMeta(lg)} &nbsp;·&nbsp;
+      <a href="${esc(lg.url)}" target="_blank" rel="noopener">Open ${lg.platform === "espn" ? "ESPN" : "Sleeper"} ↗</a></p>
+    <h2>Needs attention</h2>${alerts}
+    <h2>Suggested pickups</h2>${moves}
+    <h2>Watch list</h2>${watch}${drops}
+    <h2>Roster</h2>
+    <div class="card table-wrap"><table>
+      <thead><tr>
+        <th class="slot-cell">Slot</th><th>Player</th><th>Wk ${weeks[0]}</th><th class="hide-sm">Wk ${weeks[1]}</th>
+        <th class="hide-sm">Wk ${weeks[2]}</th><th class="hide-sm">Avg</th>
+        <th class="hide-sm">Last</th><th class="hide-sm">Snap</th><th>Bye</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+function render() {
+  const tabs = [{ id: "overview", label: "Overview" }]
+    .concat(DATA.leagues.map(lg => ({ id: lg.id, label: lg.error ? lg.name : lg.team_name })));
+  $("#tabs").innerHTML = tabs.map(t =>
+    `<button role="tab" data-tab="${esc(t.id)}" aria-selected="${t.id === active}">${esc(t.label)}</button>`).join("");
+  const lg = DATA.leagues.find(l => l.id === active);
+  $("#view").innerHTML = lg ? leagueView(lg) : overview();
+  window.scrollTo({ top: 0 });
+}
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-tab]");
+  if (!btn) return;
+  active = btn.dataset.tab;
+  location.hash = active === "overview" ? "" : active;
+  render();
+});
+window.addEventListener("hashchange", () => { active = location.hash.slice(1) || "overview"; render(); });
+
+fetch("data.json?" + Date.now()).then(r => r.json()).then(data => {
+  DATA = data;
+  active = location.hash.slice(1) || "overview";
+  const when = new Date(data.generated_at);
+  $("#stamp").textContent = `Week ${data.week} · updated ${when.toLocaleString([], {
+    weekday: "short", hour: "numeric", minute: "2-digit" })}`;
+  $("#method").textContent = `Suggestions compare your best possible lineup with and without each free agent, ` +
+    `across weeks ${data.short_weeks.join(", ")}, and only appear when the move doesn't cost you points ` +
+    `through week ${data.long_weeks[data.long_weeks.length - 1]}.`;
+  render();
+}).catch(err => {
+  $("#view").innerHTML = `<div class="card error">Couldn't load data.json: ${esc(err.message)}</div>`;
+});
+</script>
+</body>
+</html>

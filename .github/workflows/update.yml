@@ -1,0 +1,59 @@
+name: Update dashboard
+
+on:
+  schedule:
+    - cron: "0 13 * * *"    # every morning, 9am ET (8am when clocks change)
+    - cron: "0 22 * * 2"    # Tuesday evening, before waivers run
+    - cron: "30 15 * * 0"   # Sunday late morning, before the early games
+  workflow_dispatch:         # the "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - "**.py"
+      - "config.json"
+      - "docs/index.html"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Pull league data
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python build.py
+
+      # Committing the data keeps a history and counts as repository activity,
+      # which stops GitHub from pausing the schedule after 60 quiet days.
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json
+          git diff --quiet --staged || git commit -m "Update dashboard data"
+          git push
+
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v5
