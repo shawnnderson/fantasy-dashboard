@@ -212,7 +212,7 @@ function overview() {
     </button>`;
   }).join("");
 
-  const positions = ["QB", "RB", "WR", "TE", "K", "DEF"];
+  const positions = ["FLEX", "QB", "RB", "WR", "TE", "K", "DEF"];
   const scopes = [`<option value="free">Free in any league</option>`]
     .concat(DATA.checked_leagues.map(l => `<option value="${esc(l.id)}">Free in ${esc(l.team)}</option>`))
     .concat([`<option value="mine">On my rosters</option>`, `<option value="all">Everyone</option>`]).join("");
@@ -223,7 +223,8 @@ function overview() {
       <input id="q" type="search" placeholder="Search players" value="${esc(explorer.q)}" autocomplete="off">
       <select id="pos">
         <option value="">All positions</option>
-        ${positions.map(p => `<option value="${p}"${explorer.pos === p ? " selected" : ""}>${p}</option>`).join("")}
+        ${positions.map(p => `<option value="${p}"${explorer.pos === p ? " selected" : ""}>${
+          p === "FLEX" ? "FLEX (RB/WR/TE)" : p}</option>`).join("")}
       </select>
       <select id="scope">${scopes}</select>
     </div>
@@ -248,6 +249,7 @@ const COLUMNS = [
   { key: "adds", label: "Adds", get: p => p.adds, cell: p => p.adds ? compact(p.adds) : "—" },
 ];
 
+const FLEX_POSITIONS = ["RB", "WR", "TE"];
 const pct = (v) => v == null ? "—" : Math.round(v * 100) + "%";
 const shortName = (s) => String(s).split(" ")[0].slice(0, 9);
 
@@ -271,7 +273,8 @@ function renderExplorer() {
   const col = COLUMNS.find(c => c.key === explorer.sort) || COLUMNS[2];
   const q = explorer.q.trim().toLowerCase();
   let rows = DATA.players.filter(p => {
-    if (explorer.pos && p.pos !== explorer.pos) return false;
+    if (explorer.pos === "FLEX") { if (!FLEX_POSITIONS.includes(p.pos)) return false; }
+    else if (explorer.pos && p.pos !== explorer.pos) return false;
     if (q && !p.name.toLowerCase().includes(q) && !String(p.team).toLowerCase().includes(q)) return false;
     if (explorer.scope === "free") return p.free.length > 0;
     if (explorer.scope === "mine") return p.mine.length > 0;
