@@ -14,6 +14,10 @@ class AuthError(Exception):
 
 
 def get_json(url, cookies=None, retries=3, timeout=60):
+    return json.loads(get_bytes(url, cookies=cookies, retries=retries, timeout=timeout))
+
+
+def get_bytes(url, cookies=None, retries=3, timeout=60):
     headers = {
         "User-Agent": USER_AGENT,
         "Accept": "application/json",
@@ -30,7 +34,7 @@ def get_json(url, cookies=None, retries=3, timeout=60):
                 body = resp.read()
                 if resp.headers.get("Content-Encoding") == "gzip":
                     body = gzip.decompress(body)
-                return json.loads(body)
+                return body
         except urllib.error.HTTPError as e:
             if e.code in (401, 403):
                 raise AuthError("HTTP %d from %s" % (e.code, url.split("?")[0]))

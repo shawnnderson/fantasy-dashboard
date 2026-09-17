@@ -33,13 +33,14 @@ MAX_PER_POSITION = 2
 class SeasonData:
     """League-independent data shared by every league."""
 
-    def __init__(self, players, projections, stats, byes, adds, drops, week):
+    def __init__(self, players, projections, stats, byes, adds, drops, week, usage=None):
         self.players = players
         self.projections = projections  # {week: {pid: {pts_ppr, ..., opp}}}
         self.stats = stats              # {week: {pid: {pts_ppr, off_snp, ...}}}
         self.byes = byes
         self.adds = adds
         self.drops = drops
+        self.usage = usage or {}   # nflverse: {pid: {week: {target_share, carries, ...}}}
         self.week = week
         self.short_weeks = [w for w in range(week, week + 3) if w <= LAST_FANTASY_WEEK]
         self.long_weeks = [w for w in range(week, week + 8) if w <= LAST_FANTASY_WEEK]
@@ -79,19 +80,55 @@ class SeasonData:
         return self._ppg[key]
 
     def recent(self, pid, scoring):
+        """Week by week: Sleeper's points and snaps, nflverse's usage shares."""
         out = []
-        for w in sorted(self.stats):
-            s = self.stats[w].get(pid)
-            if not s:
+        deep = self.usage.get(pid, {})
+        for w in sorted(set(self.stats) | set(deep)):
+            s = self.stats.get(w, {}).get(pid)
+            d = deep.get(w)
+            if not s and not d:
                 continue
+            s = s or {}
+            d = d or {}
             snap = s["off_snp"] / s["tm_off_snp"] if s.get("tm_off_snp") and s.get("off_snp") else None
             out.append({
                 "w": w,
                 "pts": round(s.get(SCORE_KEY[scoring], 0.0), 1),
                 "snap": round(snap, 2) if snap is not None else None,
                 "touches": int(s.get("rec_tgt", 0) + s.get("rush_att", 0)),
+                "targets": int(d["targets"]) if d.get("targets") is not None else None,
+                "carries": int(d["carries"]) if d.get("carries") is not None else None,
+                "tgt_share": round(d["target_share"], 3) if d.get("target_share") is not None else None,
+                "carry_share": round(d["carry_share"], 3) if d.get("carry_share") is not None else None,
+                "ay_share": round(d["air_yards_share"], 3) if d.get("air_yards_share") is not None else None,
             })
         return out
+
+    def played(self, pid, scoring):
+        """Only the weeks the player was actually on the field."""
+        return [r for r in self.recent(pid, scoring)
+                if (r["snap"] or 0) > 0 or r["targets"] or r["carries"]]
+
+    def usage_summary(self, pid, scoring):
+        """Per-game averages over the weeks played, for sorting and filtering."""
+        weeks = self.played(pid, scoring)
+        if not weeks:
+            return {"g": 0}
+
+        def avg(key):
+            vals = [w[key] for w in weeks if w.get(key) is not None]
+            return round(sum(vals) / len(vals), 3) if vals else None
+
+        return {
+            "g": len(weeks),
+            "snap": avg("snap"),
+            "tgt_share": avg("tgt_share"),
+            "carry_share": avg("carry_share"),
+            "ay_share": avg("ay_share"),
+            "targets": avg("targets"),
+            "carries": avg("carries"),
+            "pts": avg("pts"),
+        }
 
     def _depth_charts(self):
         charts = {}
@@ -157,9 +194,22 @@ def replacement_levels(league, data, pool):
     return levels
 
 
+def _plural(n, word, plural=None):
+    return "%d %s" % (n, word if n == 1 else (plural or word + "s"))
+
+
 def _names(data, pids):
     names = [data.name(p) for p in pids]
     return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def eligible_positions(slots):
+    """Positions that can fill a starting spot in this league."""
+    positions = set(s for s in FIXED_SLOTS if slots.get(s))
+    for slot, allowed in FLEX_SLOTS:
+        if slots.get(slot):
+            positions |= allowed
+    return positions
 
 
 def analyze(league, data):
@@ -168,10 +218,7 @@ def analyze(league, data):
     roster = league["roster"]
     week = data.week
     active = [pid for pid, slot in roster.items() if slot not in ("IR", "TAXI")]
-    eligible_positions = set(s for s in FIXED_SLOTS if slots.get(s))
-    for slot, positions in FLEX_SLOTS:
-        if slots.get(slot):
-            eligible_positions |= positions
+    startable = eligible_positions(slots)
 
     week_points = {}
 
@@ -197,22 +244,35 @@ def analyze(league, data):
     def signals(pid):
         tags = []
         p = data.player(pid)
+        pos = p.get("position")
         if data.adds.get(pid):
             tags.append({"kind": "trend", "text": "%s adds in 48h" % _compact(data.adds[pid])})
         ahead = data.injured_ahead(pid)
         if ahead:
             tags.append({"kind": "opportunity",
                          "text": "Next up: %s is %s" % (data.name(ahead), data.player(ahead).get("injury_status"))})
-        recent = data.recent(pid, scoring)
-        if recent and p.get("position") in ("RB", "WR", "TE"):
-            first, last = recent[0], recent[-1]
-            if len(recent) > 1 and first["snap"] is not None and last["snap"] is not None \
-                    and last["snap"] - first["snap"] >= 0.15:
-                tags.append({"kind": "usage", "text": "Snaps up %d%% → %d%%" % (first["snap"] * 100, last["snap"] * 100)})
-            elif last["snap"] is not None and last["snap"] >= 0.6:
+
+        weeks = data.played(pid, scoring)
+        if pos in ("RB", "WR", "TE") and weeks:
+            first, last = weeks[0], weeks[-1]
+            key, label = ("carry_share", "of team carries") if pos == "RB" else ("tgt_share", "target share")
+            if last.get(key) is not None:
+                if len(weeks) > 1 and first.get(key) is not None and last[key] - first[key] >= 0.08:
+                    tags.append({"kind": "usage", "text": "%s %d%% → %d%% (Wk %d–%d)" % (
+                        label.capitalize() if key == "tgt_share" else "Carries",
+                        first[key] * 100, last[key] * 100, first["w"], last["w"])})
+                else:
+                    tags.append({"kind": "usage", "text": "%d%% %s in Wk %d" % (last[key] * 100, label, last["w"])})
+            elif last.get("snap") is not None:
                 tags.append({"kind": "usage", "text": "%d%% of snaps in Wk %d" % (last["snap"] * 100, last["w"])})
-            if last["touches"] >= 10:
-                tags.append({"kind": "usage", "text": "%d targets + carries in Wk %d" % (last["touches"], last["w"])})
+
+            # Plenty of managers adding him, not much actually happening on the field.
+            if data.adds.get(pid, 0) >= 50000 and (last.get("tgt_share") or 0) < 0.1 \
+                    and (last.get("carry_share") or 0) < 0.15 and last.get("targets") is not None:
+                tags.append({"kind": "caution", "text": "Hype ahead of usage: %s, %s in Wk %d" % (
+                    _plural(last["targets"] or 0, "target"), _plural(last["carries"] or 0, "carry", "carries"),
+                    last["w"])})
+
         if p.get("injury_status") in OUT:
             back = next((w for w in data.long_weeks if data.points(pid, w, scoring) > 0), None)
             if back:
@@ -237,6 +297,7 @@ def analyze(league, data):
             "next": [round(data.points(pid, w, scoring), 1) for w in data.short_weeks],
             "ros": round(data.ros_ppg(pid, scoring), 1),
             "last": recent[-1] if recent else None,
+            "usage": data.usage_summary(pid, scoring),
             "adds": data.adds.get(pid),
             "drops": data.drops.get(pid),
         }
@@ -247,7 +308,7 @@ def analyze(league, data):
         pool.update(data.projections.get(w, {}).keys())
     free_agents = [
         pid for pid in pool
-        if pid not in league["rostered"] and data.pos(pid) in eligible_positions and data.player(pid).get("team")
+        if pid not in league["rostered"] and data.pos(pid) in startable and data.player(pid).get("team")
     ]
     by_pos = {}
     for pid in free_agents:

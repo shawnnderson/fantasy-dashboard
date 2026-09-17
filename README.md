@@ -9,9 +9,9 @@ Pages. No server, no cost, no installs.
 ```
 GitHub Actions (daily + Tuesday night + Sunday morning)
    │
-   ├── Sleeper API ────┐
+   ├── Sleeper API ────┐   leagues, rosters, projections, trends
    ├── ESPN API ───────┼──► build.py ──► docs/data.json ──► GitHub Pages
-   └── NFL schedule ───┘
+   └── nflverse ───────┘   target share, carries, air yards
 ```
 
 ## Setup
@@ -77,6 +77,18 @@ scoring, so the four leagues stay comparable.
   are adding them.
 - **Needs attention** covers injured or on-bye starters, empty lineup spots, bench
   players out-projecting your starters, and bye weeks coming up in the next month.
+- **Waiver wire** on the overview page is one sortable table across all four
+  leagues. Filter by position, by name, or by the league a player is free in, then
+  sort by projection, target share, share of team carries, snap share or how many
+  managers are adding them. Points columns follow the scoring of whichever league
+  you filter to. Usage figures are per-game averages over the weeks a player was
+  actually on the field, so a player returning from injury isn't punished for the
+  weeks he missed.
+
+Usage data comes from [nflverse](https://github.com/nflverse/nflverse-data), read
+straight from its weekly CSV. That avoids installing `nflreadpy`, which needs
+Python 3.10+ and polars; if nflverse is ever unreachable the build carries on
+without those columns.
 
 Tuning lives at the top of [`fantasy/analysis.py`](fantasy/analysis.py):
 `MIN_GAIN` (how big a gain is worth a roster move), `STAR_PPG` (who is never
@@ -89,6 +101,8 @@ suggested as a drop), and the size of each list.
 | `build.py` | Pulls everything and writes `docs/data.json` |
 | `fantasy/sleeper.py` | Sleeper leagues, plus the projections, stats and trends all leagues use |
 | `fantasy/espn.py` | ESPN leagues, translated to Sleeper player ids |
+| `fantasy/nflverse.py` | Weekly target share, carries and air yards |
+| `fantasy/match.py` | Matching outside player names to Sleeper ids |
 | `fantasy/analysis.py` | Lineup maths, pickups, watch list, alerts |
 | `docs/index.html` | The page (plain HTML, reads `data.json`) |
 | `tests/test_espn.py` | Checks the ESPN parser against a sample payload |

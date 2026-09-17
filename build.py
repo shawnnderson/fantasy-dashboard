@@ -11,11 +11,12 @@ import os
 import sys
 import traceback
 
-from fantasy import analysis, espn, sleeper
+from fantasy import analysis, espn, nflverse, sleeper
 from fantasy.net import AuthError
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUTPUT = os.path.join(ROOT, "docs", "data.json")
+MAX_TABLE_ROWS = 400
 
 
 def log(msg):
@@ -38,6 +39,8 @@ def main():
     long_weeks = [w for w in range(week, week + 8) if w <= analysis.LAST_FANTASY_WEEK]
     projections = {w: sleeper.projections(season, w) for w in long_weeks}
     stats = {w: sleeper.stats(season, w) for w in range(max(1, week - 3), week)}
+    usage = nflverse.weekly_usage(season, players)
+    log("  nflverse usage for %d players" % len(usage))
     data = analysis.SeasonData(
         players=players,
         projections=projections,
@@ -46,6 +49,7 @@ def main():
         adds=sleeper.trending("add"),
         drops=sleeper.trending("drop"),
         week=week,
+        usage=usage,
     )
 
     raw_leagues = []  # (platform, id, label, loader) so one broken league never blocks the rest
@@ -87,20 +91,47 @@ def main():
                 "needs_login": isinstance(e, AuthError),
             })
 
-    trending = []
-    for pid, count in sorted(data.adds.items(), key=lambda kv: -kv[1])[:25]:
+    # One row per player worth looking at, for the sortable table on the overview.
+    startable = {lg["id"]: analysis.eligible_positions(lg["slots"]) for lg in trending_scope}
+    pool = set()
+    for w in data.long_weeks:
+        pool.update(data.projections.get(w, {}))
+
+    players_table = []
+    for pid in pool:
         p = data.player(pid)
-        if not p:
+        pos = p.get("position")
+        if not p.get("team") or pos not in analysis.FIXED_SLOTS:
             continue
-        trending.append({
+        mine = [lg["id"] for lg in trending_scope if pid in lg["roster"]]
+        free = [lg["id"] for lg in trending_scope
+                if pid not in lg["rostered"] and pos in startable[lg["id"]]]
+        if not mine and not free:
+            continue
+        ros = {k: round(data.ros_ppg(pid, k), 1) for k in analysis.SCORE_KEY}
+        use = data.usage_summary(pid, "ppr")
+        if not mine and ros["ppr"] < 2 and data.adds.get(pid, 0) < 5000 and not use.get("g"):
+            continue
+        players_table.append({
             "id": pid,
             "name": data.name(pid),
-            "pos": p.get("position"),
+            "pos": pos,
             "team": p.get("team"),
             "injury": p.get("injury_status"),
-            "adds": count,
-            "available": [lg["id"] for lg in trending_scope if pid not in lg["rostered"]],
+            "bye": data.byes.get(p.get("team")),
+            "opp": (data.projections.get(week, {}).get(pid) or {}).get("opp"),
+            "proj": {k: round(data.points(pid, week, k), 1) for k in analysis.SCORE_KEY},
+            "next3": {k: round(sum(data.points(pid, w, k) for w in data.short_weeks), 1)
+                      for k in analysis.SCORE_KEY},
+            "ros": ros,
+            "usage": use,
+            "adds": data.adds.get(pid),
+            "drops": data.drops.get(pid),
+            "free": free,
+            "mine": mine,
         })
+    players_table.sort(key=lambda r: -max(r["ros"]["ppr"], (r["adds"] or 0) / 200000.0))
+    players_table = players_table[:MAX_TABLE_ROWS]
 
     site = {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
@@ -109,8 +140,11 @@ def main():
         "short_weeks": data.short_weeks,
         "long_weeks": data.long_weeks,
         "leagues": leagues,
-        "trending": trending,
-        "checked_leagues": [lg["id"] for lg in trending_scope],
+        "players": players_table,
+        "checked_leagues": [
+            {"id": lg["id"], "team": lg["team_name"], "name": lg["name"], "scoring": lg["scoring"]}
+            for lg in trending_scope
+        ],
     }
     os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
     with open(OUTPUT, "w") as f:

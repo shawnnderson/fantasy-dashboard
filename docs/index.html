@@ -59,6 +59,24 @@
           padding: 2px 8px; font-size: 12px; color: var(--muted); white-space: nowrap; }
   .chip.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
   .chip.warn { background: var(--high-soft); color: var(--high); }
+  .chip.mine { background: var(--medium-soft); color: var(--medium); }
+  .chip.tiny { padding: 1px 6px; font-size: 11px; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .controls input, .controls select {
+    font: inherit; font-size: 14px; color: var(--text); background: var(--surface);
+    border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; min-width: 0;
+  }
+  .controls input { flex: 1 1 180px; }
+  .controls input:focus, .controls select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+  th.sortable:hover { color: var(--text); }
+  th.sorted { color: var(--accent); }
+  #explorer th:first-child, #explorer td:first-child {
+    position: sticky; left: 0; background: var(--surface); z-index: 1;
+    box-shadow: 1px 0 0 var(--border);   /* edge so it reads as pinned while the stats scroll under it */
+  }
+  #explorer .player .nm { max-width: 150px; }
 
   .alert { display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
   .alert:last-child { border-bottom: 0; }
@@ -85,6 +103,7 @@
   .tag.trend { background: var(--medium-soft); color: var(--medium); }
   .tag.opportunity, .tag.usage { background: var(--accent-soft); color: var(--accent); }
   .tag.injury, .tag.bye { background: var(--high-soft); color: var(--high); }
+  .tag.caution { background: var(--medium-soft); color: var(--medium); }
 
   .watch-row { display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
   .watch-row:last-child { border-bottom: 0; }
@@ -130,7 +149,8 @@
   <main id="view"><p class="muted">Loading your leagues…</p></main>
   <footer>
     <p id="method"></p>
-    <p>Data from the Sleeper and ESPN fantasy APIs. Projections are Sleeper's, converted to each league's scoring.
+    <p>Leagues and projections from the Sleeper and ESPN fantasy APIs; target share, carries and usage from nflverse.
+       Target, carry and snap figures are per-game averages over the weeks each player was on the field.
        This is a personal dashboard and is not affiliated with ESPN or Sleeper.</p>
   </footer>
 </div>
@@ -142,6 +162,7 @@ const num = (n) => (n ?? 0).toFixed(1);
 const compact = (n) => n >= 1e6 ? (n/1e6).toFixed(1) + "M" : n >= 1e3 ? Math.round(n/1e3) + "K" : String(n);
 
 let DATA = null, active = "overview";
+const explorer = { q: "", pos: "", scope: "free", sort: "next3", desc: true, limit: 50 };
 
 const headshot = (p) => p.pos === "DEF"
   ? `https://sleepercdn.com/images/team_logos/nfl/${String(p.team || "").toLowerCase()}.png`
@@ -190,24 +211,117 @@ function overview() {
     </button>`;
   }).join("");
 
-  const rows = DATA.trending.map(t => {
-    const where = DATA.checked_leagues.map(id => {
-      const lg = DATA.leagues.find(l => l.id === id);
-      const free = t.available.includes(id);
-      return `<span class="chip ${free ? "on" : ""}">${esc((lg?.team_name || id).slice(0, 18))}${free ? " ✓" : " ✗"}</span>`;
-    }).join(" ");
-    return `<tr>
-      <td class="name-cell">${playerCell(t)}</td>
-      <td class="num">${compact(t.adds)}</td>
-      <td style="text-align:right">${where || '<span class="muted">—</span>'}</td>
-    </tr>`;
-  }).join("");
+  const positions = ["QB", "RB", "WR", "TE", "K", "DEF"];
+  const scopes = [`<option value="free">Free in any league</option>`]
+    .concat(DATA.checked_leagues.map(l => `<option value="${esc(l.id)}">Free in ${esc(l.team)}</option>`))
+    .concat([`<option value="mine">On my rosters</option>`, `<option value="all">Everyone</option>`]).join("");
 
   return `<h2>Your teams</h2><div class="grid">${cards}</div>
-    <h2>Most added across Sleeper (48h)</h2>
-    <div class="card table-wrap"><table>
-      <thead><tr><th>Player</th><th>Adds</th><th>Free in</th></tr></thead>
-      <tbody>${rows}</tbody></table></div>`;
+    <h2>Waiver wire</h2>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search players" value="${esc(explorer.q)}" autocomplete="off">
+      <select id="pos">
+        <option value="">All positions</option>
+        ${positions.map(p => `<option value="${p}"${explorer.pos === p ? " selected" : ""}>${p}</option>`).join("")}
+      </select>
+      <select id="scope">${scopes}</select>
+    </div>
+    <div class="card table-wrap"><table id="explorer">
+      <thead><tr>${COLUMNS.map(c =>
+        `<th class="sortable ${c.hide ? "hide-sm" : ""}" data-key="${c.key}">${c.label}<span class="arrow"></span></th>`
+      ).join("")}</tr></thead>
+      <tbody></tbody></table></div>
+    <p class="muted" id="count" style="font-size:13px;margin:8px 2px 0"></p>`;
+}
+
+// Columns for the waiver wire table. `get` pulls the sortable value from a row.
+const COLUMNS = [
+  { key: "name", label: "Player", get: p => p.name, cell: p => playerCell(p) },
+  { key: "free", label: "Free in", get: p => p.free.length, cell: p => freeChips(p) },
+  { key: "proj", label: "This wk", get: p => p.proj[scoring()], cell: p => num(p.proj[scoring()]) },
+  { key: "next3", label: "Next 3", get: p => p.next3[scoring()], cell: p => num(p.next3[scoring()]) },
+  { key: "ros", label: "Avg", get: p => p.ros[scoring()], cell: p => num(p.ros[scoring()]) },
+  { key: "tgt_share", label: "Tgt %", get: p => p.usage.tgt_share, cell: p => pct(p.usage.tgt_share) },
+  { key: "carry_share", label: "Car %", get: p => p.usage.carry_share, cell: p => pct(p.usage.carry_share) },
+  { key: "snap", label: "Snap %", get: p => p.usage.snap, cell: p => pct(p.usage.snap) },
+  { key: "adds", label: "Adds", get: p => p.adds, cell: p => p.adds ? compact(p.adds) : "—" },
+];
+
+const pct = (v) => v == null ? "—" : Math.round(v * 100) + "%";
+const shortName = (s) => String(s).split(" ")[0].slice(0, 9);
+
+// Which scoring the points columns use: the chosen league's, else PPR.
+function scoring() {
+  const league = DATA.checked_leagues.find(l => l.id === explorer.scope);
+  return league ? league.scoring : "ppr";
+}
+
+function freeChips(p) {
+  return DATA.checked_leagues.map(l => {
+    const free = p.free.includes(l.id);
+    const mine = p.mine.includes(l.id);
+    const title = mine ? "on your roster" : free ? "free agent" : "rostered by someone else";
+    return `<span class="chip tiny ${free ? "on" : mine ? "mine" : ""}" title="${esc(l.team)}: ${title}">${
+      esc(shortName(l.team))}</span>`;
+  }).join(" ");
+}
+
+function renderExplorer() {
+  const col = COLUMNS.find(c => c.key === explorer.sort) || COLUMNS[2];
+  const q = explorer.q.trim().toLowerCase();
+  let rows = DATA.players.filter(p => {
+    if (explorer.pos && p.pos !== explorer.pos) return false;
+    if (q && !p.name.toLowerCase().includes(q) && !String(p.team).toLowerCase().includes(q)) return false;
+    if (explorer.scope === "free") return p.free.length > 0;
+    if (explorer.scope === "mine") return p.mine.length > 0;
+    if (explorer.scope === "all") return true;
+    return p.free.includes(explorer.scope);
+  });
+
+  const dir = explorer.desc ? -1 : 1;
+  rows.sort((a, b) => {
+    const [x, y] = [col.get(a), col.get(b)];
+    if (x == null && y == null) return 0;
+    if (x == null) return 1;          // blanks always last
+    if (y == null) return -1;
+    return typeof x === "string" ? dir * x.localeCompare(y) : dir * (x - y);
+  });
+
+  const shown = rows.slice(0, explorer.limit);
+  $("#explorer tbody").innerHTML = shown.map(p => `<tr>${COLUMNS.map(c =>
+    `<td class="${c.key === "name" ? "name-cell" : "num"} ${c.hide ? "hide-sm" : ""}">${c.cell(p)}</td>`
+  ).join("")}</tr>`).join("") || `<tr><td colspan="${COLUMNS.length}" class="empty">No players match.</td></tr>`;
+
+  document.querySelectorAll("#explorer th").forEach(th => {
+    const on = th.dataset.key === col.key;
+    th.classList.toggle("sorted", on);
+    th.querySelector(".arrow").textContent = on ? (explorer.desc ? " ▾" : " ▴") : "";
+  });
+  $("#count").innerHTML = rows.length > shown.length
+    ? `Showing ${shown.length} of ${rows.length}. <a href="#" id="more">Show all</a>`
+    : `${rows.length} player${rows.length === 1 ? "" : "s"} · points in ${scoring().replace("_", " ").toUpperCase()}`;
+}
+
+function bindExplorer() {
+  if (!$("#explorer")) return;
+  $("#scope").value = explorer.scope;
+  $("#q").addEventListener("input", e => { explorer.q = e.target.value; explorer.limit = 50; renderExplorer(); });
+  $("#pos").addEventListener("change", e => { explorer.pos = e.target.value; renderExplorer(); });
+  $("#scope").addEventListener("change", e => { explorer.scope = e.target.value; renderExplorer(); });
+  document.querySelectorAll("#explorer th").forEach(th => th.addEventListener("click", () => {
+    const key = th.dataset.key;
+    // Same column flips direction; a new column starts high-to-low, or A-Z for names.
+    if (explorer.sort === key) explorer.desc = !explorer.desc;
+    else { explorer.sort = key; explorer.desc = key !== "name"; }
+    renderExplorer();
+  }));
+  $("#count").addEventListener("click", e => {
+    if (e.target.id !== "more") return;
+    e.preventDefault();
+    explorer.limit = Infinity;
+    renderExplorer();
+  });
+  renderExplorer();
 }
 
 function leagueView(lg) {
@@ -288,6 +402,7 @@ function render() {
     `<button role="tab" data-tab="${esc(t.id)}" aria-selected="${t.id === active}">${esc(t.label)}</button>`).join("");
   const lg = DATA.leagues.find(l => l.id === active);
   $("#view").innerHTML = lg ? leagueView(lg) : overview();
+  if (!lg) bindExplorer();
   window.scrollTo({ top: 0 });
 }
 

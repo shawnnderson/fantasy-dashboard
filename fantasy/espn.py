@@ -7,9 +7,9 @@ the GitHub Action fills from repository secrets.
 Every ESPN player is translated to a Sleeper player id so all four leagues share
 the same projections and stats."""
 
-import re
 from collections import Counter
 
+from .match import NameIndex
 from .net import AuthError, get_json
 
 BASE = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/%s"
@@ -22,13 +22,6 @@ POSITIONS = {1: "QB", 2: "RB", 3: "WR", 4: "TE", 5: "K", 16: "DEF"}
 TEAM_FIXES = {"WSH": "WAS"}  # ESPN abbreviation -> Sleeper abbreviation
 RECEPTION_STAT_ID = 53
 
-_SUFFIX = re.compile(r"\b(jr|sr|ii|iii|iv|v)\b")
-
-
-def normalize_name(name):
-    name = re.sub(r"[^a-z ]", "", (name or "").lower().replace("-", " "))
-    return " ".join(_SUFFIX.sub("", name).split())
-
 
 class PlayerMatcher:
     """Maps ESPN players to Sleeper ids: ESPN id first, then name + position."""
@@ -37,27 +30,15 @@ class PlayerMatcher:
         self.players = players
         self.pro_teams = pro_teams
         self.by_espn_id = {str(p["espn_id"]): pid for pid, p in players.items() if p.get("espn_id")}
-        self.by_name = {}
-        for pid, p in players.items():
-            if p.get("position") in POSITIONS.values() and p.get("position") != "DEF":
-                name = p.get("full_name") or "%s %s" % (p.get("first_name", ""), p.get("last_name", ""))
-                self.by_name.setdefault((normalize_name(name), p["position"]), []).append(pid)
+        self.names = NameIndex(players)
 
     def match(self, espn_player):
         pos = POSITIONS.get(espn_player.get("defaultPositionId"))
         team = self.pro_teams.get(espn_player.get("proTeamId"))
         if pos == "DEF":
             return team if team in self.players else None
-        pid = self.by_espn_id.get(str(espn_player.get("id")))
-        if pid:
-            return pid
-        candidates = self.by_name.get((normalize_name(espn_player.get("fullName")), pos), [])
-        if len(candidates) > 1:
-            candidates = sorted(
-                candidates,
-                key=lambda c: (self.players[c].get("team") != team, not self.players[c].get("active")),
-            )
-        return candidates[0] if candidates else None
+        return (self.by_espn_id.get(str(espn_player.get("id")))
+                or self.names.find(espn_player.get("fullName"), pos, team))
 
 
 def pro_teams(season):
