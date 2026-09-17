@@ -222,9 +222,21 @@ function overview() {
       ${byeSoon}
       <optgroup label="Bye week is">${byeWeeks.map(w => `<option value="in:${w}">Wk ${w}</option>`).join("")}</optgroup>
       <optgroup label="Bye week is not">${byeWeeks.map(w => `<option value="out:${w}">Not Wk ${w}</option>`).join("")}</optgroup>`;
-  const scopes = [`<option value="free">Free in any league</option>`]
-    .concat(DATA.checked_leagues.map(l => `<option value="${esc(l.id)}">Free in ${esc(l.team)}</option>`))
-    .concat([`<option value="mine">On my rosters</option>`, `<option value="all">Everyone</option>`]).join("");
+  const perLeague = (prefix) => DATA.checked_leagues.map(l =>
+    `<option value="${prefix}:${esc(l.id)}">${prefix === "free" ? "Free in" : "Rostered in"} ${esc(l.team)}</option>`).join("");
+  const scopes = `
+      <optgroup label="Free agents">
+        <option value="free">Free in any league</option>
+        ${perLeague("free")}
+      </optgroup>
+      <optgroup label="Trade targets">
+        <option value="taken">Rostered by another manager</option>
+        ${perLeague("taken")}
+      </optgroup>
+      <optgroup label="Everything">
+        <option value="mine">On my rosters</option>
+        <option value="all">Every player</option>
+      </optgroup>`;
 
   return `<h2>Your teams</h2><div class="grid">${cards}</div>
     <h2>Waiver wire</h2>
@@ -250,8 +262,10 @@ function overview() {
 // Columns for the waiver wire table. `get` pulls the sortable value from a row.
 const COLUMNS = [
   { key: "name", label: "Player", get: p => p.name, cell: p => playerCell(p) },
-  { key: "free", label: "Free in", help: () => "Green: free agent. Amber: on your roster. Grey: rostered by someone else.",
-    get: p => p.free.length, cell: p => freeChips(p) },
+  { key: "free", label: "Status",
+    help: () => "Green: free agent. Amber: on your roster. Grey: someone else has him. Pick one league to see who.",
+    get: p => { const id = leagueFilter(); return id ? (p.taken?.[id] || (p.free.includes(id) ? "Free agent" : "~")) : p.free.length; },
+    cell: p => statusCell(p) },
   { key: "bye", label: "Bye", help: () => "The week his NFL team doesn't play",
     get: p => p.bye, cell: p => p.bye ?? "—" },
   { key: "proj", label: () => `Wk ${DATA.week}`, help: () => `Projected points for week ${DATA.week}`,
@@ -277,18 +291,29 @@ const text = (v) => typeof v === "function" ? v() : (v ?? "");
 const pct = (v) => v == null ? "—" : Math.round(v * 100) + "%";
 const shortName = (s) => String(s).split(" ")[0].slice(0, 9);
 
+// The single league the scope is narrowed to, if any ("free:123" / "taken:123").
+const leagueFilter = () => explorer.scope.split(":")[1] || "";
+
 // Which scoring the points columns use: the chosen league's, else PPR.
 function scoring() {
-  const league = DATA.checked_leagues.find(l => l.id === explorer.scope);
+  const league = DATA.checked_leagues.find(l => l.id === leagueFilter());
   return league ? league.scoring : "ppr";
 }
 
-function freeChips(p) {
+function statusCell(p) {
+  const id = leagueFilter();
+  if (id) {   // one league in view: name the manager holding him
+    if (p.mine.includes(id)) return `<span class="chip mine">Yours</span>`;
+    if (p.taken?.[id]) return `<span class="chip">${esc(p.taken[id])}</span>`;
+    if (p.free.includes(id)) return `<span class="chip on">Free agent</span>`;
+    return `<span class="muted">—</span>`;
+  }
   return DATA.checked_leagues.map(l => {
     const free = p.free.includes(l.id);
     const mine = p.mine.includes(l.id);
-    const title = mine ? "on your roster" : free ? "free agent" : "rostered by someone else";
-    return `<span class="chip tiny ${free ? "on" : mine ? "mine" : ""}" title="${esc(l.team)}: ${title}">${
+    const held = p.taken?.[l.id];
+    const state = mine ? "on your roster" : free ? "free agent" : held ? "rostered by " + held : "not eligible here";
+    return `<span class="chip tiny ${free ? "on" : mine ? "mine" : ""}" title="${esc(l.team)}: ${esc(state)}">${
       esc(shortName(l.team))}</span>`;
   }).join(" ");
 }
@@ -306,10 +331,11 @@ function renderExplorer() {
       if (mode === "out" && String(p.bye) === week) return false;
     }
     if (q && !p.name.toLowerCase().includes(q) && !String(p.team).toLowerCase().includes(q)) return false;
-    if (explorer.scope === "free") return p.free.length > 0;
-    if (explorer.scope === "mine") return p.mine.length > 0;
-    if (explorer.scope === "all") return true;
-    return p.free.includes(explorer.scope);
+    const [mode, league] = explorer.scope.split(":");
+    if (mode === "free") return league ? p.free.includes(league) : p.free.length > 0;
+    if (mode === "taken") return league ? !!p.taken?.[league] : Object.keys(p.taken || {}).length > 0;
+    if (mode === "mine") return p.mine.length > 0;
+    return true;
   });
 
   const dir = explorer.desc ? -1 : 1;

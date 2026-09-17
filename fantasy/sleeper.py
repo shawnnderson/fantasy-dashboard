@@ -107,6 +107,11 @@ def load_league(league, uid):
     for pid in mine.get("players") or []:
         current.setdefault(pid, "BN")
 
+    def team_name(roster):
+        u = users.get(roster.get("owner_id")) or {}
+        return ((u.get("metadata") or {}).get("team_name") or u.get("display_name")
+                or "Team %s" % roster.get("roster_id"))
+
     def standing(r):
         s = r.get("settings") or {}
         return (s.get("wins", 0), s.get("fpts", 0) + s.get("fpts_decimal", 0) / 100.0)
@@ -114,6 +119,7 @@ def load_league(league, uid):
     ordered = sorted(rosters, key=standing, reverse=True)
     s = mine.get("settings") or {}
     owner = users.get(mine.get("owner_id")) or {}
+
     lsettings = league.get("settings") or {}
 
     waiver = {"priority": s.get("waiver_position")}
@@ -137,6 +143,7 @@ def load_league(league, uid):
         "ir_slots": lsettings.get("reserve_slots", 0),
         "roster": current,  # {sleeper player id: current slot}
         "rostered": {pid for r in rosters for pid in (r.get("players") or [])},
+        "owners": {pid: team_name(r) for r in rosters for pid in (r.get("players") or [])},
         "waiver": waiver,
         "unmatched": [],
     }

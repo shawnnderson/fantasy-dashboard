@@ -106,11 +106,14 @@ def main():
         mine = [lg["id"] for lg in trending_scope if pid in lg["roster"]]
         free = [lg["id"] for lg in trending_scope
                 if pid not in lg["rostered"] and pos in startable[lg["id"]]]
-        if not mine and not free:
+        # Rostered by another manager: a trade target rather than a pickup.
+        taken = {lg["id"]: lg["owners"][pid] for lg in trending_scope
+                 if pid in lg["rostered"] and pid not in lg["roster"] and pid in lg["owners"]}
+        if not mine and not free and not taken:
             continue
         ros = {k: round(data.ros_ppg(pid, k), 1) for k in analysis.SCORE_KEY}
         use = data.usage_summary(pid, "ppr")
-        if not mine and ros["ppr"] < 2 and data.adds.get(pid, 0) < 5000 and not use.get("g"):
+        if not mine and not taken and ros["ppr"] < 2 and data.adds.get(pid, 0) < 5000 and not use.get("g"):
             continue
         players_table.append({
             "id": pid,
@@ -129,6 +132,7 @@ def main():
             "drops": data.drops.get(pid),
             "free": free,
             "mine": mine,
+            "taken": taken,
         })
     players_table.sort(key=lambda r: -max(r["ros"]["ppr"], (r["adds"] or 0) / 200000.0))
     players_table = players_table[:MAX_TABLE_ROWS]
@@ -142,7 +146,8 @@ def main():
         "leagues": leagues,
         "players": players_table,
         "checked_leagues": [
-            {"id": lg["id"], "team": lg["team_name"], "name": lg["name"], "scoring": lg["scoring"]}
+            {"id": lg["id"], "team": lg["team_name"], "name": lg["name"], "scoring": lg["scoring"],
+             "positions": sorted(startable[lg["id"]])}
             for lg in trending_scope
         ],
     }

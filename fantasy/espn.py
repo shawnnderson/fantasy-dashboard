@@ -94,12 +94,14 @@ def load_league(league_id, season, espn_s2, swid, matcher):
             continue
         current[pid] = LINEUP_SLOTS.get(entry.get("lineupSlotId"), "BN")
 
-    rostered = set()
+    rostered, owners = set(), {}
     for team in teams:
+        holder = team.get("name") or ("%s %s" % (team.get("location", ""), team.get("nickname", ""))).strip()
         for entry in entries(team):
             pid = matcher.match((entry.get("playerPoolEntry") or {}).get("player") or {})
             if pid:
                 rostered.add(pid)
+                owners[pid] = holder or "Team %s" % team.get("id")
 
     def standing(team):
         overall = (team.get("record") or {}).get("overall") or {}
@@ -133,6 +135,7 @@ def load_league(league_id, season, espn_s2, swid, matcher):
         "ir_slots": slot_counts.get("IR", 0),
         "roster": current,
         "rostered": rostered,
+        "owners": owners,
         "waiver": waiver,
         "unmatched": unmatched,
     }
