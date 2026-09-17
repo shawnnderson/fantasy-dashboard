@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T18:06:54+00:00",
+ "generated_at": "2026-09-17T18:16:03+00:00",
  "season": "2026",
  "week": 2,
  "short_weeks": [
@@ -72,12 +72,12 @@
       "snap": 0.48,
       "touches": 1
      },
-     "adds": 108255,
-     "drops": 95130,
+     "adds": 108507,
+     "drops": 95277,
      "tags": [
       {
        "kind": "trend",
-       "text": "108K adds in 48h"
+       "text": "109K adds in 48h"
       }
      ]
     },
@@ -102,12 +102,12 @@
       "snap": 1.0,
       "touches": 1
      },
-     "adds": 38479,
+     "adds": 38566,
      "drops": null,
      "tags": [
       {
        "kind": "trend",
-       "text": "38K adds in 48h"
+       "text": "39K adds in 48h"
       }
      ]
     },
@@ -132,8 +132,8 @@
       "snap": 0.68,
       "touches": 3
      },
-     "adds": 75969,
-     "drops": 122949,
+     "adds": 76050,
+     "drops": 123255,
      "tags": [
       {
        "kind": "trend",
@@ -166,8 +166,8 @@
       "snap": 0.67,
       "touches": 6
      },
-     "adds": 34008,
-     "drops": 70412,
+     "adds": 34060,
+     "drops": 70520,
      "tags": [
       {
        "kind": "trend",
@@ -230,7 +230,7 @@
       "snap": 1.0,
       "touches": 2
      },
-     "adds": 179109,
+     "adds": 179417,
      "drops": null,
      "tags": [
       {
@@ -260,7 +260,7 @@
       "snap": 0.28,
       "touches": 8
      },
-     "adds": 54168,
+     "adds": 54260,
      "drops": null,
      "tags": [
       {
@@ -290,8 +290,8 @@
       "snap": 0.46,
       "touches": 7
      },
-     "adds": 35541,
-     "drops": 64116,
+     "adds": 35586,
+     "drops": 64215,
      "tags": [
       {
        "kind": "trend",
@@ -323,7 +323,7 @@
       "touches": 2
      },
      "adds": null,
-     "drops": 118594
+     "drops": 118742
     },
     {
      "id": "6130",
@@ -346,8 +346,8 @@
       "snap": 0.36,
       "touches": 10
      },
-     "adds": 1927962,
-     "drops": 140040
+     "adds": 1931643,
+     "drops": 140706
     },
     {
      "id": "12489",
@@ -396,7 +396,7 @@
       "snap": 1.0,
       "touches": 5
      },
-     "adds": 117276,
+     "adds": 117432,
      "drops": null,
      "slot": "QB",
      "optimal": true
@@ -605,7 +605,7 @@
       "touches": 2
      },
      "adds": null,
-     "drops": 146151,
+     "drops": 146394,
      "slot": "BN",
      "optimal": false
     },
@@ -630,7 +630,7 @@
       "snap": 0.49,
       "touches": 17
      },
-     "adds": 219753,
+     "adds": 220077,
      "drops": null,
      "slot": "BN",
      "optimal": false
@@ -656,7 +656,7 @@
       "snap": 0.76,
       "touches": 3
      },
-     "adds": 49110,
+     "adds": 49305,
      "drops": null,
      "slot": "BN",
      "optimal": false
@@ -683,7 +683,7 @@
       "touches": 2
      },
      "adds": null,
-     "drops": 121760,
+     "drops": 121955,
      "slot": "BN",
      "optimal": false
     },
@@ -734,8 +734,8 @@
       "snap": 0.36,
       "touches": 10
      },
-     "adds": 1927962,
-     "drops": 140040,
+     "adds": 1931643,
+     "drops": 140706,
      "slot": "BN",
      "optimal": false
     },
@@ -761,7 +761,7 @@
       "touches": 2
      },
      "adds": null,
-     "drops": 118594,
+     "drops": 118742,
      "slot": "BN",
      "optimal": false
     },
@@ -787,7 +787,7 @@
       "touches": 0
      },
      "adds": null,
-     "drops": 78336,
+     "drops": 78528,
      "slot": "IR",
      "optimal": false
     }
@@ -823,7 +823,7 @@
    "pos": "WR",
    "team": "NO",
    "injury": null,
-   "adds": 2448173,
+   "adds": 2449097,
    "available": []
   },
   {
@@ -832,7 +832,7 @@
    "pos": "WR",
    "team": "MIA",
    "injury": null,
-   "adds": 2150368,
+   "adds": 2152160,
    "available": []
   },
   {
@@ -841,7 +841,7 @@
    "pos": "RB",
    "team": "NYG",
    "injury": null,
-   "adds": 1927962,
+   "adds": 1931643,
    "available": []
   },
   {
@@ -850,7 +850,7 @@
    "pos": "DEF",
    "team": "TB",
    "injury": null,
-   "adds": 1798845,
+   "adds": 1800610,
    "available": [
     "1398428734666579968"
    ]
@@ -861,7 +861,7 @@
    "pos": "RB",
    "team": "SF",
    "injury": null,
-   "adds": 1273482,
+   "adds": 1274315,
    "available": []
   },
   {
@@ -870,7 +870,7 @@
    "pos": "RB",
    "team": "CLE",
    "injury": null,
-   "adds": 1109664,
+   "adds": 1110944,
    "available": [
     "1398428734666579968"
    ]
@@ -881,7 +881,7 @@
    "pos": "QB",
    "team": "MIN",
    "injury": null,
-   "adds": 1030014,
+   "adds": 1030938,
    "available": [
     "1398428734666579968"
    ]
@@ -892,7 +892,7 @@
    "pos": "DEF",
    "team": "SF",
    "injury": null,
-   "adds": 995346,
+   "adds": 996189,
    "available": [
     "1398428734666579968"
    ]
@@ -903,7 +903,7 @@
    "pos": "RB",
    "team": "KC",
    "injury": null,
-   "adds": 597060,
+   "adds": 597834,
    "available": [
     "1398428734666579968"
    ]
@@ -914,7 +914,7 @@
    "pos": "WR",
    "team": "SF",
    "injury": null,
-   "adds": 591162,
+   "adds": 592254,
    "available": [
     "1398428734666579968"
    ]
@@ -925,7 +925,7 @@
    "pos": "WR",
    "team": "DEN",
    "injury": null,
-   "adds": 551264,
+   "adds": 551768,
    "available": []
   },
   {
@@ -934,7 +934,7 @@
    "pos": "WR",
    "team": "NE",
    "injury": null,
-   "adds": 472221,
+   "adds": 472953,
    "available": []
   },
   {
@@ -943,7 +943,7 @@
    "pos": "TE",
    "team": "CIN",
    "injury": null,
-   "adds": 438824,
+   "adds": 439380,
    "available": []
   },
   {
@@ -952,7 +952,7 @@
    "pos": "TE",
    "team": "NYJ",
    "injury": null,
-   "adds": 380520,
+   "adds": 381105,
    "available": [
     "1398428734666579968"
    ]
@@ -963,7 +963,7 @@
    "pos": "WR",
    "team": "PHI",
    "injury": null,
-   "adds": 377829,
+   "adds": 378156,
    "available": []
   },
   {
@@ -972,7 +972,7 @@
    "pos": "QB",
    "team": "CAR",
    "injury": null,
-   "adds": 346440,
+   "adds": 346872,
    "available": [
     "1398428734666579968"
    ]
@@ -983,7 +983,7 @@
    "pos": "RB",
    "team": "DET",
    "injury": null,
-   "adds": 332157,
+   "adds": 332626,
    "available": [
     "1398428734666579968"
    ]
@@ -994,7 +994,7 @@
    "pos": "K",
    "team": "CHI",
    "injury": null,
-   "adds": 317324,
+   "adds": 318115,
    "available": [
     "1398428734666579968"
    ]
@@ -1005,7 +1005,7 @@
    "pos": "TE",
    "team": "DEN",
    "injury": null,
-   "adds": 301480,
+   "adds": 301880,
    "available": [
     "1398428734666579968"
    ]
@@ -1016,7 +1016,7 @@
    "pos": "QB",
    "team": "NO",
    "injury": null,
-   "adds": 293608,
+   "adds": 293880,
    "available": []
   },
   {
@@ -1025,7 +1025,7 @@
    "pos": "WR",
    "team": "GB",
    "injury": null,
-   "adds": 290101,
+   "adds": 290577,
    "available": []
   },
   {
@@ -1034,7 +1034,7 @@
    "pos": "WR",
    "team": "CHI",
    "injury": null,
-   "adds": 241780,
+   "adds": 242018,
    "available": [
     "1398428734666579968"
    ]
@@ -1045,7 +1045,7 @@
    "pos": "WR",
    "team": "ARI",
    "injury": null,
-   "adds": 241491,
+   "adds": 241626,
    "available": [
     "1398428734666579968"
    ]
@@ -1056,7 +1056,7 @@
    "pos": "RB",
    "team": "WAS",
    "injury": null,
-   "adds": 219753,
+   "adds": 220077,
    "available": []
   },
   {
@@ -1065,7 +1065,7 @@
    "pos": "WR",
    "team": "BUF",
    "injury": null,
-   "adds": 205749,
+   "adds": 206424,
    "available": []
   }
  ],
