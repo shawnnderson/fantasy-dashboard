@@ -230,7 +230,7 @@ function leagueView(lg) {
         <div class="swap">
           <span class="sign add">+</span>${playerCell(m.add)}<span class="num muted">${num(m.add.proj)}</span>
           ${m.drop ? `<span class="sign">−</span>${playerCell(m.drop)}<span class="num muted">${num(m.drop.proj)}</span>`
-                   : `<span class="sign">+</span><span class="muted">Open roster spot</span><span></span>`}
+                   : `<span class="sign"></span><span class="muted">No drop needed &mdash; you have an open roster spot</span><span></span>`}
         </div>
         ${m.reasons.length ? `<ul class="reasons">${m.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
         ${tagList(m.tags)}
