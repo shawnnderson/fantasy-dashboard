@@ -163,7 +163,7 @@ const num = (n) => (n ?? 0).toFixed(1);
 const compact = (n) => n >= 1e6 ? (n/1e6).toFixed(1) + "M" : n >= 1e3 ? Math.round(n/1e3) + "K" : String(n);
 
 let DATA = null, active = "overview";
-const explorer = { q: "", pos: "", scope: "free", sort: "next3", desc: true, limit: 50 };
+const explorer = { q: "", pos: "", scope: "free", bye: "", sort: "next3", desc: true, limit: 50 };
 
 const headshot = (p) => p.pos === "DEF"
   ? `https://sleepercdn.com/images/team_logos/nfl/${String(p.team || "").toLowerCase()}.png`
@@ -213,6 +213,15 @@ function overview() {
   }).join("");
 
   const positions = ["FLEX", "QB", "RB", "WR", "TE", "K", "DEF"];
+  const byeWeeks = [...new Set(DATA.players.map(p => p.bye).filter(w => w != null))].sort((a, b) => a - b);
+  const span = `${DATA.short_weeks[0]}–${DATA.short_weeks[DATA.short_weeks.length - 1]}`;
+  // The "no bye soon" shortcut only appears once a bye actually falls in that window.
+  const byeSoon = DATA.players.some(p => DATA.short_weeks.includes(p.bye))
+    ? `<option value="soon:">No bye in Wk ${span}</option>` : "";
+  const byeOptions = `<option value="">Any bye week</option>
+      ${byeSoon}
+      <optgroup label="Bye week is">${byeWeeks.map(w => `<option value="in:${w}">Wk ${w}</option>`).join("")}</optgroup>
+      <optgroup label="Bye week is not">${byeWeeks.map(w => `<option value="out:${w}">Not Wk ${w}</option>`).join("")}</optgroup>`;
   const scopes = [`<option value="free">Free in any league</option>`]
     .concat(DATA.checked_leagues.map(l => `<option value="${esc(l.id)}">Free in ${esc(l.team)}</option>`))
     .concat([`<option value="mine">On my rosters</option>`, `<option value="all">Everyone</option>`]).join("");
@@ -227,6 +236,7 @@ function overview() {
           p === "FLEX" ? "FLEX (RB/WR/TE)" : p}</option>`).join("")}
       </select>
       <select id="scope">${scopes}</select>
+      <select id="bye">${byeOptions}</select>
     </div>
     <div class="card table-wrap"><table id="explorer">
       <thead><tr>${COLUMNS.map(c =>
@@ -242,6 +252,8 @@ const COLUMNS = [
   { key: "name", label: "Player", get: p => p.name, cell: p => playerCell(p) },
   { key: "free", label: "Free in", help: () => "Green: free agent. Amber: on your roster. Grey: rostered by someone else.",
     get: p => p.free.length, cell: p => freeChips(p) },
+  { key: "bye", label: "Bye", help: () => "The week his NFL team doesn't play",
+    get: p => p.bye, cell: p => p.bye ?? "—" },
   { key: "proj", label: () => `Wk ${DATA.week}`, help: () => `Projected points for week ${DATA.week}`,
     get: p => p.proj[scoring()], cell: p => num(p.proj[scoring()]) },
   { key: "next3", label: () => `Wk ${DATA.short_weeks[0]}–${DATA.short_weeks[DATA.short_weeks.length - 1]}`,
@@ -287,6 +299,12 @@ function renderExplorer() {
   let rows = DATA.players.filter(p => {
     if (explorer.pos === "FLEX") { if (!FLEX_POSITIONS.includes(p.pos)) return false; }
     else if (explorer.pos && p.pos !== explorer.pos) return false;
+    if (explorer.bye) {
+      const [mode, week] = explorer.bye.split(":");
+      if (mode === "soon" && DATA.short_weeks.includes(p.bye)) return false;
+      if (mode === "in" && String(p.bye) !== week) return false;
+      if (mode === "out" && String(p.bye) === week) return false;
+    }
     if (q && !p.name.toLowerCase().includes(q) && !String(p.team).toLowerCase().includes(q)) return false;
     if (explorer.scope === "free") return p.free.length > 0;
     if (explorer.scope === "mine") return p.mine.length > 0;
@@ -325,9 +343,11 @@ function renderExplorer() {
 function bindExplorer() {
   if (!$("#explorer")) return;
   $("#scope").value = explorer.scope;
+  $("#bye").value = explorer.bye;
   $("#q").addEventListener("input", e => { explorer.q = e.target.value; explorer.limit = 50; renderExplorer(); });
   $("#pos").addEventListener("change", e => { explorer.pos = e.target.value; renderExplorer(); });
   $("#scope").addEventListener("change", e => { explorer.scope = e.target.value; renderExplorer(); });
+  $("#bye").addEventListener("change", e => { explorer.bye = e.target.value; renderExplorer(); });
   document.querySelectorAll("#explorer th").forEach(th => th.addEventListener("click", () => {
     const key = th.dataset.key;
     // Same column flips direction; a new column starts high-to-low, or A-Z for names.

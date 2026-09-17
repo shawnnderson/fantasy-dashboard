@@ -78,8 +78,9 @@ scoring, so the four leagues stay comparable.
 - **Needs attention** covers injured or on-bye starters, empty lineup spots, bench
   players out-projecting your starters, and bye weeks coming up in the next month.
 - **Waiver wire** on the overview page is one sortable table across all four
-  leagues. Filter by position (or FLEX for RB/WR/TE together), by name, or by the
-  league a player is free in, then
+  leagues. Filter by position (or FLEX for RB/WR/TE together), by name, by the
+  league a player is free in, or by bye week — either to find players with a
+  particular bye or to rule that bye out — then
   sort by projection, target share, share of team carries, snap share or how many
   managers are adding them. Points columns follow the scoring of whichever league
   you filter to. Usage figures are per-game averages over the weeks a player was
