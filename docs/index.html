@@ -230,26 +230,38 @@ function overview() {
     </div>
     <div class="card table-wrap"><table id="explorer">
       <thead><tr>${COLUMNS.map(c =>
-        `<th class="sortable ${c.hide ? "hide-sm" : ""}" data-key="${c.key}">${c.label}<span class="arrow"></span></th>`
+        `<th class="sortable" data-key="${c.key}" title="${esc(text(c.help))}">${esc(text(c.label))}<span class="arrow"></span></th>`
       ).join("")}</tr></thead>
       <tbody></tbody></table></div>
-    <p class="muted" id="count" style="font-size:13px;margin:8px 2px 0"></p>`;
+    <p class="muted" id="count" style="font-size:13px;margin:8px 2px 0"></p>
+    <p class="muted" id="legend" style="font-size:12px;margin:6px 2px 0;line-height:1.6"></p>`;
 }
 
 // Columns for the waiver wire table. `get` pulls the sortable value from a row.
 const COLUMNS = [
   { key: "name", label: "Player", get: p => p.name, cell: p => playerCell(p) },
-  { key: "free", label: "Free in", get: p => p.free.length, cell: p => freeChips(p) },
-  { key: "proj", label: "This wk", get: p => p.proj[scoring()], cell: p => num(p.proj[scoring()]) },
-  { key: "next3", label: "Next 3", get: p => p.next3[scoring()], cell: p => num(p.next3[scoring()]) },
-  { key: "ros", label: "Avg", get: p => p.ros[scoring()], cell: p => num(p.ros[scoring()]) },
-  { key: "tgt_share", label: "Tgt %", get: p => p.usage.tgt_share, cell: p => pct(p.usage.tgt_share) },
-  { key: "carry_share", label: "Car %", get: p => p.usage.carry_share, cell: p => pct(p.usage.carry_share) },
-  { key: "snap", label: "Snap %", get: p => p.usage.snap, cell: p => pct(p.usage.snap) },
-  { key: "adds", label: "Adds", get: p => p.adds, cell: p => p.adds ? compact(p.adds) : "—" },
+  { key: "free", label: "Free in", help: () => "Green: free agent. Amber: on your roster. Grey: rostered by someone else.",
+    get: p => p.free.length, cell: p => freeChips(p) },
+  { key: "proj", label: () => `Wk ${DATA.week}`, help: () => `Projected points for week ${DATA.week}`,
+    get: p => p.proj[scoring()], cell: p => num(p.proj[scoring()]) },
+  { key: "next3", label: () => `Wk ${DATA.short_weeks[0]}–${DATA.short_weeks[DATA.short_weeks.length - 1]}`,
+    help: () => `Total projected points across weeks ${DATA.short_weeks.join(", ")}. A bye counts as zero.`,
+    get: p => p.next3[scoring()], cell: p => num(p.next3[scoring()]) },
+  { key: "ros", label: "Avg/wk",
+    help: () => `Average projected points per week through week ${DATA.long_weeks[DATA.long_weeks.length - 1]}, skipping the bye`,
+    get: p => p.ros[scoring()], cell: p => num(p.ros[scoring()]) },
+  { key: "tgt_share", label: "Tgt %", help: () => "Share of his team's targets, per game played",
+    get: p => p.usage.tgt_share, cell: p => pct(p.usage.tgt_share) },
+  { key: "carry_share", label: "Car %", help: () => "Share of his team's carries, per game played",
+    get: p => p.usage.carry_share, cell: p => pct(p.usage.carry_share) },
+  { key: "snap", label: "Snap %", help: () => "Share of his team's offensive snaps, per game played",
+    get: p => p.usage.snap, cell: p => pct(p.usage.snap) },
+  { key: "adds", label: "Adds", help: () => "Managers adding him across Sleeper in the last 48 hours",
+    get: p => p.adds, cell: p => p.adds ? compact(p.adds) : "—" },
 ];
 
 const FLEX_POSITIONS = ["RB", "WR", "TE"];
+const text = (v) => typeof v === "function" ? v() : (v ?? "");
 const pct = (v) => v == null ? "—" : Math.round(v * 100) + "%";
 const shortName = (s) => String(s).split(" ")[0].slice(0, 9);
 
@@ -304,6 +316,10 @@ function renderExplorer() {
   $("#count").innerHTML = rows.length > shown.length
     ? `Showing ${shown.length} of ${rows.length}. <a href="#" id="more">Show all</a>`
     : `${rows.length} player${rows.length === 1 ? "" : "s"} · points in ${scoring().replace("_", " ").toUpperCase()}`;
+  $("#legend").textContent = `Wk ${DATA.week} is this week's projection; `
+    + `Wk ${DATA.short_weeks[0]}–${DATA.short_weeks[DATA.short_weeks.length - 1]} is those three weeks added up, `
+    + `with byes counting as zero; Avg/wk runs through week ${DATA.long_weeks[DATA.long_weeks.length - 1]} and skips the bye. `
+    + `Tgt %, Car % and Snap % are per-game averages over the weeks played.`;
 }
 
 function bindExplorer() {
