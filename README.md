@@ -46,6 +46,20 @@ GitHub Actions (daily + Tuesday night + Sunday morning)
 > "needs login" on the site, set the secrets again. The published page itself is
 > public, so anyone with the link can see your rosters.
 
+## When it updates
+
+| When | Time (ET) | Why |
+| --- | --- | --- |
+| Every day | 9:00am | Injury news, depth chart changes, new free agents |
+| Tuesday | 6:00pm | Before waivers run, so you can set claims |
+| Wednesday | 7:00am | After waivers have cleared, to see the new wire |
+| Sunday | 11:30am | Before the early games |
+
+Times are fixed in UTC, so each shifts an hour earlier once the clocks change.
+GitHub's scheduled jobs can lag by a few minutes to half an hour. *Actions → Update
+dashboard → Run workflow* refreshes on demand, and the page header always shows
+when the data was actually pulled.
+
 ## Running it locally
 
 ```bash

@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "0 13 * * *"    # every morning, 9am ET (8am when clocks change)
     - cron: "0 22 * * 2"    # Tuesday evening, before waivers run
+    - cron: "0 11 * * 3"    # Wednesday morning, 7am ET, after waivers have cleared
     - cron: "30 15 * * 0"   # Sunday late morning, before the early games
   workflow_dispatch:         # the "Run workflow" button
   push:
