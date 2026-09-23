@@ -50,13 +50,15 @@ GitHub Actions (daily + Tuesday night + Sunday morning)
 
 | When | Time (ET) | Why |
 | --- | --- | --- |
-| Every day | 9:00am | Injury news, depth chart changes, new free agents |
-| Tuesday | 6:00pm | Before waivers run, so you can set claims |
-| Wednesday | 7:00am | After waivers have cleared, to see the new wire |
-| Sunday | 11:30am | Before the early games |
+| Every day | 8:23am | Injury news, depth chart changes, new free agents |
+| Tuesday | 5:23pm | Before waivers run, so you can set claims |
+| Wednesday | 6:23am | After waivers have cleared, to see the new wire |
+| Sunday | 10:38am | Before the early games |
 
 Times are fixed in UTC, so each shifts an hour earlier once the clocks change.
-GitHub's scheduled jobs can lag by a few minutes to half an hour. *Actions → Update
+GitHub runs scheduled jobs on a shared queue and they start late: jobs booked on
+the hour were starting three to five hours behind, so these are booked at odd
+minutes, which queue much sooner. Expect some lag regardless. *Actions → Update
 dashboard → Run workflow* refreshes on demand, and the page header always shows
 when the data was actually pulled.
 

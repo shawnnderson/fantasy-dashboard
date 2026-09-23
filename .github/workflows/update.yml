@@ -2,10 +2,10 @@ name: Update dashboard
 
 on:
   schedule:
-    - cron: "0 13 * * *"    # every morning, 9am ET (8am when clocks change)
-    - cron: "0 22 * * 2"    # Tuesday evening, before waivers run
-    - cron: "0 11 * * 3"    # Wednesday morning, 7am ET, after waivers have cleared
-    - cron: "30 15 * * 0"   # Sunday late morning, before the early games
+    - cron: "23 12 * * *"   # every morning, 8:23am ET (odd minutes queue sooner)
+    - cron: "23 21 * * 2"   # Tuesday evening, before waivers run
+    - cron: "23 10 * * 3"   # Wednesday morning, after waivers have cleared
+    - cron: "38 14 * * 0"   # Sunday, before the early games
   workflow_dispatch:         # the "Run workflow" button
   push:
     branches: [main]
@@ -42,19 +42,32 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: python build.py
 
-      # Committing the data keeps a history and counts as repository activity,
-      # which stops GitHub from pausing the schedule after 60 quiet days.
-      - name: Commit refreshed data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data.json
-          git diff --quiet --staged || git commit -m "Update dashboard data"
-          git push
-
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
           path: docs
       - id: deploy
         uses: actions/deploy-pages@v5
+
+      # Committing the data keeps a history and counts as repository activity,
+      # which stops GitHub from pausing the schedule after 60 quiet days. It runs
+      # after the deploy and never fails the job: the push has hit GitHub 500s,
+      # and a published site matters more than the commit.
+      - name: Commit refreshed data
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json
+          git diff --quiet --staged && exit 0
+          git commit -m "Update dashboard data"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            sleep $((attempt * 20))
+            # Re-apply the data file on top of whatever the remote has now.
+            git fetch origin main && git reset --soft origin/main
+            git add docs/data.json
+            git diff --quiet --staged && exit 0
+            git commit -m "Update dashboard data"
+          done
+          echo "::warning::Could not push the refreshed data; the site was still published."
