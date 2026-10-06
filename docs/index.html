@@ -69,6 +69,27 @@
   }
   .controls input { flex: 1 1 180px; }
   .controls input:focus, .controls select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .toggle { display: inline-flex; background: var(--chip); border-radius: 8px; padding: 2px; }
+  .toggle button {
+    font: inherit; font-size: 13px; border: 0; background: transparent; color: var(--muted);
+    padding: 5px 12px; border-radius: 6px; cursor: pointer;
+  }
+  .toggle button[aria-pressed="true"] { background: var(--surface); color: var(--text); font-weight: 600; }
+
+  .trend-row { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center;
+               padding: 10px 16px; border-bottom: 1px solid var(--border); }
+  .trend-row:last-child { border-bottom: 0; }
+  .trend-who { flex: 1 1 190px; min-width: 0; }
+  .trend-figs { display: flex; align-items: center; gap: 10px; }
+  .trend-where { display: flex; gap: 4px; flex-wrap: wrap; }
+  .spark { color: var(--muted); overflow: visible; }
+  .spark circle.up { fill: var(--accent); }
+  .spark circle.down { fill: var(--high); }
+  .shift { font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .shift strong { color: var(--text); }
+  .delta { font-size: 12px; font-weight: 650; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .delta.up { background: var(--accent-soft); color: var(--accent); }
+  .delta.down { background: var(--high-soft); color: var(--high); }
   th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
   th.sortable:hover { color: var(--text); }
   th.sorted { color: var(--accent); }
@@ -164,6 +185,10 @@ const compact = (n) => n >= 1e6 ? (n/1e6).toFixed(1) + "M" : n >= 1e3 ? Math.rou
 
 let DATA = null, active = "overview";
 const explorer = { q: "", pos: "", scope: "free", bye: "", sort: "next3", desc: true, limit: 50 };
+const trend = { dir: "up" };
+const TREND_SHOWN = 8;
+const MIN_SHIFT = 0.05;    // 5 points of target share: a real role change, not noise
+const MIN_SHARE = 0.12;
 
 const headshot = (p) => p.pos === "DEF"
   ? `https://sleepercdn.com/images/team_logos/nfl/${String(p.team || "").toLowerCase()}.png`
@@ -239,6 +264,15 @@ function overview() {
       </optgroup>`;
 
   return `<h2>Your teams</h2><div class="grid">${cards}</div>
+    <h2>Target share trend</h2>
+    <div class="controls">
+      <div class="toggle">
+        <button data-trend="up" aria-pressed="${trend.dir === "up"}">Rising</button>
+        <button data-trend="down" aria-pressed="${trend.dir === "down"}">Falling</button>
+      </div>
+    </div>
+    <div class="card" id="trend-list"></div>
+    <p class="muted" id="trend-note" style="font-size:12px;margin:6px 2px 0;line-height:1.6"></p>
     <h2>Waiver wire</h2>
     <div class="controls">
       <input id="q" type="search" placeholder="Search players" value="${esc(explorer.q)}" autocomplete="off">
@@ -280,6 +314,10 @@ const COLUMNS = [
     get: p => p.usage.tgt_share, cell: p => pct(p.usage.tgt_share) },
   { key: "carry_share", label: "Car %", help: () => "Share of his team's carries, per game played",
     get: p => p.usage.carry_share, cell: p => pct(p.usage.carry_share) },
+  { key: "tgt_delta", label: "Tgt Δ",
+    help: () => "Change in target share: last few games against the games before them",
+    get: p => p.trend?.delta,
+    cell: p => p.trend ? `${p.trend.delta > 0 ? "+" : "−"}${Math.abs(Math.round(p.trend.delta * 100))}` : "—" },
   { key: "snap", label: "Snap %", help: () => "Share of his team's offensive snaps, per game played",
     get: p => p.usage.snap, cell: p => pct(p.usage.snap) },
   { key: "adds", label: "Adds", help: () => "Managers adding him across Sleeper in the last 48 hours",
@@ -289,6 +327,56 @@ const COLUMNS = [
 const FLEX_POSITIONS = ["RB", "WR", "TE"];
 const text = (v) => typeof v === "function" ? v() : (v ?? "");
 const pct = (v) => v == null ? "—" : Math.round(v * 100) + "%";
+
+function sparkline(history, rising) {
+  const w = 62, h = 20, pad = 3;
+  const vals = history.map(p => p.t);
+  const top = Math.max(0.3, ...vals);
+  const x = (i) => pad + i * (w - 2 * pad) / Math.max(1, vals.length - 1);
+  const y = (v) => h - pad - (v / top) * (h - 2 * pad);
+  const points = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const label = history.map(p => `Wk ${p.w} ${Math.round(p.t * 100)}%`).join(", ");
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img"
+      aria-label="Target share by game: ${esc(label)}"><title>${esc(label)}</title>
+    <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" points="${points}"></polyline>
+    <circle class="${rising ? "up" : "down"}" cx="${x(vals.length - 1).toFixed(1)}"
+      cy="${y(vals[vals.length - 1]).toFixed(1)}" r="2.5"></circle>
+  </svg>`;
+}
+
+function renderTrend() {
+  const rising = trend.dir === "up";
+  const rows = DATA.players
+    .filter(p => p.trend && FLEX_POSITIONS.includes(p.pos) && (rising
+      ? p.trend.delta >= MIN_SHIFT && p.trend.recent >= MIN_SHARE
+      : p.trend.delta <= -MIN_SHIFT && p.trend.prior >= MIN_SHARE))
+    .sort((a, b) => rising ? b.trend.delta - a.trend.delta : a.trend.delta - b.trend.delta)
+    .slice(0, TREND_SHOWN);
+
+  document.querySelectorAll("[data-trend]").forEach(b =>
+    b.setAttribute("aria-pressed", b.dataset.trend === trend.dir));
+
+  $("#trend-list").innerHTML = rows.map(p => {
+    const t = p.trend;
+    const sign = t.delta > 0 ? "+" : "−";
+    return `<div class="trend-row">
+      <div class="trend-who">${playerCell(p)}</div>
+      <div class="trend-figs">
+        ${sparkline(t.history, rising)}
+        <span class="shift num">${pct(t.prior)} → <strong>${pct(t.recent)}</strong></span>
+        <span class="delta ${rising ? "up" : "down"}">${sign}${Math.abs(Math.round(t.delta * 100))} pts</span>
+        <span class="muted num">${t.targets}/g</span>
+      </div>
+      <div class="trend-where">${leagueChips(p)}</div>
+    </div>`;
+  }).join("") || `<div class="empty">Nothing has moved more than ${MIN_SHIFT * 100} points yet.</div>`;
+
+  const window = rows.length ? rows[0].trend.window : 3;
+  $("#trend-note").textContent = `Each player's last ${window} games against the games before them, `
+    + `counted in games played so byes and missed weeks don't dilute it. Target share swings about `
+    + `5 points week to week, so only moves of 5 points or more show up here.`;
+}
 const shortName = (s) => String(s).split(" ")[0].slice(0, 9);
 
 // The single league the scope is narrowed to, if any ("free:123" / "taken:123").
@@ -308,6 +396,10 @@ function statusCell(p) {
     if (p.free.includes(id)) return `<span class="chip on">Free agent</span>`;
     return `<span class="muted">—</span>`;
   }
+  return leagueChips(p);
+}
+
+function leagueChips(p) {
   return DATA.checked_leagues.map(l => {
     const free = p.free.includes(l.id);
     const mine = p.mine.includes(l.id);
@@ -368,6 +460,11 @@ function renderExplorer() {
 
 function bindExplorer() {
   if (!$("#explorer")) return;
+  document.querySelectorAll("[data-trend]").forEach(b => b.addEventListener("click", () => {
+    trend.dir = b.dataset.trend;
+    renderTrend();
+  }));
+  renderTrend();
   $("#scope").value = explorer.scope;
   $("#bye").value = explorer.bye;
   $("#q").addEventListener("input", e => { explorer.q = e.target.value; explorer.limit = 50; renderExplorer(); });

@@ -128,6 +128,7 @@ def main():
                       for k in analysis.SCORE_KEY},
             "ros": ros,
             "usage": use,
+            "trend": data.usage_trend(pid, "ppr"),
             "adds": data.adds.get(pid),
             "drops": data.drops.get(pid),
             "free": free,

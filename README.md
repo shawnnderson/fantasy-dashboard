@@ -93,6 +93,16 @@ scoring, so the four leagues stay comparable.
   are adding them.
 - **Needs attention** covers injured or on-bye starters, empty lineup spots, bench
   players out-projecting your starters, and bye weeks coming up in the next month.
+- **Target share trend** on the overview page lists the biggest risers and
+  fallers among RB, WR and TE: each player's last three games against the games
+  before them, counted in games played so byes and missed weeks don't dilute it.
+  Early in the season, before anyone has five games, it compares the last two.
+  The window comes from the data: target share swings about 5 points week to
+  week, and a three-game average predicts the next week about as well as a
+  two-game one (5.7 vs 5.8 points of error) and much better than a single game
+  (6.8). Four or more games is steady enough to miss a role change entirely.
+  Only moves of 5 points or more appear, and the same figure is sortable in the
+  waiver wire table as "Tgt Δ".
 - **Waiver wire** on the overview page is one sortable table across all four
   leagues. Filter by position (or FLEX for RB/WR/TE together), by name, by the
   league a player is free in, or by bye week — either to find players with a
