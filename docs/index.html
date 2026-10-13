@@ -109,6 +109,7 @@
   .move { padding: 14px 16px; border-bottom: 1px solid var(--border); }
   .move:last-child { border-bottom: 0; }
   .move .gain { color: var(--accent); font-weight: 650; font-size: 13px; }
+  .trade-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
   .swap { display: grid; grid-template-columns: 22px 1fr auto; gap: 8px 10px; align-items: center; margin-top: 8px; }
   .swap .sign { text-align: center; font-weight: 700; color: var(--muted); }
   .swap .sign.add { color: var(--accent); }
@@ -487,6 +488,42 @@ function bindExplorer() {
   renderExplorer();
 }
 
+function tradesView() {
+  const leagues = DATA.leagues.filter(lg => !lg.error);
+  const PLURAL = { QB: "Quarterbacks", RB: "Running backs", WR: "Wide receivers", TE: "Tight ends",
+                   K: "Kickers", DEF: "Defenses" };
+  const protectedNote = (DATA.protected_positions || []).length
+    ? `<p class="muted" style="margin:-4px 0 14px">${esc(DATA.protected_positions.map(p => PLURAL[p] || p).join(" and "))} are protected:
+       no offer below sends one away. Change that in <code>config.json</code>, or ask Claude to.</p>` : "";
+
+  const blocks = leagues.map(lg => {
+    const trades = lg.trades || [];
+    const body = trades.length ? `<div class="card">${trades.map(t => `
+        <div class="move">
+          <div class="trade-head">
+            <span class="gain">+${num(t.gain)}/wk for you</span>
+            <span class="chip">${esc(t.team)} gains ${num(t.their_gain)}/wk</span>
+          </div>
+          <div class="swap">
+            ${t.get.map(p => `<span class="sign add">+</span>${playerCell(p)}<span class="num muted">${num(p.ros)}/wk</span>`).join("")}
+            ${t.give.map(p => `<span class="sign">−</span>${playerCell(p)}<span class="num muted">${num(p.ros)}/wk</span>`).join("")}
+          </div>
+          <ul class="reasons">
+            ${t.reasons.map(r => `<li>${esc(r)}</li>`).join("")}
+            <li>Keeps ${num(t.gain_long)}/wk ahead through week ${DATA.long_weeks[DATA.long_weeks.length - 1]}</li>
+          </ul>
+        </div>`).join("")}</div>`
+      : `<div class="card empty">No trade in this league helps both sides right now.</div>`;
+    return `<h2>${esc(lg.team_name)} · ${esc(lg.name)}</h2>${body}`;
+  }).join("");
+
+  return `<h2>Trade finder</h2>
+    <p class="muted" style="margin:-4px 0 6px">Every offer is tested from both sides: your best lineup
+      and theirs, week by week. Nothing appears unless both rosters come out ahead, so these are
+      offers that can actually be accepted.</p>
+    ${protectedNote}${blocks}`;
+}
+
 function leagueView(lg) {
   if (lg.error) {
     return `<h2>${esc(lg.name)}</h2><div class="card error">
@@ -559,13 +596,13 @@ function leagueView(lg) {
 }
 
 function render() {
-  const tabs = [{ id: "overview", label: "Overview" }]
+  const tabs = [{ id: "overview", label: "Overview" }, { id: "trades", label: "Trades" }]
     .concat(DATA.leagues.map(lg => ({ id: lg.id, label: lg.error ? lg.name : lg.team_name })));
   $("#tabs").innerHTML = tabs.map(t =>
     `<button role="tab" data-tab="${esc(t.id)}" aria-selected="${t.id === active}">${esc(t.label)}</button>`).join("");
   const lg = DATA.leagues.find(l => l.id === active);
-  $("#view").innerHTML = lg ? leagueView(lg) : overview();
-  if (!lg) bindExplorer();
+  $("#view").innerHTML = lg ? leagueView(lg) : active === "trades" ? tradesView() : overview();
+  if (!lg && active !== "trades") bindExplorer();
   window.scrollTo({ top: 0 });
 }
 

@@ -103,6 +103,14 @@ scoring, so the four leagues stay comparable.
   (6.8). Four or more games is steady enough to miss a role change entirely.
   Only moves of 5 points or more appear, and the same figure is sortable in the
   waiver wire table as "Tgt Δ".
+- **Trade finder** checks every rival roster in all four leagues. For each
+  package it re-picks both lineups, week by week, and only suggests a trade when
+  *both* sides come out ahead — an offer that only helps you is one nobody
+  accepts. Two-for-ones account for the other manager dropping his worst player
+  to fit the roster limit, and a package has to be worth roughly what it asks
+  for, so it never proposes swapping a backup for someone's star. Positions
+  listed in `protected_positions` in `config.json` (running backs, by default)
+  are never offered.
 - **Waiver wire** on the overview page is one sortable table across all four
   leagues. Filter by position (or FLEX for RB/WR/TE together), by name, by the
   league a player is free in, or by bye week — either to find players with a

@@ -11,7 +11,7 @@ import os
 import sys
 import traceback
 
-from fantasy import analysis, espn, nflverse, sleeper
+from fantasy import analysis, espn, nflverse, sleeper, trades
 from fantasy.net import AuthError
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -27,6 +27,7 @@ def main():
     with open(os.path.join(ROOT, "config.json")) as f:
         config = json.load(f)
 
+    protected = tuple(config.get("protected_positions") or ())
     state = sleeper.nfl_state()
     season = str(config.get("season") or state.get("league_season") or state["season"])
     week = int(state.get("display_week") or state.get("week") or 1)
@@ -77,7 +78,9 @@ def main():
         try:
             league = loader()
             trending_scope.append(league)
-            leagues.append(analysis.analyze(league, data))
+            summary = analysis.analyze(league, data)
+            summary["trades"] = trades.find_trades(league, data, protected)
+            leagues.append(summary)
             log("  ok   %s" % label)
         except Exception as e:  # show the problem on the site instead of failing the build
             if not isinstance(e, AuthError):
@@ -146,6 +149,7 @@ def main():
         "long_weeks": data.long_weeks,
         "leagues": leagues,
         "players": players_table,
+        "protected_positions": list(protected),
         "checked_leagues": [
             {"id": lg["id"], "team": lg["team_name"], "name": lg["name"], "scoring": lg["scoring"],
              "positions": sorted(startable[lg["id"]])}
